@@ -1,687 +1,681 @@
 {
-  "date": "2026-11-15",
-  "weekday": "Sunday",
+  "date": "2026-11-16",
+  "weekday": "Monday",
   "title": "The Daily Diff",
   "stories": [
     {
-      "id": "starship-ship-42-tower-catch",
-      "kicker": "STARSHIP",
-      "headline": "SpaceX catches Ship 42 with the tower arms after 22.5 hours in orbit, the first orbital upper stage ever brought home",
-      "why_read": "Your last night on X was almost nothing but this catch, and it deserves the top slot: full reusability just stopped being a slide and became a video.",
-      "body": [
-        "SpaceX closed out Starship Flight 15 on Saturday by catching Ship 42 in the Mechazilla tower's chopsticks at Starbase, roughly 22.5 hours after liftoff, according to a summary of posts on X. The ship had reached orbit on November 13, deployed 26 Starlink V3 satellites, and circled Earth before coming home. Commentator Dan Huot called it the Holy Grail of spaceflight, and posts you reposted note that Starship is now the largest object ever to go to orbit and be recovered.",
-        "Not everything went to plan: Super Heavy splashed down in the Gulf instead of being caught, and one engineering account you reposted says the booster simply ran short of propellant. Still, the reactions say a lot. Walter Isaacson recalled engineers' faces in December 2020 when Elon Musk insisted the tower arms could catch a returning ship, and Demis Hassabis called the sonic thunderclap before the catch one of the coolest things he has ever seen."
-      ],
-      "authors": [
-        "X News",
-        "SpaceX"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2121761516722536662",
-      "discuss_url": "https://x.com/WalterIsaacson/status/2121725076919717899",
-      "interests": [
-        "space"
-      ],
-      "lead": true,
-      "featured": false
-    },
-    {
-      "id": "spacexai-grok-bot-team-11000-prs",
-      "kicker": "GROK BOT",
-      "headline": "Inside SpaceXAI's Grok Bot team: agents as teammates, 11,000 pull requests in a month and a 0.5% rollback rate",
-      "why_read": "You run a whole fleet of these bots, so this is the rare behind-the-scenes look at how the people building them actually work, from lint rules to Slack-thread shipping.",
-      "body": [
-        "Engineers at SpaceXAI described building Grok Bot, where AI agents run on their own cloud computers with browsers, files and terminals, sign into apps, and pass work between each other, according to a summary of posts on X. Lauren Tan (@poteto) shared that her small team hit about 11,000 pull requests in a month with roughly 0.5% rollbacks, treating agents as coworkers that take code from start to finish. The product went from start to launch in seven weeks.",
-        "The interesting part for an architect is the guardrails: strict architecture, lint rules, and self-verification so agents can ship without a human babysitting every diff. A companion thread shows heavy users wiring up Chief of Staff style bots that book FedEx pickups and run CRMs, with some running dozens of agents on the Ultra plan. Usage spikes have strained limits along the way."
-      ],
-      "authors": [
-        "X News",
-        "Lauren Tan"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2121761513660661939",
-      "discuss_url": "https://x.com/i/trending/2121923340743151654",
-      "interests": [
-        "ai"
-      ],
-      "lead": true,
-      "featured": false
-    },
-    {
-      "id": "chinese-models-blackwell-fingerprint",
-      "kicker": "CHIPS",
-      "headline": "Forensics on published weights suggest DeepSeek, Moonshot, MiniMax and Ant trained new models on export-controlled Blackwell GPUs",
-      "why_read": "Export controls usually get argued with leaks and anonymous sources; this one argues from the numbers inside the open weights themselves, which is a much more interesting kind of evidence.",
-      "body": [
-        "A report by Will DePue at Unemployment Labs says six models released since April 2026 by DeepSeek, Moonshot AI, MiniMax and Ant Group carry numerical patterns that match Nvidia's Blackwell hardware, while earlier models from the same labs match the older Hopper generation. The team recovers traces of the models' initial values and searches for hardware configurations that reproduce them, and says it confirmed the match on physical Blackwell chips for DeepSeek-V4-Flash and Kimi K3.",
-        "The authors are careful to say the fingerprint shows how the weights were created and supports, without proving, that Blackwell also did the training. They rule out specially configured AMD hardware for DeepSeek-V4-Flash and call it very unlikely for the rest. It landed on Hacker News near the top of the week's AI threads, and it adds a technical layer to a policy fight that has mostly run on accusations."
-      ],
-      "authors": [
-        "Will DePue",
-        "Unemployment Labs"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://unemploymentlabs.com/checkpoint-forensics",
-      "discuss_url": "https://news.ycombinator.com/item?id=50474883",
-      "interests": [
-        "ai",
-        "systems"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "project-zero-90-day-policy",
-      "kicker": "SECURITY",
-      "headline": "Google Project Zero drops its 30-day patch soak and will disclose bugs 90 days after reporting, citing AI-speed exploitation",
-      "why_read": "If you own patch pipelines at work, this is the policy change that resets everyone's clock: Project Zero now treats patch-to-exploit time as roughly zero.",
-      "body": [
-        "Since 2021 Project Zero followed a 90 plus 30 policy: vendors got 90 days to fix a bug plus 30 days of soak time for rollout. The team now says AI-assisted vulnerability discovery and exploitation make that timeline clearly insufficient. LLMs let attackers find bugs faster, raise the odds that several parties find the same bug, and can reverse engineer a patch almost immediately, so the extra soak time mainly creates a false sense of secrecy.",
-        "The post also says LLMs have raised the volume of bugs Project Zero itself reports, to several a week in some targets. It pushes vendors to shrink the patch gap, the time between a fix shipping and users installing it, either by rolling out faster or by protecting users while remediation is still underway. Expect other disclosure programs to be asked why they still allow longer windows."
-      ],
-      "authors": [
-        "Project Zero"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://projectzero.google/2026/11/disclosure-policy.html",
-      "discuss_url": "https://news.ycombinator.com/item?id=50496051",
-      "interests": [
-        "systems",
-        "ai"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "h100-rental-price-up-58",
-      "kicker": "INFERENCE",
-      "headline": "Michael Dell: H100 rental prices rose from $1.96 to $3.10 an hour in a year, on a chip that first shipped in 2022",
-      "why_read": "You reposted this one, and it is the cleanest single data point on how tight inference compute still is: old GPUs are getting more expensive, not cheaper.",
-      "body": [
-        "Michael Dell posted that Dell started shipping Nvidia's H100 in 2022, that a year ago it rented for $1.96 per hour, and that today it rents for $3.10, a 58% increase. Normally a three-year-old accelerator would be sliding down the price curve as newer parts arrive. Instead, demand for inference and training capacity is keeping even previous-generation hardware fully booked.",
-        "The number sits alongside other signals from this week: Saturday's edition covered WSJ reporting on Nvidia helping small clouds buy its GPUs, and a DRAM conspiracy suit (below) argues memory makers shifted capacity toward HBM. For anyone planning on-prem versus cloud GPU spend, the takeaway is that used and older capacity is not a bargain bin right now."
-      ],
-      "authors": [
-        "Michael Dell"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/MichaelDell/status/2121372048048161223",
-      "discuss_url": "https://x.com/MichaelDell/status/2121372048048161223",
-      "interests": [
-        "ai",
-        "systems"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "cybercabs-line-up-dallas",
-      "kicker": "CYBERCAB",
-      "headline": "More than 50 production Cybercabs, some with Starlink antennas, show up in a Dallas lot ahead of robotaxi rides",
-      "why_read": "After Saturday's Cybercab order news, this is the physical proof: a lot full of steering-wheel-free two-seaters a few hours up I-35 from you.",
-      "body": [
-        "Videos shared on X show dozens of officially badged gold Cybercabs parked in a Dallas lot, with some appearing to carry integrated Starlink hardware, according to a summary of posts. The sightings follow Tesla VP Ashok Elluswamy's October statement that rides would start in Dallas in November, where Model Y robotaxis already run unsupervised. Tesla has not announced a public Cybercab launch date there yet.",
-        "Your bookmarks from Friday night were full of the economics behind it. One post you saved compares a full-time chauffeur at roughly $38 an hour with a $300 a month autonomy subscription, which works out to about 40 cents an hour if used around the clock. Another argues that robotaxis in several cities plus Cybercab sales to the public is hard to square with the bear case."
-      ],
-      "authors": [
-        "X News",
-        "TSLAFanMtl"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2121773591033151527",
-      "discuss_url": "https://x.com/TSLAFanMtl/status/2121419104145870924",
-      "interests": [
-        "tesla"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "spacex-tesla-merger-talks",
-      "kicker": "MUSK INC",
-      "headline": "SpaceX and Tesla merger talks advance, with special committees negotiating and an announcement possible by December",
-      "why_read": "Two of your three favorite companies on X might become one, and the catch this weekend only adds fuel to the valuation talk.",
-      "body": [
-        "Talks between SpaceX and Tesla on a combination are moving forward, with special committees of independent directors negotiating terms, according to summaries of posts on X. Reports put a possible announcement as early as December or in early 2027, and describe a combined company worth roughly $3.4 to $3.5 trillion that would be among the largest in the S&P 500. Prediction markets cited in the coverage put the odds at 91% by the end of 2027.",
-        "The obstacles are real: Tesla's China operations, SpaceX's defense contracts, and regulatory approvals all came up. The bull case is synergy across robotics, AI, energy, Starlink and launch. One bookmark you saved makes the de-risking argument directly, saying the leap from expendable to reusable rockets was a harder problem than building satellites that send compute back to Earth."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2121699140224852454",
-      "discuss_url": "https://x.com/i/trending/2120976983177716110",
-      "interests": [
-        "tesla",
-        "space"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "lovable-apps-expose-data",
-      "kicker": "VIBE CODING",
-      "headline": "Researchers scan 159,041 Lovable projects and find personal data, including passports and private messages, readable without login",
-      "why_read": "This is the security bill for no-code AI app builders coming due, and it is a useful reference the next time someone at work wants to ship a vibe-coded internal tool.",
-      "body": [
-        "German security firm Crissy Field examined 159,041 projects built on Lovable, the Stockholm AI app builder, and reports many cases where personal and confidential information was reachable without logging in. The Hacker News headline summarizing the work says exposed data included passport details and more than 200,000 private messages. The report notes that Lovable's terms place responsibility for application security and data handling on customers.",
-        "The researchers' point is the gap between marketing that says no technical knowledge is needed and the reality that access control is still the builder's job. With Lovable generating full apps backed by databases, a missing row-level policy is one prompt away. It is a strong argument for security review and default-deny data access in any agent-built app."
-      ],
-      "authors": [
-        "Crissy Field GmbH"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://www.crissyfield.de/research/lovable-en/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50499017",
-      "interests": [
-        "ai",
-        "systems"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "starship-catch-economics",
-      "kicker": "STARSHIP",
-      "headline": "The catch math: about $1 million in propellant for 100 tons to orbit, and ARK sees roughly $100 per kilogram",
-      "why_read": "Once the cheering stops, this is the part that changes industries, and a few of the posts you saved put real numbers on it.",
-      "body": [
-        "Several posts you bookmarked tried to price what a recovered ship means. One notes that fueling Starship costs about $1 million, so if both the ship and booster come back, propellant becomes the main cost of putting about 100 tons into orbit. A post from ARK's @wintonARK goes further, saying the catch could drop cost per kilogram to orbit to roughly $100 from about $1,000.",
-        "Those are estimates, not SpaceX figures, and the booster still was not recovered on this flight. But the direction is clear, and other posts connect it to orbital data centers, military logistics and much cheaper upmass for Starlink. Treat the numbers as a framework for where launch pricing could go if reuse becomes routine."
-      ],
-      "authors": [
-        "Winton (ARK)",
-        "Kyle"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/wintonARK/status/2121722112729915539",
-      "discuss_url": "https://x.com/pronounced_kyle/status/2121727192698966139",
-      "interests": [
-        "space"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "rocket-lab-100th-electron",
-      "kicker": "LAUNCH",
-      "headline": "Rocket Lab flies its 100th Electron, deploying a Japanese radar satellite for iQPS",
-      "why_read": "A post you saved put it best: Rocket Lab hit 100 launches the same week SpaceX caught Starship, and the two keep running circles around everyone else.",
-      "body": [
-        "Rocket Lab launched its 100th Electron on November 14 from the Māhia Peninsula in New Zealand, placing the YAMATSUMI-II radar satellite for Japan's iQPS into a 575 km orbit, according to a summary of posts on X. The mission flew under a special black-and-gold livery and kept a perfect record on all 11 iQPS flights since 2023.",
-        "CEO Peter Beck credited innovations like 3D-printed engines and said the company is building a rocket roughly every eight days, with more than 100 launches booked. Ashlee Vance captured the mood on your timeline: Rocket Lab doing 100 rockets and SpaceX catching Starship in the same week shows how far ahead these two are."
-      ],
-      "authors": [
-        "X News",
-        "Ashlee Vance"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2121062679049543719",
-      "discuss_url": "https://x.com/ashleevance/status/2121730511513260294",
-      "interests": [
-        "space"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "starship-satellites-as-cameras",
-      "kicker": "STARSHIP",
-      "headline": "Why SpaceX turned three of Starship's satellites into cameras",
-      "why_read": "You reposted Farzad's explainer, and it is the right companion to the catch footage: it answers why we got such good views of the ship this time.",
-      "body": [
-        "Farzad's video explainer looks at why SpaceX used three of the satellites on Starship's flight as camera platforms rather than pure payload. Watching a ship in orbit, deploying satellites and preparing for reentry is hard to capture from the ground or from onboard cameras alone, and dedicated imaging gives engineers and the public a view of the vehicle from outside.",
-        "It is a short watch, and it pairs well with the posts you reposted about Starlink V3 capacity and the ship's 14 orbits before coming home. If you want the why behind the imagery that filled your timeline this weekend, start here."
-      ],
-      "authors": [
-        "Farzad"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/farzyness/status/2121802712144593059",
-      "discuss_url": "https://x.com/farzyness/status/2121802712144593059",
-      "interests": [
-        "space"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "model-daily-driver-debate",
+      "id": "qwen4-max-launch",
       "kicker": "MODELS",
-      "headline": "Claude Fable 5.2, Opus 5.5 or the free Gemini 4 Hydrogen? Developers argue over which model to code with",
-      "why_read": "You reposted Peter Yang saying Claude is his daily driver again, and this thread is the broader version of that choice, with prices attached.",
+      "headline": "Alibaba ships Qwen4-Max: 2.4 trillion parameters, 71 billion active, a million-token context and a claimed 60% cut in task cost",
+      "why_read": "It is the top story on Hacker News this morning and the biggest Chinese model drop since Qwen3.8, with open-weight smaller Qwen4 models promised next.",
       "body": [
-        "Google launched Gemini 4 Hydrogen on November 12 as a fast model with a free tier and paid pricing of $1.50 per million input tokens and $7.50 per million output tokens, according to a summary of posts on X. Developers are stacking it against Anthropic's Claude Fable 5.2, released November 9 with a one-million-token context, and Opus 5.5, which costs about half as much as Fable.",
-        "The emerging consensus is a split: Fable edges ahead on long agentic coding runs, many people keep Opus as the reliable daily driver, and Hydrogen is the budget option for quick iteration. Peter Yang's new tutorial, which you reposted, walks through which model he uses for which kind of real work, which is a practical way to set your own defaults."
+        "Alibaba made Qwen4-Max generally available on Monday after a preview that began November 11. It is a sparse Mixture-of-Experts model with 2.4 trillion total parameters that activates about 71 billion per token, roughly 25% fewer active parameters than Qwen3.8-Max at the same scale. It reads images and video natively, supports a context of up to one million tokens, and speaks both OpenAI- and Anthropic-compatible APIs, with tool calling and structured outputs. Alibaba says it ranked 6th on Code Arena and uses 35% fewer tokens than its predecessor on its own Work360 benchmark, cutting average cost per task by about 60%. Cached input starts at $0.075 per million tokens.",
+        "The flagship stays closed, but Alibaba says smaller Qwen4 models will be released as open weights, which is the part LocalLLaMA folks will care about. Coverage notes the benchmark claims, including beating GPT-6.1 Sol and Opus 5.5 on some coding tests, are Alibaba's own and not independently verified. On Hacker News, one commenter pointed to an Artificial Analysis score of 43 at an average cost of $3.27, against 46 at $0.36 for GPT-6.1 Sol at medium effort, and others hoped the new model is faster to serve than the famously slow Qwen 3.8."
       ],
       "authors": [
-        "X News",
-        "Peter Yang"
+        "Qwen Team",
+        "Alibaba"
       ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2121936297082138815",
-      "discuss_url": "https://x.com/petergyang/status/2121286290629107967",
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://qwen.ai/blog?id=qwen4-max",
+      "discuss_url": "https://news.ycombinator.com/item?id=50513215",
       "interests": [
         "ai"
       ],
-      "lead": false,
+      "lead": true,
       "featured": false
     },
     {
-      "id": "antigravity-teamwork-science",
-      "kicker": "AGENTS",
-      "headline": "Google Research shows Antigravity's /teamwork agents working on open problems in math, chemistry and kernel optimization",
-      "why_read": "After Saturday's Dynamic Workflows story, this is Google's multi-agent pitch aimed at real research, and the tools are being opened to outside researchers.",
+      "id": "starship-v4-70m-nine-engines",
+      "kicker": "STARSHIP",
+      "headline": "Musk: Starship V4 grows to about 70 meters with nine engines and more than 60% more propellant, as SpaceX eyes 50+ Tbps of Starlink per flight",
+      "why_read": "You bookmarked this the night after the catch, and it is the natural next chapter: the ship that just came home is about to get a lot bigger.",
       "body": [
-        "In a November 13 Google Research post, Vahab Mirrokni describes teams across Google and academic partners using Gemini 4 Argon, Carbon and Hydrogen with Antigravity's /teamwork multi-agent workflows on long-open problems. He cites new results in information theory, formal verification, molecular structure discovery and kernel optimization, plus several production infrastructure gains at Google.",
-        "The framing is a discovery loop: humans set the questions and the physical or theoretical constraints, while long-horizon agents write custom solvers, search large spaces and test candidates. Google says it is making these agents available in Antigravity's /teamwork, alongside /boost, and through a researcher access program."
+        "Elon Musk posted that Starship V4 will be about 70 meters long, roughly a 40% length increase, allowing more than 60% more propellant. The engine count rises to nine by adding three more Raptor Vacuum engines, and they will be higher-thrust V4 engines. The post, quoting a picture of Starship's scale, passed 2.3 million views overnight.",
+        "A companion post you saved from Nic Cruz Patane says Musk expects future Starship missions to deploy more than 50 Tbps of Starlink capacity per flight, almost double what Starship carries now and roughly 20 times what a Falcon 9 delivers with V2 Mini satellites. Put those together with this weekend's tower catch and the plan is clear: a bigger, reusable upper stage whose main job is to pour bandwidth into orbit."
       ],
       "authors": [
-        "Vahab Mirrokni",
-        "Google Research"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50496811",
-      "interests": [
-        "ai",
-        "science"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "obsidian-skills-for-agents",
-      "kicker": "OBSIDIAN",
-      "headline": "Obsidian ships Obsidian Skills, teaching agents to fully operate your vaults and wikis",
-      "why_read": "You reposted this from kepano, and it is aimed squarely at your setup: a vault plus a fleet of bots that file notes into it.",
-      "body": [
-        "Obsidian CEO Steph Ango (@kepano) announced Obsidian Skills, described as a way to teach your agents how to fully operate your vaults and wikis. Skills are packaged instructions that coding and personal agents load on demand, so an official set from Obsidian means agents can learn the app's conventions directly instead of guessing at file formats and links.",
-        "For anyone already running agents that write into a vault, this could replace hand-rolled prompts with a maintained, official playbook. It is worth comparing against whatever conventions your own note-filing bots follow today."
-      ],
-      "authors": [
-        "Steph Ango"
+        "Elon Musk",
+        "Nic Cruz Patane"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/kepano/status/2121671835066786169",
-      "discuss_url": "https://x.com/kepano/status/2121671835066786169",
+      "source_url": "https://x.com/elonmusk/status/2122141019894383027",
+      "discuss_url": "https://x.com/niccruzpatane/status/2122122823435202992",
+      "interests": [
+        "space"
+      ],
+      "lead": true,
+      "featured": false
+    },
+    {
+      "id": "faa-ground-stop-juniper-router",
+      "kicker": "NETWORKS",
+      "headline": "The router behind Friday's nationwide US ground stop was reportedly a brand-new Juniper unit, not the 2001-era gear first blamed",
+      "why_read": "As a network-minded architect who reposted both sides of this, it is a perfect incident-review puzzle: was it old routers, or a new box with a chatty feature?",
+      "body": [
+        "Transportation Secretary Sean Duffy said the routers having issues during Friday's outage were bought in 2001, became obsolete in 2006 and were still in use in 2026. Network engineer John Breth quipped that Cisco 6500 and 2950 switches went end of life in 2006, adding that those 6500s were beasts. A later update from International Cyber Digest, which you reposted, tells a different story: the router behind the nationwide ground stop was a brand-new Juniper unit at a remote FAA radio site in Arkansas, just installed by defense contractor L3Harris.",
+        "According to that report, FAA officials believe a feature that broadcast data more widely than needed flooded the network. If it holds up, the lesson is less about aging hardware and more about change management: a fresh install with the wrong defaults can take down a system that old gear had kept running for two decades. Expect a formal post-incident report to settle which version is right."
+      ],
+      "authors": [
+        "International Cyber Digest",
+        "John Breth"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/IntCyberDigest/status/2122137828062572603",
+      "discuss_url": "https://x.com/JBizzle703/status/2122119335678292137",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "steve-blank-nvidia-after-huang",
+      "kicker": "CHIPS",
+      "headline": "Steve Blank on Nvidia after Jensen Huang: visionary founders are rarely replaced by visionaries, and the board must pick an innovator, not an operator",
+      "why_read": "After last week's Huang resignation news, this is the most useful long read on what actually happens next, from someone who has watched Silicon Valley succession for decades.",
+      "body": [
+        "Steve Blank argues that Huang reinvented Nvidia three times: CUDA in 2006, funded for years before revenue; the pivot to deep learning after ImageNet in 2012; and the 2020 Mellanox deal that turned Nvidia from a board vendor into a systems company selling integrated AI racks. Each was a business model change, not just a product change, and Blank doubts an execution-focused CEO would have funded CUDA through those lean years.",
+        "He compares Microsoft's Ballmer era, when sales tripled to $78 billion while the company missed search, smartphones, media and cloud, with Nadella's turnaround. Nvidia is the extreme case, he writes: Huang had about 60 direct reports, discouraged one-on-ones, kept no long-term plans and did not believe in succession planning. Blank's advice to the board is to look for a product and engineering visionary, not simply the operator next in line. The Hacker News thread passed 380 comments."
+      ],
+      "authors": [
+        "Steve Blank"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50512235",
       "interests": [
         "ai",
         "systems"
       ],
       "lead": false,
-      "featured": false
+      "featured": true
     },
     {
-      "id": "dram-conspiracy-suit-survives",
-      "kicker": "MEMORY",
-      "headline": "Judge refuses to dismiss suit accusing Samsung, SK Hynix and Micron of starving DDR5 supply to favor HBM",
-      "why_read": "If you have wondered why server memory got so expensive, this case puts that exact theory in front of a federal judge.",
+      "id": "bitly-old-links-hijacked",
+      "kicker": "SECURITY",
+      "headline": "Old Bitly links in 2011 tweets from Burger King, McDonald's and Trump were re-registered and pointed at new pages; Bitly confirms the flaw",
+      "why_read": "Every wiki, runbook and slide deck you own probably has a few short links in it, and this is a sharp reminder that a link is only as permanent as the service behind it.",
       "body": [
-        "U.S. District Judge Noël Wise of the Northern District of California on November 14 denied in full a joint motion by Samsung, SK Hynix and Micron to dismiss a proposed class action, LitNews reports. The suit alleges the three conspired to cut supply of conventional DRAM such as DDR5 and shift capacity to HBM for AI accelerators. The judge held it was not a rerun of an earlier DRAM conspiracy case the Ninth Circuit dismissed in 2022.",
-        "The court pointed to long-term HBM lock-ups, refusals of long-term conventional DRAM contracts, Micron's Crucial closure, fab delays and the companies' cartel history as supporting a plausible inference of conspiracy. It gave no weight to investor talk of supply discipline or to conference meetings. Answers are due December 7, with a case management conference reset to January 12, 2027."
+        "Ransomnews found that a Bitly link in a Burger King tweet from July 2011 had been registered again on November 15 and pointed at Wikipedia's list of Nazi concentration camps; 18 minutes earlier, a link in a 2011 McDonald's tweet was redirected to the article on the September 11 attacks. Neither account was hacked. Checking 97 Bitly links in Donald Trump's tweets from 2009 to 2013, the site found that 56 had been created after the tweets, and CNN later reported redirected links in old posts from Bill Gates, Justin Trudeau, the FBI and the Department of Defense.",
+        "Bitly confirmed an issue that allowed bad actors to repurpose certain old, inactive links, suspended the accounts involved and began disabling the affected links. By the evening the Burger King and McDonald's links showed Bitly's Link Deactivated page, though 49 re-created Trump links that look like the originals still worked at the last check. If your organization relies on short links in documentation, it is a good week to audit them."
       ],
       "authors": [
-        "LitNews"
+        "Ransomnews"
       ],
       "source": "hn",
       "source_label": "HN",
-      "source_url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
-      "discuss_url": "https://news.ycombinator.com/item?id=50502988",
+      "source_url": "https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50511395",
       "interests": [
         "systems"
       ],
       "lead": false,
-      "featured": false
+      "featured": true
     },
     {
-      "id": "rust-std-memory-safety-bugs",
-      "kicker": "RUST",
-      "headline": "Microsoft's FORGE Lab uses an AI scanner to find memory safety bugs in Rust's standard library, some reachable from safe code",
-      "why_read": "This pairs neatly with the Project Zero story: AI-driven bug hunting is now finding flaws even in the foundations people trust most.",
+      "id": "ublock-origin-uxss",
+      "kicker": "SECURITY",
+      "headline": "A one-click universal XSS in uBlock Origin's element picker, found mostly by GPT-5.6 Sol, let a malicious site inject scripts into any other site",
+      "why_read": "It is a clean example of AI-assisted bug hunting on software almost everyone trusts, and the fix is already out, so it is a satisfying read rather than a scary one.",
       "body": [
-        "Microsoft's FORGE Lab reports several memory safety issues in Rust's std and core libraries, including cases where code written entirely in safe Rust can trigger undefined behavior. The work used Hyenas, a research version of an AI vulnerability scanning system code-named MDASH. The team includes people behind Rudra, an earlier static analyzer for unsafe Rust.",
-        "The findings fall into three patterns of misplaced trust in unsafe code: trusting code not to panic, trusting user-provided implementations to be correct, and trusting the underlying system. With Microsoft, GitHub, Android, Linux and Cloudflare all moving code to Rust, the post argues that bugs in the foundational libraries carry outsized consequences."
+        "Smitty van Bodegom describes a flaw in the Firefox MV2 version of uBlock Origin, with a smaller related issue in uBO Lite, where a malicious website could trick the extension into adding arbitrary trusted filters. Trusted filters can inject JavaScript, so an attacker could run code in the context of any site. The trick was to embed the element picker's internal page in an invisible iframe, drive it to the filter the attacker wanted, and position it so the user clicks the hidden Create button.",
+        "The hard part on Firefox was learning the extension's random per-install UUID, which the author extracted by hooking a request made by one of uBO's default filter rules. He credits GPT-5.6 Sol with doing most of the work of finding the bug, which he then verified, and says Claude wrote most of the proof-of-concept code. The issue is fixed, and a GitHub advisory has more detail."
       ],
       "authors": [
-        "FORGE Lab"
+        "Smitty van Bodegom"
       ],
       "source": "hn",
       "source_label": "HN",
-      "source_url": "https://forge-blog.github.io/posts/rust-std-memory-safety/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50478701",
+      "source_url": "https://iter.ca/post/ubo-uxss/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50513160",
       "interests": [
         "systems",
         "ai"
       ],
       "lead": false,
-      "featured": false
+      "featured": true
     },
     {
-      "id": "kiri-container-runtime",
-      "kicker": "CONTAINERS",
-      "headline": "Kiri, a Rust container runtime, claims 22 ms docker run versus 178 ms on Docker Desktop, with the Docker CLI and Compose intact",
-      "why_read": "You bookmarked this one, and it is worth a test drive on your Mac: a drop-in Docker Desktop alternative that keeps your existing commands.",
+      "id": "m365-outage-chlorine-gas",
+      "kicker": "OUTAGES",
+      "headline": "A Microsoft 365 outage swallowed a pool system's alarm emails, and 15 hotel guests were hurt by excess chlorine at Phantasialand",
+      "why_read": "The Hacker News crowd turned this into a masterclass on safety design: never let a life-safety alarm depend on a single cloud email path.",
       "body": [
-        "Kiri bills itself as a modern container runtime that runs Docker containers with one daemon, while the docker CLI, Compose and the Docker Engine API work as they do today. Its own benchmark says docker run takes 22 ms on Kiri versus 178 ms on Docker Desktop, 152 ms on Colima and 279 ms on OrbStack, with every engine on 2 CPUs and 8 GB.",
-        "Version 0.2.1 is free and in beta on Mac, Windows and Linux, and the bookmark you saved describes it as tiny and written in Rust. The speed numbers are the vendor's own, so they deserve a local check, but low overhead plus Compose compatibility is exactly what makes a runtime easy to swap in."
+        "German broadcaster WDR reports that during Friday's Microsoft outage, which knocked out Outlook, the Phantasialand theme park in Brühl did not receive emails. Its maintenance safety system had already sent an alarm by email because the automatic dosing system was pumping too much chlorine into the pool at the Hotel Ling Bao. Thirteen guests complained of respiratory irritation, the count rose to 15, four went to hospital and one stayed for observation with a moderate injury. Firefighters found a defect in the dosing system, and the water was replaced.",
+        "The top comment on Hacker News, from someone who runs a closed-loop chlorination system, explains that these systems tend to fail by reading low and then overdosing, so a human or an independent sensor must always guard against both extremes. Others put it more bluntly: the outage was Microsoft's, but relying on email alone for a dangerous alarm was the real failure."
       ],
       "authors": [
-        "Kiri"
+        "WDR"
       ],
       "source": "hn",
       "source_label": "HN",
-      "source_url": "https://runkiri.com/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50504077",
+      "source_url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html",
+      "discuss_url": "https://news.ycombinator.com/item?id=50509411",
       "interests": [
         "systems"
       ],
       "lead": false,
-      "featured": false
+      "featured": true
     },
     {
-      "id": "deepseek-v3-pure-jax",
-      "kicker": "OPEN MODELS",
-      "headline": "DeepSeek V3's architecture in 190 lines of pure JAX, pretrained from scratch on a MacBook Air",
-      "why_read": "If you want to actually understand MLA and DeepSeekMoE rather than nod along, this is the most readable implementation you will find this week.",
+      "id": "grok-bot-800k-paid-users",
+      "kicker": "GROK BOT",
+      "headline": "Gwynne Shotwell: Grok Bot's paid weekly users more than doubled to 800,000 in about a month",
+      "why_read": "You run a fleet of these bots yourself, so here is the scale you are part of, and the cost tension that explains the recent usage-limit changes.",
       "body": [
-        "Vaibhaav Tiwari's repository implements the architecture from the DeepSeek-V3 technical report in about 190 lines of pure JAX, with no Flax, Equinox or PyTorch. It covers Multi-head Latent Attention, DeepSeekMoE, auxiliary-loss-free load balancing and multi-token prediction, and keeps parameters as plain dictionaries of arrays so every piece reads top to bottom.",
-        "The model was pretrained from scratch on a MacBook Air using public-domain detective fiction, and a companion write-up explains the code piece by piece with diagrams. In this toy setup, MLA caches 144 numbers per token per layer instead of 480. It drew a big Show HN response."
+        "SpaceX President Gwynne Shotwell said on the third-quarter earnings call that Grok Bot's paid weekly users more than doubled to 800,000 in about a month, according to a summary of posts on X, and Elon Musk called it the fastest growth of any product he has seen. Users are sharing bots that scan X posts, draft content, run research and act as personal assistants, along with one that builds interactive courses.",
+        "The same summary notes executives saying heavy usage costs are rising faster than revenue. That matches another thread on X this weekend in which users describe stretching weekly limits with specialized bots, such as a batcher that queues jobs or a team with courier and librarian roles. Growth plus tighter allowances is the story to watch for anyone running dozens of agents."
       ],
       "authors": [
-        "Vaibhaav Tiwari"
+        "X News",
+        "Gwynne Shotwell"
       ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
-      "discuss_url": "https://news.ycombinator.com/item?id=50497589",
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2122257098977218664",
+      "discuss_url": "https://x.com/i/trending/2122061886573445444",
       "interests": [
         "ai"
       ],
       "lead": false,
-      "featured": false
+      "featured": true
     },
     {
-      "id": "pypi-security-tab",
-      "kicker": "SUPPLY CHAIN",
-      "headline": "PyPI's redesigned project pages go live with a security tab showing provenance and per-file attestations",
-      "why_read": "Supply-chain signals only help if people can read them, and PyPI just made them visible on every package page you check.",
+      "id": "starship-moon-refill-race",
+      "kicker": "ARTEMIS",
+      "headline": "The catch did not win the Moon race, it put SpaceX in it: each Starship landing needs about ten refill launches",
+      "why_read": "You bookmarked this sober take, and it is the right counterweight to a weekend of celebration: reuse is the precondition, not the finish line.",
       "body": [
-        "The Python Package Index finished the interface updates it announced in July. The redesign, shaped by user research and built with Kabu Creative, adds a security tab that explains release provenance and shows per-file digital attestations, following the OpenSSF Attestations Style Guide.",
-        "PyPI says the ecosystem's growth has made it a bigger target for malicious packages, and attestations, introduced in 2024, give a verifiable record of where a release file came from. Until now the site did little to explain what that meant. Release files and history also got clearer layouts."
+        "A post you saved lays out the math. NASA still has not picked whose lander returns its astronauts to the Moon in 2028 and will take whichever is ready first, Starship or Blue Origin's. Starship cannot reach the Moon on one tank, so roughly ten more Starships have to launch first and refill it in orbit.",
+        "Ten launches for every landing only works if ships come home and fly again, and until Saturday no Starship had. Meanwhile, the post notes, China plans two rockets, a lander and astronauts on the Moon before 2030. Orbital refueling is the next big milestone to watch."
       ],
       "authors": [
-        "PyPI"
+        "Kekius Maximus"
       ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50497892",
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/Kekius_Sage/status/2121993106379939898",
+      "discuss_url": "https://x.com/Kekius_Sage/status/2121993106379939898",
       "interests": [
-        "systems"
+        "space"
       ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "tsoracle-timestamp-oracle",
-      "kicker": "DISTRIBUTED SYSTEMS",
-      "headline": "tsoracle: an embeddable Rust timestamp oracle for strictly monotonic timestamps and gapless sequences",
-      "why_read": "This is the Spanner and CockroachDB trick packaged as a small service, plus gapless IDs for invoices and ledgers, which is a very architect-shaped tool.",
+      "id": "starship-tiles-after-catch",
+      "kicker": "HEAT SHIELD",
+      "headline": "One missing tile, orange stains and Musk on a lift: the first close looks at a Starship that came back from orbit",
+      "why_read": "Three of your bookmarks were about the heat shield, which is the right obsession: rapid reuse lives or dies on those tiles.",
       "body": [
-        "tsoracle is a distributed, fault-tolerant timestamp oracle written in Rust. A TSO hands out strictly increasing IDs that order events across machines, which you need for MVCC databases, merging change data across shards and audit logs. The project notes that Spanner, CockroachDB and FoundationDB all rely on the same idea internally.",
-        "Its twist is gapless sequences: get_seq() returns contiguous numbers per named key, with nothing skipped or reused across crashes or failover, which suits invoice numbers and ledger lines. Window state is fsync'd before any timestamp is issued, and consensus is pluggable, with openraft in production."
+        "Everyday Astronaut shared a photo of what one missing tile looks like on the recovered ship, calling it impressive that the rest held up so well, and asked who else wants to see this ship re-fly even if it makes no sense to do so. Another post you saved from Serious Callers Only showed Elon Musk on a lift inspecting the nose tiles.",
+        "A third post asked why Starship tiles still get an orange stain when the Space Shuttle's did not, calling the Shuttle the best worst spacecraft ever. Together they make a nice before-and-after for anyone who followed years of tile-loss worries: the first look at a caught orbital ship shows wear, not failure."
       ],
       "authors": [
-        "tsoracle"
+        "Everyday Astronaut",
+        "Serious Callers Only"
       ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://tsoracle.rs/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50481056",
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/Erdayastronaut/status/2122092865904116000",
+      "discuss_url": "https://x.com/ProblemChildGCU/status/2122073465712693655",
       "interests": [
-        "systems"
+        "space"
       ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "tesla-fsd-times-square-billboard",
-      "kicker": "FSD",
-      "headline": "Tesla buys its first Times Square billboard to advertise Full Self-Driving",
-      "why_read": "Tesla famously does not advertise, so a billboard in the middle of Manhattan says a lot about how hard it is now pushing FSD adoption.",
+      "id": "founder-ability-not-capital",
+      "kicker": "FOUNDERS",
+      "headline": "Paul Graham, Musk and Garrett Reisman push back on the claim that anyone with SpaceX's money could have caught a Starship",
+      "why_read": "You reposted three angles on this argument, and Paul Graham's one-liner is the one people will quote all week.",
       "body": [
-        "Tesla has placed its first billboard in Times Square to promote Full Self-Driving, according to a summary of posts on X. The ad claims FSD is 7 times safer than human drivers, based on Tesla's own data, and cites more than 15 billion miles driven globally. It runs through November on a screen owned by JPMorgan Chase.",
-        "Fans read it as a shift away from Tesla's long reliance on word of mouth, coming as FSD usage rises and regulators keep watching the supervised system. Combined with Cybercab orders and the Dallas fleet, it rounds out a week of Tesla going on offense about autonomy."
+        "Finance writer Matt Stoller argued that SpaceX's wins come down to capital and engineering anyone could buy, and Musk replied by pointing to SpaceX's share of global payload to orbit and the tower catch, according to a summary of posts on X. Paul Graham's response passed a million views: you solve really hard problems for decades and get told anyone could have done it, but as an investor, he says, the limiting factor is not investment, it is founder ability.",
+        "Former NASA astronaut Garrett Reisman, who spent seven years at SpaceX, added in a clip you reposted that he has met many super smart people who are usually smart about one thing, while Musk moves from software to welding detail with his engineers. John LeFevre's line was the funniest: the engineers who caught the rocket do not write LinkedIn thought pieces about leadership."
       ],
       "authors": [
+        "Paul Graham",
         "X News"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/i/trending/2121653182984290462",
-      "discuss_url": "https://x.com/i/trending/2121653182984290462",
-      "interests": [
-        "tesla"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "voyager-1-one-light-day",
-      "kicker": "DEEP SPACE",
-      "headline": "Voyager 1 becomes the first human-made object one light-day from Earth on November 18",
-      "why_read": "A gentle reminder that a 1977 spacecraft is still talking to us, and NASA is inviting everyone to wave back with a flashlight.",
-      "body": [
-        "On November 18 at 5:16 a.m. Eastern, Voyager 1 will reach one full light-day from Earth, more than 16 billion miles away, according to a summary of posts on X. Launched in 1977, it has been in interstellar space since 2012 and still sends data on cosmic rays and magnetic fields, with engineers shutting down instruments over time to stretch its fading power.",
-        "NASA is asking people to celebrate after sunset on November 17 by flashing VGR in Morse code toward the sky with a flashlight or phone. It is a nice family activity for Tuesday evening, and a good companion to a weekend of reusable rockets."
-      ],
-      "authors": [
-        "X News",
-        "NASA"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2121617904563089799",
-      "discuss_url": "https://x.com/i/trending/2121617904563089799",
+      "source_url": "https://x.com/paulg/status/2122033524857589799",
+      "discuss_url": "https://x.com/i/trending/2122249700313018443",
       "interests": [
         "space",
-        "science"
+        "life"
       ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "chemistry-became-biology",
-      "kicker": "ORIGINS OF LIFE",
-      "headline": "Quanta: a new generation of scientists rethinks how chemistry turned into biology",
-      "why_read": "This fits the physics and chemistry corner of your pinned post: a long, careful read on the oldest open question in science.",
+      "id": "ari-paul-wrong-on-spacex",
+      "kicker": "SPACEX",
+      "headline": "Ari Paul: 'I was wrong on SpaceX' and Musk's vertical integration of bottlenecks is the best moat he has seen",
+      "why_read": "A skeptic changing his mind in public is rare, and his question about which moats survive AI is a good one for any architect thinking about build versus buy.",
       "body": [
-        "Quanta's Yasemin Saplakoglu reports that after decades of arguing over which molecules came first, researchers are rethinking what life was, is and could be. The story is part of an Origins of Life week package focused on the roughly 200 million years after conditions for life emerged on Earth but before our most ancient single-celled ancestor appeared.",
-        "It walks from Earth's molten, meteorite-battered early days to acidic oceans under carbon dioxide skies, then into the competing ideas about metabolism, RNA and cells. A good weekend read that rewards slow attention."
+        "Investor Ari Paul wrote that he had mocked SpaceX's IPO valuation as absurd, but now thinks Musk has been smartly verticalizing and building strategic moats; he does not own shares yet but expects to buy and could see it becoming a large core holding. His argument: if advanced AI lets leading software companies take over many industries, hardware is harder to copy in the short term because factories and supply chains take years, though robotics may close that gap within about five years.",
+        "His answer to what remains defensible is Musk's vertical integration of key bottlenecks. The biggest risk, he says, is Musk himself, comparing SpaceX's dependence on him to Nvidia's on Jensen Huang, which reads differently after last week's news."
       ],
       "authors": [
-        "Yasemin Saplakoglu",
-        "Quanta Magazine"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://www.quantamagazine.org/the-evolving-story-of-how-chemistry-became-biology-20261112/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50482222",
-      "interests": [
-        "science"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "bacterial-flagellar-motor",
-      "kicker": "BIOPHYSICS",
-      "headline": "Oxford's molecular motors group explains the bacterial flagellar motor, a 45-nanometer rotary engine",
-      "why_read": "Engineering is magic, as one post in your bookmarks put it, and nature built this rotary motor long before we built any.",
-      "body": [
-        "Oxford Physics' Molecular Motors group describes the bacterial flagellar motor, a rotary engine powered by ions flowing across the cell membrane. Each motor drives a helical filament that spins at hundreds of revolutions per second to make the cell swim. The rotor is a set of rings about 45 nm across made of a few hundred protein molecules.",
-        "Around it sit independent torque generators built from the proteins MotA and MotB, with room for at least 11 in E. coli. Structures from 2020 suggest a MotA5 MotB2 complex where the five-part ring turns around the pair, coupled to proton flow, like little wheels. It is a lovely blend of physics and biology."
-      ],
-      "authors": [
-        "Oxford Molecular Motors"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://www.physics.ox.ac.uk/research/group/oxford-molecular-motors/research/bacterial-flagellar-motor",
-      "discuss_url": "https://news.ycombinator.com/item?id=50455732",
-      "interests": [
-        "science"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "software-job-titles-family-tree",
-      "kicker": "CAREERS",
-      "headline": "A family tree of 104 software job titles, from human 'Computer' to 'AI Agent / Context Engineer'",
-      "why_read": "As an IT architect who has watched DevOps become SRE become platform engineering, you will enjoy finding your own branch on this tree.",
-      "body": [
-        "Ian Miell, a former Head of DevOps, built a family tree of software job titles from the 1940s to now with help from Claude. It covers 104 titles in seven families, including development, architecture and leadership, operations and infrastructure, networks and security, and data and AI, with time running top to bottom in five-year rows.",
-        "Solid arrows mean a title grew out of its parent and dashed arrows mean influence or a common career move. The whole thing is one Graphviz file and one JSON file of descriptions, and clicking a title shows its history. The dates are his estimates of when titles became common, not first use."
-      ],
-      "authors": [
-        "Ian Miell"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50499038",
-      "interests": [
-        "systems"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "old-phone-instead-of-pi",
-      "kicker": "HARDWARE HACKS",
-      "headline": "Why buy a Raspberry Pi when an old phone already has the camera, GPS, battery and modem?",
-      "why_read": "A fun, practical homelab read: the parts math makes a strong case for the drawer of retired phones most of us have.",
-      "body": [
-        "The author needs a high-resolution camera, GPS, storage and a microcontroller for a lighting project, and compares a Raspberry Pi build with used phones like a Redmi 13C 5G and Huawei Mate 30 5G. Those phones sell second hand for about ¥300 to ¥500, roughly $45 to $75, and already include a 50MP or 40MP camera, GPS, storage, clock, battery, touchscreen and mobile data.",
-        "By the author's tally, a Pi 4 core build with camera, GPS hat and storage runs about ¥1,483, and a fully equipped one with RTC, UPS, display and 4G is around ¥2,317. The rooted phone talks to an LED controller board over USB-C. It is a good reminder that e-waste can be a dev board."
-      ],
-      "authors": [
-        "so.long.thanks.fish"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://so.long.thanks.fish/why-pi-when-i-have-an-old-phone/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50440709",
-      "interests": [
-        "systems"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "claude-code-tailscale-preview",
-      "kicker": "DEV WORKFLOW",
-      "headline": "A simple trick: Tailscale on laptop and phone, then have Claude Code or Codex send you a preview link you can open anywhere",
-      "why_read": "You bookmarked this tip, and it is a nice fit with the Tailscale-heavy homelab setup you already run.",
-      "body": [
-        "A post you saved lays out a quick workflow: install Tailscale on your computer and phone on the same free account, open a project in Claude Code or Codex, and ask the agent to run the project and send you a preview link. Because both devices sit on the same tailnet, the link opens on your phone without exposing anything to the public internet.",
-        "It is a small idea, but it turns a coding agent into something you can check from the couch or the airport. Pair it with the Grok Bot team story above and you can see where agent workflows are heading: start work in one place and review it from anywhere."
-      ],
-      "authors": [
-        "Voxyz"
+        "Ari Paul"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/Voxyz_ai/status/2121702208546967753",
-      "discuss_url": "https://x.com/Voxyz_ai/status/2121702208546967753",
+      "source_url": "https://x.com/AriDavidPaul/status/2122068230621573278",
+      "discuss_url": "https://x.com/AriDavidPaul/status/2122068230621573278",
+      "interests": [
+        "space"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "mollick-starship-catch-3js",
+      "kicker": "AGENTS",
+      "headline": "Ethan Mollick asked Fable and Opus to find the Starship catch video and rebuild its last 40 seconds in 3D with three.js, and they did",
+      "why_read": "You reposted it, and it is the most fun demo of the weekend: a single prompt turned a webcast into an interactive model with cutaway views.",
+      "body": [
+        "Ethan Mollick shared another thing that would have seemed impossible a few months ago. His prompt asked Claude Fable and Opus to find video of the Starship catch, render the last 40 seconds or so in 3D with three.js in extreme detail, let him switch between views like cutaway blueprints, and skip the crowd. The result is a playable scene with the tower arms and the cloud deck.",
+        "When he asked for sources, Claude said the recreation was built from SpaceX's official webcast replay of Flight 15, with a specific window of the video driving the timing, camera shots and catch moment. It is a neat pairing with this weekend's posts about coding agents doing work that is not really code."
+      ],
+      "authors": [
+        "Ethan Mollick"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/emollick/status/2122036763468214711",
+      "discuss_url": "https://x.com/emollick/status/2122040753853505709",
       "interests": [
         "ai",
+        "space"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "coding-agents-non-code-work",
+      "kicker": "AGENTS",
+      "headline": "@mattyp and Lauren Tan: coding agents are underrated for work that isn't code",
+      "why_read": "You bookmarked this clip, and it fits how you already use your bot fleet: long, multi-step jobs where planning and clean context matter more than code.",
+      "body": [
+        "In a livestream between @mattyp and Lauren Tan, highlighted by Attia, the point was that coding agents are great at long, complex tasks because they plan, split the work and keep context clean. People are even editing video with them now, and the post asks for the weirdest non-coding job readers have given a coding agent.",
+        "It lands at a good time, alongside Tan's team talk about shipping 11,000 pull requests in a month and Mollick's three.js Starship demo. The common thread is that the agent harness, not the programming language, is the valuable part."
+      ],
+      "authors": [
+        "Attia"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/attiamo1/status/2121986610728501402",
+      "discuss_url": "https://x.com/attiamo1/status/2121986610728501402",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "esr-defends-rust",
+      "kicker": "RUST",
+      "headline": "Eric S. Raymond, of all people, defends Rust: annoying, yes, but he is shipping a significant amount of it",
+      "why_read": "You reposted the man who wrote The Cathedral and the Bazaar taking Rust's side, with LLMs as the reason the borrow checker stopped bothering him.",
+      "body": [
+        "Responding to a post that said Rust might be the official language of products that do not actually ship, Eric S. Raymond wrote that he could not believe he had to defend Rust. He lists his gripes, including lifetime tracking, which he calls a huge pain and says he never learned to do by hand before LLMs made it unnecessary, slow compiles and obnoxious evangelists.",
+        "None of that, he argues, means the tool lacks uses, and he says he is shipping a significant amount of Rust these days. It is a small but telling data point: AI assistance is lowering the learning curve of strict languages, which may matter more for Rust adoption than any advocacy."
+      ],
+      "authors": [
+        "Eric S. Raymond"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/esrtweet/status/2122128907138908331",
+      "discuss_url": "https://x.com/esrtweet/status/2122128907138908331",
+      "interests": [
         "systems"
       ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "starlink-kits-childcare-nigeria",
-      "kicker": "KINDNESS",
-      "headline": "SpaceX donates Starlink kits to childcare centers in 16 countries, including 210 in Nigeria",
-      "why_read": "For the love and kindness part of your pinned post: connectivity used to help reunite families and protect kids.",
+      "id": "grok-watermarking-optional",
+      "kicker": "GROK",
+      "headline": "SpaceXAI makes invisible text watermarking in Grok models off by default, days after turning it on for the EU AI Act",
+      "why_read": "If you build on the Grok API, this changes a default under your feet, and admins now control it per model.",
       "body": [
-        "SpaceX handed Starlink kits to the Lagos State Ministry of Youth and Social Development as part of a grant of 750 units for childcare institutions in 16 countries, 210 of them in Nigeria, according to a summary of posts on X. Each kit includes up to 12 months of free service to support digital record keeping, staff training, family reunification and child protection.",
-        "The donation is being delivered through the nonprofit Both Ends Believing, with most units rolling out by early 2027. It is a quiet counterpoint to a loud weekend of rocket news."
+        "SpaceXAI enabled watermarking on November 7 for seven Grok models to meet Article 50 of the EU AI Act, which requires machine-readable marks on AI output, according to a summary of posts on X. Days later it reversed the default to off, letting team admins enable it per model or where the law requires it. Musk said the change prioritizes user control.",
+        "Image and video watermarks from Grok Imagine stay visible and mandatory. Reactions split between developers glad to avoid invisible tracking in their text and people questioning how this squares with EU rules."
       ],
       "authors": [
         "X News"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/i/trending/2121665974571245837",
-      "discuss_url": "https://x.com/i/trending/2121665974571245837",
+      "source_url": "https://x.com/i/trending/2122240561578934481",
+      "discuss_url": "https://x.com/i/trending/2122240561578934481",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "nvidia-gr00t-2-corl-austin",
+      "kicker": "ROBOTICS",
+      "headline": "At CoRL 2026 in Austin, Nvidia shows GR00T 2, an open robot model that learns manipulation from human demos",
+      "why_read": "It is happening in your town, and it pairs open models with robots, two of your favorite beats.",
+      "body": [
+        "At the Conference on Robot Learning in Austin, Nvidia introduced GR00T 2, an open model that learns manipulation from human demonstrations and transfers skills across robot types, according to a summary of posts on X. The reported success rates are 71% on tasks with a single demonstration and 95% with five.",
+        "PrismaX also unveiled a Robotics Data Catalog with camera views, task details, quality scores and downloadable episodes, including work with UPenn's GRASP Lab. The theme of the week is that better data and adaptable models, not just bigger ones, are what move robots into homes and factories."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2122251111830626629",
+      "discuss_url": "https://x.com/i/trending/2122251111830626629",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "terminal-bench-top-benchmark",
+      "kicker": "EVALS",
+      "headline": "Asked which public benchmark they trust for frontier models, 56 AI experts picked Terminal-Bench 4",
+      "why_read": "When everyone claims a win on some leaderboard, as Qwen4-Max does today, it helps to know which evals practitioners actually believe.",
+      "body": [
+        "Chris Barber surveyed 56 AI practitioners about which public benchmarks they trust, excluding any tied to their own work, according to a summary of posts on X. Terminal-Bench 4 led with 25 votes, Terminal-Bench Science followed with 20, and coding tests FrontierCode with 13 and FrontierSWE with 10 rounded out the top.",
+        "Respondents liked terminal-based evals because they look like real work in software and science, but many were skeptical that any benchmark captures true progress. That is worth remembering when reading Alibaba's claim that Qwen4-Max is 49% more token efficient on Terminal-Bench 4.0 than its predecessor."
+      ],
+      "authors": [
+        "X News",
+        "Chris Barber"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2122084680962920790",
+      "discuss_url": "https://x.com/i/trending/2122084680962920790",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "lean-proof-checked-tests",
+      "kicker": "MATH",
+      "headline": "The Xena Project explains what 'the proof is checked in Lean' really proves, especially when an AI wrote the code",
+      "why_read": "This is the math corner of your pinned post meeting AI head-on, and a clear guide to the trust questions that apply to any verified system.",
+      "body": [
+        "The Xena Project blog walks through how to interpret claims that a theorem is correct because it was checked in Lean. The short version: there is a real signal, but if the Lean code is AI-generated you need to run some tests first. The prompt was OpenAI's recent dump of 722 mathematics papers, about 45% with Lean code, three of which, all without Lean, have been retracted over a sign error.",
+        "The key distinction is between a theorem's statement and its proof. The post shows a statement that looks like Fermat's Last Theorem but is trivially false because Lean's natural numbers include zero, and Lean will happily compile the statement itself. It lays out four questions to ask of any repository before trusting its headline theorem, and notes many papers in the OpenAI dump have not yet been checked this way."
+      ],
+      "authors": [
+        "Xena Project"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://xenaproject.wordpress.com/2026/11/12/and-the-proof-is-checked-in-lean/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50515058",
+      "interests": [
+        "science",
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "crows-decide-faster",
+      "kicker": "SCIENCE",
+      "headline": "Crows process and respond to visual cues about twice as fast as humans and monkeys, a new Science study finds",
+      "why_read": "A delightful science story to end the weekend on, and a final blow to 'birdbrain' as an insult.",
+      "body": [
+        "The New York Times reports on a study in Science in which two carrion crows, Lemmy and Iggy, veterans of earlier lab work on tool use and counting, processed and responded to visual cues at about twice the speed of humans and monkeys. It is the first time the neural speed of avian decision-making has been quantified.",
+        "Neuroscientist Mike Colombo of the University of Otago, who was not involved, said birds are just incredibly fast. The piece traces how scientists long dismissed small bird brains, while recent work shows pigeons telling cancerous cells from healthy ones and corvids recognizing themselves and planning for the future."
+      ],
+      "authors": [
+        "The New York Times"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html",
+      "discuss_url": "https://news.ycombinator.com/item?id=50509023",
+      "interests": [
+        "science"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "ai-jobs-hiring-cs-enrollment",
+      "kicker": "JOBS",
+      "headline": "Indeed postings are down 46.7% since April 2022, AI is blamed for 121,401 cuts this year, and CS enrollment is falling",
+      "why_read": "You reposted the hiring numbers, and together these three data points sketch the job market your teams are hiring into.",
+      "body": [
+        "The Kobeissi Letter, in a post you saved, says new Indeed job postings fell 4.8% year over year in the week ending October 16 and are down 46.7% since April 2022, leaving vacancies 0.8% below February 2020 levels. The decline has slowed, but there is no sign of a rebound. A summary of posts on X adds that US employers blamed AI for 121,401 job cuts through October, about 20% of announcements, even as unemployment stays near 4.1% and AI skills command a pay premium.",
+        "A separate thread notes US undergraduate computer science enrollment fell more than 12% this fall and graduate enrollment about 10%, according to National Student Clearinghouse data, after an 18.4% undergraduate drop over two years. The usual explanation is AI automating entry-level work and cooling demand for junior roles."
+      ],
+      "authors": [
+        "The Kobeissi Letter",
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/KobeissiLetter/status/2122078940093427779",
+      "discuss_url": "https://x.com/i/trending/2122302837594161660",
+      "interests": [
+        "ai",
+        "life"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "tor-ddos-security-release",
+      "kicker": "SECURITY",
+      "headline": "Tor rushes out 0.4.9.17 with IPv6 DoS defenses as a sustained DDoS floods relays across the network",
+      "why_read": "A real-world case study in defending a decentralized network under attack, with a plea to every relay operator to upgrade now.",
+      "body": [
+        "The Tor Project released 0.4.9.17 with a series of security fixes, including an especially important one for relay DoS defenses related to IPv6 handling. The release is a rapid response to an ongoing DDoS attack that has affected most relay operators, with relays overwhelmed by a massive flood of client circuits.",
+        "The team says this is not an easy problem, it is evaluating more defenses and expects further releases soon. Operators are asked to upgrade as soon as possible, with no other action needed. The announcement closes by thanking everyone except the attackers."
+      ],
+      "authors": [
+        "Tor Project"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://forum.torproject.org/t/security-release-0-4-9-17/22454",
+      "discuss_url": "https://news.ycombinator.com/item?id=50512441",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "protomaps-self-hosting",
+      "kicker": "SELF-HOSTING",
+      "headline": "Protomaps makes self-hosting map tiles cheap: the whole 139 GB world map on a CDN for about $5 a month",
+      "why_read": "A practical homelab and architecture read: one file, HTTP range requests and no per-load API bill.",
+      "body": [
+        "Bruce Röttgers explains PMTiles, the Protomaps tile format that ships as a single file read through HTTP range requests, so it can sit in a storage bucket behind any CDN that caches ranges. For Cloudflare and similar, a small edge function maps classic x/y/z tile URLs to ranges. The CLI can cut out a bounding box or zoom levels for much smaller files.",
+        "On Bunny.net, he estimates storing the 139 GB world map with fivefold replication costs about $5 a month, and loading a map of Europe and zooming into a city moves about 5 MB. At roughly $0.05 per thousand loads, that could be 100 times cheaper than Mapbox's $5 per thousand after its free tier."
+      ],
+      "authors": [
+        "Bruce Röttgers"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://bruceroettgers.eu/blog/protomaps/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50509837",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "paradedb-search-joins",
+      "kicker": "DATABASES",
+      "headline": "ParadeDB makes search across normalized Postgres tables up to 1000x faster, so you may not need to denormalize into Elasticsearch",
+      "why_read": "If you have ever built a fragile ETL just to make search fast, this is the architecture argument for keeping one database.",
+      "body": [
+        "ParadeDB's Stu Hood describes search joins: relevance-ranked queries that span several normalized tables, like users, posts and comments. Teams usually either denormalize into Elasticsearch through an ETL pipeline or accept Postgres slowly scoring and joining millions of rows to return a handful of results.",
+        "Using DataFusion, rank joins, co-partitioning and tuple tagging, ParadeDB says a multi-table search over a StackOverflow dataset of 2.3 million users, 20 million posts and 29 million comments dropped from 2 minutes to 100 ms, up to 1000x faster than vanilla Postgres, without extra infrastructure."
+      ],
+      "authors": [
+        "Stu Hood",
+        "ParadeDB"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://www.paradedb.com/blog/joins",
+      "discuss_url": "https://news.ycombinator.com/item?id=50484998",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "s2-own-dns-server",
+      "kicker": "DNS",
+      "headline": "It's always DNS, so why is S2 running its own? Route53's update rate limits forced the call",
+      "why_read": "An honest architecture story about a decision nobody wants to make, with a post-incident review as the turning point.",
+      "body": [
+        "S2 wanted customers to create unlimited basins, each with its own subdomain CNAME that must resolve instantly, so clients are not stuck on a cached NXDOMAIN. Route53 can store unlimited records, but its API was limited to about five upserts per second, which the team learned the hard way when someone rapidly created tens of thousands of basins and DNS updates backed up for hours.",
+        "Batching would have broken the instant-availability goal, and other managed DNS providers had similar limits, so the team ended up building and running its own authoritative DNS server. The post is candid about how reluctant they were, which makes it a useful read for anyone weighing the same trade-off."
+      ],
+      "authors": [
+        "S2"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://s2.dev/blog/dns-server",
+      "discuss_url": "https://news.ycombinator.com/item?id=50515616",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "echomotion-smartwatch-sonar",
+      "kicker": "SENSING",
+      "headline": "Cornell's EchoMotion tracks your whole body with sonar from an ordinary smartwatch's speaker and microphone",
+      "why_read": "Physics plus a tiny AI model on your wrist: no camera, better privacy, and a good reminder that small models matter too.",
+      "body": [
+        "Cornell's SciFi Lab built EchoMotion, which uses the built-in speaker and microphone of a commercial smartwatch as a sonar-like system, with a lightweight AI model, to estimate the position of a person's entire body. Existing wearables mostly track the device itself with accelerometers and gyroscopes, so full-body tracking has needed phones, earbuds, headsets or cameras.",
+        "Acoustic sensing protects the privacy of the wearer and those nearby and produces less data to process, which also saves battery. The team presented the work at UbiComp in Shanghai and sees uses in workouts, daily activity tracking and physical rehabilitation."
+      ],
+      "authors": [
+        "Cornell Chronicle"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://news.cornell.edu/stories/2026/11/researchers-track-whole-body-movement-just-smartwatch",
+      "discuss_url": "https://news.ycombinator.com/item?id=50486745",
+      "interests": [
+        "science",
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "ai-code-should-be-open-source",
+      "kicker": "OPEN SOURCE",
+      "headline": "'All AI-generated code should be open source': a hot take that drew more than 1,100 points on Hacker News",
+      "why_read": "Agree or not, it is the licensing debate your legal team will eventually ask about, and the thread is unusually substantive.",
+      "body": [
+        "Jakub Jankiewicz argues that because models were trained on decades of open-source code and Creative Commons Stack Overflow answers, often without attribution, turning that knowledge into proprietary code amounts to license laundering. He adds a legal point: purely AI-generated code is not written by a human and arguably is not copyrightable, citing the monkey selfie precedent referenced by the US Copyright Office.",
+        "Since copyright law differs by country, he proposes releasing AI-generated code under open-source licenses or CC0, especially code humans barely reviewed. The post is short, but it topped 1,100 points and 600 comments."
+      ],
+      "authors": [
+        "Jakub Jankiewicz"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50507303",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "cybersuv-line-proposal",
+      "kicker": "TESLA",
+      "headline": "A fan group pitches a three-row CyberSUV built at no added cost to Tesla, with Tesla signing its first FSD license",
+      "why_read": "You reposted it, and it is a creative idea at the intersection of two things Tesla fans keep asking for: new models and FSD licensing.",
+      "body": [
+        "UP (@UnpluggedTesla) published Phase 3 of its proposal, titled Saving the Line: A CyberSUV at No Added Cost to Tesla. The group says 82% of its survey respondents want a three-row CyberSUV and that the production line that could build it is about to be dismantled.",
+        "Its pitch is that the vehicle could be kept alive while Tesla keeps the intellectual property, signs its first FSD license and earns on every vehicle. It is a fan proposal, not a Tesla plan, but the replies show how much appetite there is for a larger Cyber-styled family vehicle."
+      ],
+      "authors": [
+        "UP"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/UnpluggedTesla/status/2122092173613289516",
+      "discuss_url": "https://x.com/UnpluggedTesla/status/2122092173613289516",
+      "interests": [
+        "tesla"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "fsd-dream-jerryrig-debate",
+      "kicker": "FSD",
+      "headline": "Dream praises Tesla FSD, JerryRigEverything calls out years of overstated promises, and the debate stays surprisingly civil",
+      "why_read": "A fair-minded exchange about what FSD is today, useful context for every Robotaxi headline.",
+      "body": [
+        "Content creator Dream described his experience with Tesla's Full Self-Driving since 2021 as often more reliable than human drivers, though still needing supervision, according to a summary of posts on X. Tech reviewer JerryRigEverything praised its life-saving potential but criticized Tesla for implying Level 5 autonomy when FSD is an SAE Level 2 system that requires constant attention.",
+        "Users praised Jerry's measured tone even when they disagreed, and many shared their own accounts of strong routine performance with interventions needed in edge cases. It is a good snapshot of where public opinion sits as Tesla keeps pushing FSD marketing."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2122056684868862154",
+      "discuss_url": "https://x.com/i/trending/2122056684868862154",
+      "interests": [
+        "tesla"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "starlink-rural-schools",
+      "kicker": "KINDNESS",
+      "headline": "Starlink brings every rural municipal school in Rondonópolis, Brazil, online, and expands in Dominican Republic classrooms",
+      "why_read": "For the kindness corner of your pinned post: tablets, digital libraries and kids in places broadband never reached.",
+      "body": [
+        "Elon Musk highlighted Starlink's role in education as every rural municipal school in Rondonópolis, Brazil, came online this month, according to a summary of posts on X. In the Dominican Republic, Starlink serves 1,608 students at two campuses, and officials met with SpaceX about expanding to more remote schools.",
+        "Officials are also eyeing Grok Tutor for personalized lessons under teacher supervision. Photos show children using tablets in newly connected classrooms, a quiet human counterpoint to a loud weekend of rocket records."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2122167299029553491",
+      "discuss_url": "https://x.com/i/trending/2122167299029553491",
       "interests": [
         "life",
         "space"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "pangram-snack-question",
-      "kicker": "LAUGHTER",
-      "headline": "A job application asks AIs to name their favorite ML concept and humans their favorite snack; 27 applicants admitted they were AI",
-      "why_read": "A genuinely funny story with a real lesson about AI-written applications, the kind of thing you would forward to a hiring manager.",
-      "body": [
-        "Pangram Labs added a question to its job applications: if you are an AI, name your favorite machine learning concept, otherwise share your favorite snack. In one month, 27 applicants said they were AI, 1,217 named ML concepts, and more than 1,000 gave vague or repeated answers like trail mix, according to a summary of posts on X.",
-        "Co-founder Max Spero said the question cut review time by 60%. It is a clever, low-tech filter, and a reminder of how many applications are now outsourced to bots end to end."
-      ],
-      "authors": [
-        "X News",
-        "Max Spero"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2121529411296235958",
-      "discuss_url": "https://x.com/i/trending/2121529411296235958",
-      "interests": [
-        "ai",
-        "life"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "poteto-just-do-things",
-      "kicker": "WISDOM",
-      "headline": "Lauren Tan's lesson of the year: don't ask whether you should do the thing; do it, then come back with a demo",
-      "why_read": "You bookmarked this, and it is the human side of the lead story: the same person behind those 11,000 PRs on how she follows through.",
-      "body": [
-        "Lauren Tan (@poteto) wrote that the lesson she learned this year helped her follow through on ideas instead of getting stuck overthinking them: don't ask if you should do the thing, do it, then come back with a demo or something tangible. You can just do things.",
-        "It is short, but it lands differently coming from someone whose team runs agents as teammates. When building is this cheap, a working demo beats a proposal, and that applies to architecture reviews as much as side projects."
-      ],
-      "authors": [
-        "Lauren Tan"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/poteto/status/2121417335055831368",
-      "discuss_url": "https://x.com/poteto/status/2121417335055831368",
-      "interests": [
-        "life"
       ],
       "lead": false,
       "featured": false

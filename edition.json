@@ -1,685 +1,677 @@
 {
-  "date": "2026-11-18",
-  "weekday": "Wednesday",
+  "date": "2026-11-19",
+  "weekday": "Thursday",
   "title": "The Daily Diff",
   "stories": [
     {
-      "id": "gpt-6-2-astra-sol",
+      "id": "gemini-4-neon",
       "kicker": "FRONTIER MODELS",
-      "headline": "OpenAI ships GPT-6.2 Astra and Sol, claiming the top score on Agents' Last Exam at a fraction of Fable 5.2's cost",
-      "why_read": "The biggest model launch of the week and the top story on Hacker News with more than 800 comments, and it reprices the frontier you build agents on.",
+      "headline": "Google ships Gemini 4 Neon: #3 on the Artificial Analysis index at $3/$15, and it lands in Cursor the same day",
+      "why_read": "The top story on Hacker News with nearly 700 comments, and you retweeted Cursor's CursorBench numbers: this is the new cost-performance bar for coding agents.",
       "body": [
-        "OpenAI released GPT-6.2 Astra, its new frontier model for the hardest projects, and GPT-6.2 Sol, an efficient model for everyday work. Both are pitched on doing more with fewer output tokens. On Agents' Last Exam, a benchmark of long-horizon professional workflows, OpenAI says Astra scores 5.2 points above GPT-6 Astra at less than a third of the cost, and 5.5 points ahead of Claude Fable 5.2 at about 5% of the cost. It also claims new highs on Terminal-Bench-Science 0.1, 9 points above GPT-6 Astra, and on the Vals Science Index, and calls Astra the best model in the world for scientists.",
-        "API pricing for Astra drops 20% from GPT-6 Astra: $8 per million input tokens, $0.40 cached and $40 output. Sol keeps GPT-6.1 Sol's prices while getting smarter and more efficient, and OpenAI says many of its employees use it as their default. Note the footnote: Agents' Last Exam leaderboard results for Fable 5.2 exclude nine tasks that fell back to another model."
+        "Google DeepMind's Koray Kavukcuoglu introduced Gemini 4 Neon as frontier-level intelligence with fast end-to-end task completion across software engineering, knowledge work and science. Google says Neon scores 61 on the Artificial Analysis Intelligence Index at its xhigh thinking level, #3 overall and just behind larger, slower models, ranks #2 on the Vals Index and #2 on steerability on the new Agent Arena Index, and posted its lowest fabrication rate yet in internal Antigravity testing.",
+        "Pricing is $3 per million input tokens ($0.15 cached, a 95% discount) and $15 per million output, with a 1 million-token context window. It is rolling out in the Gemini API, Gemini for business, Antigravity for paid Pro and Ultra subscribers, and the Gemini app. Cursor added it immediately and says at default effort it scores 63.7% on CursorBench 4.1, up from 57.3% for Gemini 4 Hydrogen, setting a new cost-performance frontier there."
       ],
       "authors": [
-        "OpenAI"
+        "Koray Kavukcuoglu",
+        "Cursor"
       ],
       "source": "hn",
-      "source_url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50535230",
+      "source_label": "HN",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50552424",
       "interests": [
         "ai"
       ],
       "lead": true,
-      "source_label": "HN",
       "featured": false
     },
     {
-      "id": "tesla-powercore-transformer",
-      "kicker": "ENERGY TECH",
-      "headline": "Tesla unveils Powercore, its first solid-state transformer, built for fully off-grid data centers",
-      "why_read": "You bookmarked both posts: Tesla Energy moving from batteries into grid hardware, aimed squarely at the AI data-center power crunch.",
+      "id": "model-y-no-wheel-robotaxi",
+      "kicker": "ROBOTAXI",
+      "headline": "Musk at DealBook: Tesla will build an autonomous Model Y with no steering wheel or pedals for groups of six or seven",
+      "why_read": "You retweeted and bookmarked it: a second purpose-built robotaxi beyond Cybercab, aimed at families and groups.",
       "body": [
-        "Tesla Megapack introduced Powercore, a solid-state medium-voltage transformer, inverter and breaker in one unit. Tesla rates it at 7.4 MW / 9 MVA continuously at 34.5 kVac, with grid-forming support for 10 MVA of peak power. It is made in America and is due to begin operating in 2027.",
-        "Sawyer Merritt's summary adds a peak efficiency of 98.86% and frames the pitch: paired with Megapacks, Powercore is meant to let data centers run fully off-grid. Transformers have been one of the longest-lead items in the power build-out, so a Tesla-built solid-state option matters as much for supply as for specs."
+        "Speaking at the New York Times DealBook Summit, Elon Musk said it will make sense for Tesla to build autonomous cars that seat different numbers of people. \"We still need autonomous vehicles if you've got 4 or 6, or a whole family,\" he said, describing an autonomous version of the Model Y \"that won't have steering wheels or pedals and would be good for transporting groups of 6 or 7 people.\"",
+        "That fills the obvious gap in a fleet built around the two-seat Cybercab: airport runs, family trips and group rides. No timeline or production details were given in the clip Sawyer Merritt shared."
       ],
       "authors": [
-        "Tesla Megapack",
         "Sawyer Merritt"
       ],
       "source": "x",
-      "source_url": "https://x.com/Tesla_Megapack/status/2122721563493744771",
-      "discuss_url": "https://x.com/SawyerMerritt/status/2122724413036761244",
-      "interests": [
-        "tesla",
-        "energy"
-      ],
-      "lead": true,
       "source_label": "X",
-      "featured": false
-    },
-    {
-      "id": "java4shell-openjdk-rce",
-      "kicker": "SECURITY",
-      "headline": "Java4Shell: a bug in OpenJDK's AVX-512 Base64 decoder gives pre-auth RCE in Keycloak, Jira, Confluence, Jenkins and more",
-      "why_read": "Rated 9.2 critical and sitting under almost every enterprise Java stack you run; this is a patch-today story for an IT architect.",
-      "body": [
-        "Calif disclosed CVE-2026-114938, a memory-corruption bug in hand-written assembly that OpenJDK uses to speed up Base64 decoding with AVX-512 VBMI instructions on x86-64. A short crafted input, 64 'A' characters and one '=' (128 on OpenJDK 17), makes the decoder write 64 bytes past the end of its output buffer. Calif turned that into heap reads in the style of Heartbleed and remote code execution.",
-        "In default configurations they demonstrated pre-auth RCE in Keycloak, Atlassian Jira and Confluence, JFrog Artifactory, Jenkins and PingFederate, and post-auth RCE in Kafka, Solr, Elasticsearch, Gerrit and Spinnaker. Temurin, Microsoft, Azul, Liberica, SapMachine, Red Hat and Oracle builds are all listed as affected. Because the bug only fires on CPUs with those instructions, exposure depends on your hardware, and the authors close with a call to strip out code you do not need."
-      ],
-      "authors": [
-        "Calif"
-      ],
-      "source": "hn",
-      "source_url": "https://calif.io/java4shell/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50538240",
-      "interests": [
-        "systems"
-      ],
-      "featured": true,
-      "source_label": "HN",
-      "lead": false
-    },
-    {
-      "id": "ai-patch-rush-outages",
-      "kicker": "INFRASTRUCTURE",
-      "headline": "Banks and the NSA tell Congress this week's outages came from rushing to patch flaws that AI models found, as the NSA's own classified network goes dark",
-      "why_read": "You retweeted it: the first credible explanation for a week of strange failures, and a warning about what AI-scale vulnerability discovery does to change control.",
-      "body": [
-        "The Washington Sun's Jeff Stein reports, citing three sources, that Wall Street executives and the NSA told lawmakers this week's widespread tech failures were caused by attempts to fix vulnerabilities identified by AI. AI did not cause the outages, the sources say, but found so many issues that the rush to patch them before attackers could act overwhelmed systems.",
-        "Separately, CNN reports that the highly classified network the NSA uses for internal communications is down, according to six people familiar with the matter, and that the agency closed its campus to most employees on Tuesday night while it works on a restore. CNN does not give a cause. Either way, it is a case study in why patch velocity needs the same staging and rollback discipline as feature work."
-      ],
-      "authors": [
-        "Jeff Stein",
-        "CNN"
-      ],
-      "source": "x",
-      "source_url": "https://www.washingtonsun.com/technology/bank-ceos-nsa-tell-congress-ai-driven-patches-behind-outages",
-      "discuss_url": "https://www.cnn.com/2026/11/17/politics/highly-classified-national-security-communications-network-goes-down",
-      "interests": [
-        "systems",
-        "ai"
-      ],
-      "featured": true,
-      "source_label": "X",
-      "lead": false
-    },
-    {
-      "id": "robotaxi-miami-vs-waymo",
-      "kicker": "ROBOTAXI",
-      "headline": "Tesla Robotaxi in Miami's expanded geofence: zero issues through construction zones, and $10.11 against Waymo's $17.80",
-      "why_read": "You retweeted it: a rider's report from a new market, with a price comparison that shows where the robotaxi fight is heading.",
-      "body": [
-        "Ray4Tesla took several Tesla Robotaxi rides in the expanded Miami service area, through construction zones and a range of urban situations, and reports zero issues, calling the trips exceptionally smooth and saying human-driven taxis are \"not even on the same level\".",
-        "The number to remember is the fare: his comparison shows Tesla charging $10.11 for a trip that cost $17.80 on Waymo, nearly 43% less. Tesla's Eric E. added his own note on Cybercab's design goal, a ride meant to feel indistinguishable from your favorite comfortable chair at home."
-      ],
-      "authors": [
-        "Ray4Tesla",
-        "Eric E."
-      ],
-      "source": "x",
-      "source_url": "https://x.com/ray4tesla/status/2122810787697758421",
-      "discuss_url": "https://x.com/EricETesla/status/2122722099127333047",
+      "source_url": "https://x.com/SawyerMerritt/status/2123197569878642820",
+      "discuss_url": "https://x.com/SawyerMerritt/status/2123197569878642820",
       "interests": [
         "tesla"
       ],
-      "featured": true,
-      "source_label": "X",
-      "lead": false
+      "lead": true,
+      "featured": false
     },
     {
-      "id": "starbase-power-plant-permit",
-      "kicker": "STARBASE",
-      "headline": "SpaceX wins a Texas air permit to build its own 31 MW gas power plant at Starbase, off the public grid",
-      "why_read": "You retweeted it: SpaceX quietly joins the behind-the-meter power trend, right as Tesla pitches off-grid power hardware.",
+      "id": "anthropic-ipo-prices",
+      "kicker": "AI MARKETS",
+      "headline": "Anthropic prices its IPO at $83 a share and starts trading on Nasdaq today as ANT",
+      "why_read": "The largest stock debut ever by X's tally and a 498-comment HN thread; you bookmarked Uday Kotak's take that it now outweighs India's top 10 companies combined.",
       "body": [
-        "Texas regulator TCEQ approved the project at SpaceX's Starbase production site on November 16, according to Muskonomy. The plan calls for three natural gas turbines generating 31.14 MW combined, with all of the electricity used on site.",
-        "The turbines include controls to reduce nitrogen oxide and carbon monoxide emissions, and the permit lets SpaceX power Starbase without relying on the public grid, a useful hedge for a factory that is ramping Starship production."
+        "Anthropic, PBC priced 980 million Class A shares at $83.00, of which 956,351,354 are sold by the company and 23,648,646 by selling stockholders. Trading on the Nasdaq Global Select Market under \"ANT\" is expected to begin November 19, with closing expected November 20, and underwriters have a 30-day option on up to 147 million more shares. Goldman Sachs and Morgan Stanley are listed for the prospectus.",
+        "X's news summaries put the raise above $81 billion at a $1.5 trillion fully diluted valuation, with a $26 billion private placement that includes $10 billion each from Nvidia and Google at the IPO price. Uday Kotak noted that a company that did not exist about five years ago is now listed at $1.5 trillion, more than the top 10 Indian companies combined."
       ],
       "authors": [
-        "Muskonomy"
+        "Anthropic",
+        "Uday Kotak"
       ],
-      "source": "x",
-      "source_url": "https://x.com/muskonomy/status/2122754995007406543",
-      "discuss_url": "https://x.com/muskonomy/status/2122754995007406543",
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+      "discuss_url": "https://news.ycombinator.com/item?id=50553843",
       "interests": [
-        "space",
-        "energy"
+        "ai"
       ],
-      "featured": true,
-      "source_label": "X",
-      "lead": false
+      "lead": false,
+      "featured": true
     },
     {
-      "id": "mai-code-2",
-      "kicker": "AI CODING",
-      "headline": "Microsoft's MAI Code 2 claims 96% of Opus 5.5's coding performance at 5% of the cost",
-      "why_read": "Microsoft now has its own coding models aimed at GitHub Copilot-style everyday work, and the price-performance claims are aggressive.",
+      "id": "nginx-http2-rce",
+      "kicker": "SECURITY",
+      "headline": "Two critical unauthenticated RCEs in NGINX's HTTP/2 code, one reaching back to 1.9.5 in 2015",
+      "why_read": "The most upvoted story on HN today at 1,400+ points: if you run NGINX with HTTP/2 on, patch first and read the rest after.",
       "body": [
-        "Microsoft AI announced MAI Code 2 and MAI Code 2 Flash at Ignite, two coding models built for everyday enterprise tasks. Averaged across DeepSWE 1.1, Terminal Bench 2.1, SWE-Atlas and FrontierCode v1.1, Microsoft says MAI Code 2 delivers 98% of GPT-6.1 Sol's performance at 40% of the cost and 96% of Claude Opus 5.5's at just 5%. In blind frontend evaluations, reviewers preferred its results over GPT-6 Sol 64% of the time.",
-        "Flash targets high-volume work such as explanations, targeted edits and routine fixes, and Microsoft says it matches GPT-6 Luna and Claude Haiku 5.5 on three routine-coding benchmarks at a fraction of their cost. Microsoft is upfront that the models are not yet tuned for fundamental research or very long-horizon agentic work."
+        "Wiz Research, Ikotas Labs, Metnir, Rapid7 and Xint independently found two remote code execution flaws in NGINX itself, tracked as CVE-2026-123633 and CVE-2026-123007 and both rated Critical at CVSS 4.0 9.2. Both require HTTP/2 to be enabled, and apps can be exposed even when their own code is secure. Wiz says NGINX powers more than 225 million websites.",
+        "Wiz reported the HTTP/2 use-after-free on October 21 with a working RCE and ASLR bypass, and F5 said another team had already reported it. The second bug was reported November 16, and both fixes went into F5's November 18 security release. The guidance is simple: find your NGINX deployments and update to the latest release."
+      ],
+      "authors": [
+        "Wiz Research"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+      "discuss_url": "https://news.ycombinator.com/item?id=50547374",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "ruby2shell-rails-rce",
+      "kicker": "SECURITY",
+      "headline": "Ruby2Shell: a one-byte heap overflow from upcasing 'ß' gives pre-auth RCE on stock Rails",
+      "why_read": "A second front-door bug on the same day: it hits default Rails and Sinatra, and bundled Ruby in GitLab and GitHub Enterprise Server.",
+      "body": [
+        "Veria Labs traced the bug to Ruby's single-byte encodings, which have no capital ß. Upcasing writes two bytes, SS, but the loop only bounds-checks one; the output buffer is input length plus 20 bytes, so 21 ß characters overflow it by one byte. The loop sits in several ISO-8859 and Windows-125x encodings and dates to Ruby 2.4.0, reachable through upcase, swapcase, downcase(:fold) and casecmp?. UTF-8 strings take a different path.",
+        "Rails and classic-style Sinatra are affected in default configuration. Fixed Rubies are 3.3.14, 3.4.13 and 4.0.10. Veria's table lists GitLab 19.6.0 and GitHub Enterprise Server 3.22.5 as still shipping affected Rubies, while Mastodon, OpenProject and Discourse are fixed. Ruby also posted a separate advisory on multiple Regexp and string case-conversion vulnerabilities."
+      ],
+      "authors": [
+        "Veria Labs"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://verialabs.com/ruby2shell/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50556287",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "anthropic-wants-10gw-spacex",
+      "kicker": "AI COMPUTE",
+      "headline": "Musk says Anthropic will likely keep renting SpaceX compute and wants an additional 10 gigawatts",
+      "why_read": "The compute story behind the IPO: the frontier labs' bottleneck is power, and SpaceX is selling it.",
+      "body": [
+        "At the DealBook Summit, Musk said Anthropic is extremely likely to keep renting compute from SpaceX and wants significantly more, with its top plan calling for an additional 10 gigawatts. X's summary says that counters reports the deal might end after mid-2027, and points to Anthropic filings showing up to $120.5 billion in commitments through 2029.",
+        "The same summary says SpaceX is ramping AI infrastructure toward more than a gigawatt per month by late 2027. Read it together with the chip financing and StarMind stories below: SpaceX is positioning itself as a compute supplier, on the ground and in orbit."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2123261734941290632",
+      "discuss_url": "https://x.com/i/trending/2123261734941290632",
+      "interests": [
+        "ai",
+        "space"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "spacex-40b-chip-financing",
+      "kicker": "AI COMPUTE",
+      "headline": "Apollo arranges $40 billion off-balance-sheet financing so SpaceX can lease AI chips",
+      "why_read": "How the compute build-out actually gets paid for, and a peek at SpaceX's orbital-compute timeline.",
+      "body": [
+        "According to X's news summary, Apollo Global Management is setting up a special-purpose vehicle that buys the chips and leases them to SpaceX for about five years, starting with $20 billion upfront, with deliveries set for early 2027. The structure lets SpaceX scale compute quickly while protecting its investment-grade rating.",
+        "CFO Bret Johnsen described ambitions for orbital compute satellites by 2027 and gigawatt-scale operations by 2029, with payback under a year. The summary also notes David Tepper's fund raising its SpaceX stake 1,626%."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2123049224098979964",
+      "discuss_url": "https://x.com/i/trending/2123049224098979964",
+      "interests": [
+        "space",
+        "ai"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "starmind-easier-than-starlink",
+      "kicker": "SPACE COMPUTE",
+      "headline": "Musk: the StarMind AI satellite is an easier problem than Starlink V3, mostly solar panels and a radiator",
+      "why_read": "You retweeted it: first-principles physics on why orbital inference may not be as hard as skeptics think.",
+      "body": [
+        "Musk said he is not sure why people think an AI satellite would be hard, given SpaceX already has over 11,000 satellites in orbit. Starlink V3 is \"an incredibly complex orbital radio station\" with the most advanced phased-array antennas ever made, he said, while StarMind, the name for SpaceX's overall compute system, \"really just consists of a very large array of solar panels and a radiator\", with about five times as much solar area as radiator area.",
+        "At the center sits a compute module he described as about a quarter the physical size of a Vera Rubin NVL rack with the capability of a Vera Rubin NVL72. Shaun Maguire, also retweeted by you, put it more bluntly: last weekend's ship catch all but guarantees Starship works, and almost all inference compute will end up in space."
+      ],
+      "authors": [
+        "Kanekoa The Great",
+        "Shaun Maguire"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/KanekoaTheGreat/status/2123242707560857836",
+      "discuss_url": "https://x.com/shaunmmaguire/status/2123226341726376324",
+      "interests": [
+        "space",
+        "ai"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "mai-seven-models",
+      "kicker": "MODELS",
+      "headline": "Microsoft AI launches seven models at Ignite, led by price-performance claims against GPT-6 and Opus 5.5",
+      "why_read": "Over 350 HN comments: a big incumbent competing on cost per task, the metric that matters when agents run all day.",
+      "body": [
+        "Microsoft AI says token spend is skyrocketing and developers want models cheap enough to run agents 24/7 on real engineering work, so it released a family of seven. Its claims: MAI Cyber 2 Flash beats GPT-6 Astra's quality at under 2% of the cost per task on CyberGym-E2E; MAI Code 2 reaches 98% of GPT-6.1 Sol's coding quality at about 40% of the price and 96% of Opus 5.5 at 5% of the price.",
+        "MAI Code 2 Flash is pitched as comparable to GPT-6 Luna at 65% of the price and Haiku 5.5 at 20%, and MAI Image 2.7 is listed as #1 on Artificial Analysis image editing. These are vendor numbers; the HN thread is where the independent pushback lives."
       ],
       "authors": [
         "Microsoft AI"
       ],
       "source": "hn",
-      "source_url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50535885",
+      "source_label": "HN",
+      "source_url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50548021",
       "interests": [
         "ai"
       ],
-      "featured": true,
-      "source_label": "HN",
-      "lead": false
+      "lead": false,
+      "featured": false
     },
     {
-      "id": "grok-bot-accounting-team",
+      "id": "genie-4",
+      "kicker": "WORLD MODELS",
+      "headline": "Genie 4 rolls out to Google AI Ultra: real-time world editing by prompt, native audio and a community gallery",
+      "why_read": "Interactive world models are leaving the demo stage; a fun one to try if you have Ultra.",
+      "body": [
+        "Google DeepMind and Google Labs are rolling Genie 4 out to eligible Google AI Ultra subscribers in Project Genie. You can edit generated environments in real time with natural language, add native audio, and publish creations to a new gallery for others to explore and remix. Pro members can join a waitlist.",
+        "There is also a Project Genie agent that builds custom worlds through conversation, and an updated Genie 3 that supports longer sessions, panorama grounding and linked world sequences."
+      ],
+      "authors": [
+        "Google DeepMind"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50550415",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "daisyrose-27b",
+      "kicker": "OPEN MODELS",
+      "headline": "RadixArk's DaisyRose-27B doubles Qwen3.8-27B on Terminal-Bench 4.1 with 1,200 tasks and 144 H200s",
+      "why_read": "An open-weights post-training recipe on a small budget, with BF16, FP8 and NVFP4 checkpoints you can run.",
+      "body": [
+        "RadixArk's first model is built on Qwen3.8-27B and trained with reinforcement learning using Miles on long-horizon agent tasks with sessions up to 1M tokens. It used just 1,200 curated tasks over 18 days on 144 H200 GPUs, and lifts Terminal-Bench 4.1 pass@1 from 5.6% to 12.0%, with gains on other reasoning, instruction-following and coding benchmarks too.",
+        "The tasks were built with Eigent AI and selected so each targets a mistake the original model makes; about 1,200 of thousands of candidates made the cut. RadixArk credits three ingredients: high-quality training data, an efficient training backend and robust sandboxes."
+      ],
+      "authors": [
+        "RadixArk"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://www.radixark.com/blog/daisyrose-27b",
+      "discuss_url": "https://news.ycombinator.com/item?id=50551046",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "grok-4-8-beta",
+      "kicker": "GROK",
+      "headline": "Grok 4.8 is in RL with soft rollouts to some Grok Bot users; Musk says a week or two more polish",
+      "why_read": "The next Grok model is already quietly behind some Grok Bots, which may explain sudden behavior changes.",
+      "body": [
+        "According to X's news summary, Musk said on November 17 that Grok 4.8 is in the reinforcement learning phase, with soft rollouts to some Grok Bot users, and that a general release needs another week or two of polish, emphasizing real-world usefulness over benchmarks.",
+        "The summary says the team rewrote its training stack from scratch in C and C++, and that multiple variants are in beta with no final choice yet."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2122636433274155406",
+      "discuss_url": "https://x.com/i/trending/2122636433274155406",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "grok-bot-low-usage-setup",
       "kicker": "GROK BOT",
-      "headline": "Five Grok Bots now hold full-time jobs on SpaceXSI's accounting team, each owning one order-to-cash process end to end",
-      "why_read": "A concrete blueprint for scoping bots to one job each and only pulling in humans for judgment, which is exactly how your own fleet is set up.",
+      "headline": "A Grok Bot explains why one power user's usage is so low: scripts do the grunt work, one bot per job",
+      "why_read": "You retweeted it, and it reads like a checklist for your own fleet: connectors first, browser last, quiet routines.",
       "body": [
-        "In a post on x.ai, the SpaceXSI accounting team describes five Team Bots, each with a carefully scoped responsibility. Provisioning Bot checks contracts and opens or closes customer accounts. Billing Bot checks that billing data matches the executed contract before it generates and sends invoices. Billing Support Bot handles requests from the go-to-market team. Cash Applications Bot applies payments, investigates discrepancies and flags short payments. Collections Bot handles billing inquiries and refunds.",
-        "The team says the bots are onboarded, trained and managed like human teammates, and involve a person only when the work needs judgment or approval. The result, they write, is handling more work without growing headcount at the same rate."
+        "Mike Pat asked his Grok Bot why his usage might be lower than others', and it listed the reasons. A Mac Mini runs scripts that scan texts, total a food log, pull robotaxi stats and sort promos, handing the bot only results. Long jobs like video renders and voice generation run there too, and some work goes to Hermes on his Claude plan so it never touches Grok Bot usage.",
+        "The rest is discipline: routines stay quiet unless something is wrong, each bot has one job with its own smaller context, preferences live in Notion and memory so nothing gets rebuilt, and connectors come first with the browser last because driving a browser costs far more."
       ],
       "authors": [
-        "Grok Bot",
-        "SpaceXSI"
+        "Mike Pat"
       ],
       "source": "x",
-      "source_url": "https://x.ai/news/grok-bot-accounting",
-      "discuss_url": "https://x.com/bot/status/2122771386456551516",
+      "source_label": "X",
+      "source_url": "https://x.com/mikepat711/status/2123243670249840652",
+      "discuss_url": "https://x.com/mikepat711/status/2123243670249840652",
       "interests": [
         "ai"
       ],
-      "featured": true,
-      "source_label": "X",
-      "lead": false
+      "lead": false,
+      "featured": false
     },
     {
-      "id": "guy-dealership-fsd-day",
+      "id": "kpmg-audit-agents",
+      "kicker": "AI AT WORK",
+      "headline": "KPMG's trial of 100+ AI agents on a FTSE 250 audit found they sometimes asked better questions than the human team",
+      "why_read": "A concrete enterprise result for agentic AI in a deeply manual profession, with a 224-comment HN debate.",
+      "body": [
+        "KPMG UK ran more than 100 AI agents in an experiment codenamed Project Exponential, reported by the Financial Times, examining the financial statements of an unnamed FTSE 250 company. The agents worked alongside a conventional audit team across the audit process rather than on isolated admin tasks.",
+        "KPMG UK head of audit Cath Burnet said the technology in several instances went considerably deeper into issues than the regular team, flagging areas needing further investigation. The open question the piece raises is how fast that changes the economics of auditing."
+      ],
+      "authors": [
+        "European Business Magazine"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50547777",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "multi-agent-coordination-bench",
+      "kicker": "AGENTS",
+      "headline": "New benchmark: eight agents beat one, but teams that don't talk beat teams that do",
+      "why_read": "A useful corrective for multi-agent designs: more chatter between bots can hurt.",
+      "body": [
+        "Bespoke Labs launched the Multi Agent Coordination Bench, testing frontier models such as Opus 5.5, GPT-6.1 Sol and Gemini 4 Argon on 12 complex tasks, including Mars missions, air traffic control and zombie defense, per X's news summary.",
+        "Eight agents averaged 0.42 against 0.35 for a single agent, but non-communicating teams scored 0.44, so communication often hurt; only Opus gained from messaging. CEO Mahesh Sathiamoorthy argues better coordination could unlock agent swarms for science and engineering."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2123145813258035560",
+      "discuss_url": "https://x.com/i/trending/2123145813258035560",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "linger-local-agent",
+      "kicker": "LOCAL AI",
+      "headline": "Linger, from an early DeepSeek member, runs an open-source agent with persistent memory entirely on your own machine",
+      "why_read": "Private, subscription-free agents on an RTX 3060 or an Apple silicon Mac: the local-LLM crowd's answer to cloud bots.",
+      "body": [
+        "Per X's news summary, Tony Zhang's Linger runs open models like Qwen and DeepSeek on consumer hardware, with persistent memory over local files, email and calendars plus multi-agent workflows for complex tasks. Benchmarks cited show 45.5 tokens per second on big models.",
+        "Enthusiasts are pairing it with tools like Jan and LocalAI, part of a broader push for AI the user fully controls."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2123332263450402840",
+      "discuss_url": "https://x.com/i/trending/2123332263450402840",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "llm-reverse-engineering",
+      "kicker": "AI TOOLS",
+      "headline": "Two decades of hacking, now with agents: a practitioner's LLM-assisted reverse-engineering workflow",
+      "why_read": "Practical agent craft that transfers to any long task: make the agent write its findings to markdown as it goes.",
+      "body": [
+        "The author points an agent at a binary with a set of dedicated agent skills, using DeepSeek's harness with DeepSeek v4.1 Flash (occasionally Codex), Ghidra with an MCP bridge, and the radare2 and kuna CLIs, which are faster and possibly easier for AIs to drive. Current AIs, he notes, do fairly well with pure x86 or ARM disassembly.",
+        "The key habit is having the agent document every finding in MD files. Those notes help you understand the binary, keep the agent on track after compaction or a handoff to another agent, and stop it going in circles."
+      ],
+      "authors": [
+        "Slow Chronicle"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering",
+      "discuss_url": "https://news.ycombinator.com/item?id=50553225",
+      "interests": [
+        "ai",
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "netlify-agent-rebrand",
+      "kicker": "PLATFORMS",
+      "headline": "Netlify rebrands around prompt-to-app agents and projects 130% growth to $130M ARR",
+      "why_read": "A web-hosting incumbent reinventing itself around agents, with real usage numbers.",
+      "body": [
+        "Per X's news summary, Netlify revealed a platform where users prompt AI agents in plain language to build apps with live previews, connected to over 150 tools like Notion and Stripe. CEO Matt Biilmann called it a full turnaround after years of flat growth.",
+        "The company projects 130% year-over-year growth and $130 million ARR by the end of 2026. In the past month, 500,000 people ran 1.7 million agent sessions, producing over 700,000 live deployments, and it saw 100,000 signups in a single day."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2123097633459769791",
+      "discuss_url": "https://x.com/i/trending/2123097633459769791",
+      "interests": [
+        "ai",
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "isomorphic-5b",
+      "kicker": "AI SCIENCE",
+      "headline": "Isomorphic Labs raises $5 billion to push AI-designed drugs toward the clinic",
+      "why_read": "Big money on AI for chemistry and biology, still waiting on its first approved therapy.",
+      "body": [
+        "According to X's news summary, Isomorphic Labs, founded by Demis Hassabis and spun out in 2021, closed an oversubscribed Series C co-led by Greenoaks and Sequoia, with new backing from Andreessen Horowitz plus Alphabet. It follows a $2.1 billion raise earlier in 2026.",
+        "The money scales its IsoDDE engine, which predicts protein interactions, and more than 20 programs with partners like Eli Lilly and Novartis, pushing preclinical work in oncology and immunology toward trials. Separately, MIT spinout Boltz raised $110 million led by Bessemer for its open-origin biomolecular design models."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2122666533943955551",
+      "discuss_url": "https://x.com/i/trending/2122666533943955551",
+      "interests": [
+        "ai",
+        "science"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "roadster-la-auto-show",
+      "kicker": "TESLA",
+      "headline": "The new Tesla Roadster goes on public display at the LA Auto Show starting November 20",
+      "why_read": "You retweeted it: the first chance for the public to see the new Roadster in person.",
+      "body": [
+        "Sawyer Merritt, citing the LA Auto Show, says the new Tesla Roadster will be on display at the show starting Friday, November 20.",
+        "If you have friends in LA, this is the weekend to get a closer look."
+      ],
+      "authors": [
+        "Sawyer Merritt"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/SawyerMerritt/status/2123199768340160694",
+      "discuss_url": "https://twitter.com/LAAutoShow/status/2123126246032699899",
+      "interests": [
+        "tesla"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "fsd-deer-71-26",
       "kicker": "FSD",
-      "headline": "A car-dealer YouTuber spends a full day being driven by a Tesla: \"I don't think the auto industry fully understands what's coming\"",
-      "why_read": "You bookmarked and retweeted it: an industry insider, not a Tesla fan, reacting to current FSD.",
+      "headline": "Tesla FSD sheds 71 to 26 mph when a deer bounds across a dark motorway",
+      "why_read": "You retweeted and bookmarked it: a split-second save that's hard to imagine a human making at night.",
       "body": [
-        "The Guy Dealership, who covers the car business, posted an eight-minute video of a day spent being driven by a Tesla, with the verdict that the auto industry does not grasp what is coming.",
-        "The X news summary of the discussion around it points to FSD Supervised 14.3.13, with smoother handling around emergency vehicles and in low visibility and five driving profiles from Chill to Mad Max. Owners in the replies share near-flawless experiences, while the debate continues over how far supervised driving is from true autonomy."
+        "Nate shared a clip in which a deer leaps out of the dark across a motorway and Tesla FSD brakes from 71 to 26 mph, so the animal lives to leap another day. His question to viewers: would you have seen it?",
+        "The video originally came from kyfloyd; it is the kind of edge case robotaxi skeptics point to, handled here without drama."
       ],
       "authors": [
-        "The Guy Dealership"
+        "Nate"
       ],
       "source": "x",
-      "source_url": "https://x.com/GuyDealership/status/2122703044760719786",
-      "discuss_url": "https://x.com/GuyDealership/status/2122703044760719786",
+      "source_label": "X",
+      "source_url": "https://x.com/tslanate/status/2123174911942213847",
+      "discuss_url": "https://x.com/kyfloyd/status/2122884601312125319",
       "interests": [
         "tesla"
       ],
-      "source_label": "X",
       "lead": false,
       "featured": false
     },
     {
-      "id": "uber-austin-fare-war",
-      "kicker": "ROBOTAXI",
-      "headline": "Uber is undercutting Tesla's Cybercab in Austin, with UberX rides showing as low as $4.95",
-      "why_read": "Your city is the first real price war between human-driven rideshare and robotaxis.",
+      "id": "ship-42-preserved",
+      "kicker": "STARSHIP",
+      "headline": "Ship 42, the first Starship caught by the tower, won't fly again: Musk says it will be preserved for history",
+      "why_read": "You retweeted it: the caught ship becomes a museum piece.",
       "body": [
-        "Abhimanyu Yadav posted screenshots showing Uber prices in Austin lower than what Tesla charged before Cybercab launched, and asked how Uber can make money, or what the driver gets, on trips like these. He also notes Tesla fixed a navigation issue he had flagged, which brought its own price for the trip down.",
-        "The X news roundup of the thread puts the comparison at $4.95 for an UberX with an 8-minute wait, against $7.55 for a Cybercab arriving in 2 minutes or $7.27 for a Model Y robotaxi in 10. Some riders say they pick the robotaxi for speed even when it costs more."
+        "Aaron Burnett relayed Musk's comment that SpaceX is not reflying Ship 42 and will preserve it for history.",
+        "Ship 42 made last weekend's tower catch after multiple orbits, a milestone X's summaries tie to Musk's renewed talk of rapid reuse and a Mars city."
       ],
       "authors": [
-        "Abhimanyu Yadav"
+        "Aaron Burnett"
       ],
       "source": "x",
-      "source_url": "https://x.com/WorldlyReviewer/status/2122392961304461518",
-      "discuss_url": "https://x.com/WorldlyReviewer/status/2122392961304461518",
-      "interests": [
-        "tesla"
-      ],
       "source_label": "X",
+      "source_url": "https://x.com/aaronburnett/status/2123197824611311758",
+      "discuss_url": "https://x.com/aaronburnett/status/2123197824611311758",
+      "interests": [
+        "space"
+      ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "nvidia-after-huang",
-      "kicker": "NVIDIA",
-      "headline": "Life after Jensen: the board wants a new culture, Bezos says hire from within, and Nvidia is now spending more cash than it makes",
-      "why_read": "You retweeted half a dozen takes last night; here they are in one place, plus the FT on Nvidia's Singapore disclosure.",
+      "id": "terafab-armyx",
+      "kicker": "CHIPS",
+      "headline": "Musk: TeraFab test chips by June, volume by late 2028, and an ArmyX crew recruited from In-N-Out and Starbucks",
+      "why_read": "A view into how the chip and data-center build-out gets staffed and scheduled.",
       "body": [
-        "Gene Munster says Jensen Huang's Nvidia chapter is over and the board is signaling it wants a new culture. Jay Yarow's take is blunter: Huang thought export chip controls were dumb and acted as if he were above the law. Jeff Bezos, in a clip shared by Stock MKT News, said that if Huang does not return, Nvidia should pick its next CEO from inside the company.",
-        "On the numbers, Stock Savvy Shay points out that Nvidia's cash fell sequentially for the first time in four years because it spent $22B on buybacks and $6B on dividends, deploying more than it generates. Apollo CEO Marc Rowan told CNBC that Nvidia has been \"the bank or the guarantor of the AI ecosystem\". And per a Financial Times story on the Hacker News front page, Nvidia stopped disclosing Singapore sales as revenue hit $104B."
+        "Per X's news summary of his DealBook remarks, Musk expects first TeraFab test chips by June next year and volume production by late 2028 to feed AI infrastructure.",
+        "He also described ArmyX, a team recruited from fast food and retail for precise tasks such as running network cables, built by breaking complex jobs into simple, trainable steps so newcomers excel quickly alongside contractors."
       ],
       "authors": [
-        "Gene Munster",
-        "Jay Yarow",
-        "Stock Savvy Shay"
+        "X News"
       ],
       "source": "x",
-      "source_url": "https://x.com/munster_gene/status/2122814291057226187",
-      "discuss_url": "https://news.ycombinator.com/item?id=50534631",
-      "interests": [
-        "ai"
-      ],
       "source_label": "X",
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "anthropic-ipo-raise-price",
-      "kicker": "AI MARKETS",
-      "headline": "Anthropic may price its IPO above $80 a share on strong demand, valuing it around $1.5 trillion",
-      "why_read": "You bookmarked Ferragu's framing of the deal; here is the latest pricing news behind it.",
-      "body": [
-        "Per the Wall Street Journal, as relayed by The Kobeissi Letter, Anthropic is weighing a higher IPO price after stronger-than-expected investor demand, possibly above $80 a share against an initial range of $70 to $78. Advisers have discussed a valuation of about $1.5 trillion to $1.6 trillion, up from roughly $1.33 trillion at the original range.",
-        "Pierre Ferragu, whose post you bookmarked, shared a chart offering \"a very simple way to think about Anthropic's IPO\". The X news roundup also notes a reported $10 billion purchase by Nvidia as part of a $26 billion private placement."
-      ],
-      "authors": [
-        "The Kobeissi Letter",
-        "Pierre Ferragu"
-      ],
-      "source": "x",
-      "source_url": "https://x.com/KobeissiLetter/status/2122744324307947814",
-      "discuss_url": "https://x.com/p_ferragu/status/2122806988665180664",
-      "interests": [
-        "ai"
-      ],
-      "source_label": "X",
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "anthropic-compute-26-percent",
-      "kicker": "AI ECONOMICS",
-      "headline": "Brad Gerstner: only 26% of Anthropic's compute this year served paying customers, and the rest went mostly to training",
-      "why_read": "A counterintuitive read on inference economics: serving is a smaller cost than the scale of the build-out suggests.",
-      "body": [
-        "Speaking about Anthropic, Altimeter's Brad Gerstner said the company had about two gigawatts of compute this year and only about a quarter of it, roughly 500 megawatts, went to serving customers. He ties that slice to about $100 billion in revenue.",
-        "His conclusion is that if the consensus forecast of another $100 billion in revenue next year holds, serving it needs far less new capacity than the headlines imply, because training is where most of the compute goes. The X news summary cites Anthropic's S-1 as putting training at 74% of compute."
-      ],
-      "authors": [
-        "Fireside Alpha",
-        "Brad Gerstner"
-      ],
-      "source": "x",
-      "source_url": "https://x.com/firesidealpha/status/2122715903062090050",
-      "discuss_url": "https://x.com/firesidealpha/status/2122715903062090050",
-      "interests": [
-        "ai"
-      ],
-      "source_label": "X",
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "claude-protein-sequences",
-      "kicker": "AI + BIOLOGY",
-      "headline": "A next-amino-acid test suggests the latest Claude models were trained on protein sequences at scale, and Fable 5.2 beats open protein LMs",
-      "why_read": "A clever black-box probe that reveals what is in a frontier model's training data; no other model, GPT-6.2 included, shows the effect.",
-      "body": [
-        "Xinming Tu gave models the start of little-studied bacterial proteins and asked for the next amino acid. Claude Fable 5.2 and Opus 5.5 predict it; on shuffled proteins they cannot, and no other frontier model tested shows the effect. Like a protein language model, Claude does better on bigger protein families, even in families with no papers about them.",
-        "Fable 5.2 beats every open protein language model the author ran, including ProGen3-3B, and Opus 5.5 is level with ProtGPT3-10B. An 18 November update adds 56 proteins first made public in August 2026, which the latest Claude models still predict, and confirms GPT-6.2 Sol and Astra show no sign of it."
-      ],
-      "authors": [
-        "Xinming Tu"
-      ],
-      "source": "hn",
-      "source_url": "http://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50541619",
+      "source_url": "https://x.com/i/trending/2123304700367835316",
+      "discuss_url": "https://x.com/i/trending/2123304700367835316",
       "interests": [
         "ai",
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "panasonic-sila-anodes",
+      "kicker": "BATTERIES",
+      "headline": "Panasonic commits $1B+ to Sila's silicon anodes, the first US next-gen battery headed for commercial EVs",
+      "why_read": "You retweeted and bookmarked it: after years of false starts, a next-gen battery chemistry reaches real cars.",
+      "body": [
+        "Steve LeVine reports in The Electric that Panasonic will buy more than $1 billion of silicon battery anodes from California startup Sila Nanotechnologies under a multi-year deal.",
+        "He calls it a big, long-awaited first: a US next-gen battery technology finally powering commercially sold electric vehicles."
+      ],
+      "authors": [
+        "Steve LeVine"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/stevelevine/status/2122949511110934710",
+      "discuss_url": "https://x.com/stevelevine/status/2122949511110934710",
+      "interests": [
+        "energy"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "zerodha-blobasaur",
+      "kicker": "SYSTEMS",
+      "headline": "Zerodha built Blobasaur, a sharded blob store on SQLite doing thousands of reads and writes a second",
+      "why_read": "A lovely boring-tech systems story: SQLite as the backbone of a distributed store for 20 million traders.",
+      "body": [
+        "Kite, Zerodha's trading platform with about 20 million customers, stores user layouts, indicator templates, drawings and workspace preferences as opaque JSON blobs from a few KB to several MB. They moved from CouchDB to SSDB, a Redis-protocol C++ store, which ran reliably for years until it became unmaintained and was outside their stack.",
+        "Blobasaur, the replacement, is a sharded, distributed, lightweight blob server on SQLite that handles thousands of reads and writes per second on commodity hardware with single-digit millisecond latency."
+      ],
+      "authors": [
+        "Sarat Chandra"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://zerodha.tech/blog/high-performance-distributed-blob-storage/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50557537",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "15m-webservers-one-vm",
+      "kicker": "SYSTEMS",
+      "headline": "Trying to run 15 million web servers on one VM with 1 core and 10GB, using smoltcp, DPDK and AF_XDP",
+      "why_read": "A playful, from-the-syscalls-up tour of high-performance networking.",
+      "body": [
+        "The author's tongue-in-cheek goal is a web server for everyone on the planet, starting with 15 million on a single VM with 10GB of RAM and one CPU core. Instead of vibe coding it, the post rebuilds the idea from first principles, starting with the listen, accept, recv, send and close syscalls in plain C.",
+        "The title names the rest of the toolkit for getting there: userspace TCP with smoltcp and fast packet paths with DPDK and AF_XDP."
+      ],
+      "authors": [
+        "kapteko"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://kapteko.com/15-million-webservers/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50556533",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "voyager-teardown",
+      "kicker": "SPACE",
+      "headline": "Take Voyager 1 apart, down to a single memory chip, in an interactive explorer",
+      "why_read": "A beautiful Show HN for the week Voyager 1 hit one light-day from Earth.",
+      "body": [
+        "Raj Shekhar's site shows where the two Voyagers, launched in 1977 and still talking to Earth from interstellar space, are right now, and lets you replay the journey from launch.",
+        "The best part is the teardown mode: open the spacecraft bay by bay, then module by module, down to individual chips, with keyboard controls to move, turn and zoom."
+      ],
+      "authors": [
+        "Raj Shekhar"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://rshekhar.com/voyager/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50548161",
+      "interests": [
+        "space",
         "science"
       ],
-      "source_label": "HN",
       "lead": false,
       "featured": false
     },
     {
-      "id": "cerebras-disaggregated-inference",
-      "kicker": "INFERENCE",
-      "headline": "Cerebras puts GPUs on prefill and wafer-scale engines on decode, claiming 5x more tokens per megawatt",
-      "why_read": "Disaggregated prefill/decode is the inference architecture trend of the year, and this is the first heterogeneous version in production.",
+      "id": "cambridge-word-human",
+      "kicker": "WORDS",
+      "headline": "Cambridge Dictionary names 'human' its Word of the Year 2026",
+      "why_read": "A gentle, very 2026 choice: what it means to be human when AI blurs the line.",
       "body": [
-        "Cerebras says it is now running disaggregated inference in production: GPUs handle prompt processing (prefill) and Cerebras systems handle output generation (decode). The company claims five times more tokens per megawatt at its usual ultrafast speeds.",
-        "It will use the setup to grow its own inference cloud and offer it to infrastructure partners for their data centers. Cerebras pairs the news with its CS-4 system, scaled-up manufacturing and 700 MW of planned data-center capacity."
+        "The Cambridge Dictionary picked 'human' as Word of the Year 2026, framing the choice around a year of global debate about what it means to be human as AI blurs the boundaries between people and machines.",
+        "The pick lands in a year of agents, bots and AI coworkers, and the HN thread has more than 200 comments on whether it is insight or marketing."
       ],
       "authors": [
-        "Cerebras"
+        "University of Cambridge"
       ],
       "source": "hn",
-      "source_url": "https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference",
-      "discuss_url": "https://news.ycombinator.com/item?id=50540472",
-      "interests": [
-        "ai",
-        "systems"
-      ],
       "source_label": "HN",
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "sglang-v1-consortium",
-      "kicker": "OPEN SOURCE",
-      "headline": "SGLang hits v1.0 and launches a consortium with Nvidia, AMD, Intel, Google, Meta and Cloudflare as founding members",
-      "why_read": "The open-source inference engine behind production serving at Meta is now a cross-vendor standard effort.",
-      "body": [
-        "At the first SGLang Summit, with more than 2,000 attendees over two days, the project announced SGLang v1.0, released Miles v0.2 and launched the SGLang Consortium. The nine founding members are Nvidia, AMD, Intel, Google, Meta, Thinking Machines, Cloudflare, Modal and RadixArk.",
-        "SGLang says it is used by 332 organizations, and at Meta it powers production inference for products serving billions of users. Teams from Modal, Cloudflare and LinkedIn shared production lessons across 90+ talks and six workshops on inference, reinforcement learning and agents."
-      ],
-      "authors": [
-        "SGLang"
-      ],
-      "source": "x",
-      "source_url": "https://x.com/sgl_project/status/2122736431009595422",
-      "discuss_url": "https://x.com/sgl_project/status/2122736431009595422",
-      "interests": [
-        "ai",
-        "systems"
-      ],
-      "source_label": "X",
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "energy-based-reasoners",
-      "kicker": "RESEARCH",
-      "headline": "Energy-Based Reasoners: a 1.8M-parameter looped model hits 99.9% on Sudoku-Extreme with 345x less inference compute",
-      "why_read": "A physics-flavored idea for reasoning models, with a built-in verifier and a natural stopping rule.",
-      "body": [
-        "Researchers from Duke, UIUC and Harvard propose Energy-Based Reasoners, looped reasoning models that learn an energy function over latent reasoning states and treat each loop as gradient descent on that energy. The energy scores candidate answers without an external verifier, and its gradient both refines the answer and signals when to stop.",
-        "With only 1.8M parameters, they report 99.9% accuracy on Sudoku-Extreme using 345 times less inference compute than the next-best model, plus state-of-the-art coverage on N-Queens and graph coloring with near-100% single-sample accuracy."
-      ],
-      "authors": [
-        "William Chen",
-        "Alexi Gladstone",
-        "Yilun Du"
-      ],
-      "source": "hn",
-      "source_url": "https://energy-based-reasoners.github.io/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50543989",
-      "interests": [
-        "ai",
-        "science"
-      ],
-      "source_label": "HN",
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "frontierharness-eval",
-      "kicker": "AI CODING",
-      "headline": "FrontierHarness Eval v1.1: across 22 coding harnesses and 5 models, the best harness changes with the model",
-      "why_read": "If you swap models in your agent stack, this says you should probably swap the harness too.",
-      "body": [
-        "Runta and Baseten ran 22 harnesses against 5 models on 62 tasks with 4 attempts each, 83B tokens over 27,280 agent runs. Each model had a different best-value harness: Codex CLI with GLM-5.3, Pi with GLM-5.3 Flash, ZCode with DeepSeek V4.1 Flash, Oh My Pi with Muse and Alma with Kimi-K3.",
-        "Cost rankings swung widely: by cost per task the median harness moved 11 of 22 places, and Codex CLI went from 1st with GLM-5.3 to 16th with Kimi-K3. Across all models, OpenCode v2 had the lowest cost per task at $0.561 and ZCode the highest pass rate at 61.9%."
-      ],
-      "authors": [
-        "Shilin Zhu"
-      ],
-      "source": "hn",
-      "source_url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50532191",
-      "interests": [
-        "ai"
-      ],
-      "source_label": "HN",
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "harvard-code-review-bottleneck",
-      "kicker": "ENGINEERING",
-      "headline": "Harvard study of 718 firms: AI coding agents added about 30% more code, but review took 49% longer and finished work didn't rise",
-      "why_read": "Hard data behind yesterday's verification theme: the bottleneck moved from writing code to reviewing it.",
-      "body": [
-        "In a working paper covering 718 firms, Harvard Ph.D. candidates Fiona Chen and James Stratton found that engineers at companies adopting AI coding agents added about 30% more code, yet finished work did not measurably rise and getting code through review took 49% longer.",
-        "It is a job-market paper with no indication of completed peer review, but the measurement idea travels: track approved work, revision rates and reviewer time, not just drafting output."
-      ],
-      "authors": [
-        "Fiona Chen",
-        "James Stratton"
-      ],
-      "source": "hn",
-      "source_url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50538303",
-      "interests": [
-        "ai",
-        "systems"
-      ],
-      "source_label": "HN",
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "gemini-4-carbon-slow",
-      "kicker": "MODELS",
-      "headline": "Why Gemini 4 Carbon is so slow: about seven times the steps and sixteen times the input tokens of GPT-6 Astra",
-      "why_read": "A clean trace-level teardown of agent latency that applies to any model you are evaluating.",
-      "body": [
-        "Kernel noticed Gemini 4 Carbon spent close to an hour on tasks that Opus and Astra finished in minutes, echoing complaints from Theo and others. Tracing every step, they found the model simply does more work per task.",
-        "Compared with GPT-6 Astra, Carbon takes about seven times as many steps and eleven times as many actions such as reading files or running commands, writes about seven times as much, and because every step re-sends a growing conversation, processes more than sixteen times as much input."
-      ],
-      "authors": [
-        "Kernel"
-      ],
-      "source": "hn",
-      "source_url": "https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50541790",
-      "interests": [
-        "ai"
-      ],
-      "source_label": "HN",
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "gurman-apple-ai-jettisoned",
-      "kicker": "APPLE",
-      "headline": "Mark Gurman: two months after Siri AI, Apple has been \"completely jettisoned yet again\" by Meta and Google",
-      "why_read": "You bookmarked and retweeted it: Apple's most-followed reporter says Apple has fallen behind in consumer AI again.",
-      "body": [
-        "Bloomberg's Mark Gurman says that two months after launching Siri AI, Apple has again been left behind in the space, and that the \"real\" AI for consumers is now coming not just from the labs but from Apple's two biggest competitors, Meta and Google.",
-        "It is a sharp turn from the Siri AI launch narrative, and it lands the same week OpenAI, Microsoft and Google all pushed new models."
-      ],
-      "authors": [
-        "Mark Gurman"
-      ],
-      "source": "x",
-      "source_url": "https://x.com/markgurman/status/2122870209216225388",
-      "discuss_url": "https://x.com/markgurman/status/2122870209216225388",
-      "interests": [
-        "ai"
-      ],
-      "source_label": "X",
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "amodei-open-source-warning",
-      "kicker": "OPEN WEIGHTS",
-      "headline": "Dario Amodei warns that uncontrolled open-model releases could lead somewhere \"very dangerous\", and open-source advocates push back",
-      "why_read": "The open-weights debate you follow, in Anthropic's CEO's own words, right as Databricks shows open models taking enterprise share.",
-      "body": [
-        "In a clip shared widely on X, Amodei argues that a company deploying its own model can monitor usage, revoke a user's access and change what the model will do, while a model released in an uncontrolled way leaves all of that \"entirely out of your hands\". He says advocates should be challenged to solve that problem.",
-        "Critics in the thread compare the stance to rejecting Linux and read it as a push for corporate control of intelligence; supporters point to misuse risks such as biological threats."
-      ],
-      "authors": [
-        "Veee"
-      ],
-      "source": "x",
-      "source_url": "https://x.com/vikktorrrre/status/2122353364306374986",
-      "discuss_url": "https://x.com/vikktorrrre/status/2122353364306374986",
-      "interests": [
-        "ai"
-      ],
-      "source_label": "X",
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "chinese-ai-disclosure-rule",
-      "kicker": "POLICY",
-      "headline": "The Trump administration has weighed requiring US companies to disclose on their websites when they use Chinese AI models",
-      "why_read": "If it happens, it touches any stack quietly running Qwen or DeepSeek, which is a lot of them.",
-      "body": [
-        "Walter Bloomberg relayed a report that the administration has mulled requiring US companies to disclose their use of Chinese AI models on their websites.",
-        "The X news summary says Treasury and White House officials discussed the idea, aimed at slowing adoption through public awareness and market pressure rather than a ban, and notes models like Alibaba's Qwen and DeepSeek already power parts of customer service at companies such as DoorDash and Airbnb."
-      ],
-      "authors": [
-        "Walter Bloomberg"
-      ],
-      "source": "x",
-      "source_url": "https://x.com/DeItaone/status/2123008391840977000",
-      "discuss_url": "https://x.com/DeItaone/status/2123008391840977000",
-      "interests": [
-        "ai"
-      ],
-      "source_label": "X",
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "genesis-ai-500m",
-      "kicker": "ROBOTICS",
-      "headline": "Genesis AI raises a $500M Series A at $3.5B to build general-purpose robots with human-level dexterity",
-      "why_read": "One of the largest robotics Series A rounds yet, backed by Nvidia's and AMD's venture arms.",
-      "body": [
-        "Co-founder Zhou Xian announced the round, saying Genesis is building general-purpose robots that work reliably across whole workflows for years, to remove the physical limits on human ambition.",
-        "The X news summary says the Paris-based startup's backers include Nvidia and AMD venture arms, Khosla Ventures and Eric Schmidt, and that it trains its GENE model with sensor gloves that capture human hand motion."
-      ],
-      "authors": [
-        "Zhou Xian"
-      ],
-      "source": "x",
-      "source_url": "https://x.com/zhou_xian_/status/2122752003197833357",
-      "discuss_url": "https://x.com/zhou_xian_/status/2122752003197833357",
-      "interests": [
-        "ai"
-      ],
-      "source_label": "X",
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "google-ai-overviews-40-percent",
-      "kicker": "THE WEB",
-      "headline": "A randomized experiment finds Google's AI Overviews cut clicks to websites by about 40%",
-      "why_read": "Unusually rigorous evidence on what AI answers do to the open web, and the GEO industry has no fix yet.",
-      "body": [
-        "Revscope reports a randomized experiment in which researchers hid AI Overviews from some US desktop users. Compared with users who still saw them, an Overview cuts clicks to outside websites by about 40%. Overviews now appear on more than half the US keywords DataForSEO tracks, up from 6% two years ago.",
-        "Generative engine optimization has not shown a way to make up the loss: in March, AI assistants sent websites just 0.3% of their traffic."
-      ],
-      "authors": [
-        "Revscope"
-      ],
-      "source": "hn",
-      "source_url": "https://revscope.co/blog/search-seo-geo-2026/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50540178",
-      "interests": [
-        "ai"
-      ],
-      "source_label": "HN",
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "quad9-leaves-france",
-      "kicker": "NETWORKING",
-      "headline": "Cloudflare calls Quad9's withdrawal from France a canary in the coal mine for DNS-level blocking",
-      "why_read": "A free, privacy-focused DNS resolver exiting a whole country over court-ordered blocking is a real infrastructure precedent.",
-      "body": [
-        "Quad9, the Swiss non-profit, said last month it will pull its free public DNS resolver out of France after a court imposed daily penalties for not blocking domains tied to alleged copyright infringement.",
-        "Cloudflare's Patrick Nemeroff and Christiaan Smits argue the ruling left Quad9 choosing between crippling penalties and undermining its users' privacy and security. They warn that demanding blocking at every layer of the Internet will drive basic infrastructure services away."
-      ],
-      "authors": [
-        "Patrick Nemeroff",
-        "Christiaan Smits"
-      ],
-      "source": "hn",
-      "source_url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50538994",
-      "interests": [
-        "systems"
-      ],
-      "source_label": "HN",
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "freshrss-over-tailscale",
-      "kicker": "HOMELAB",
-      "headline": "Tailscale's guide to a self-hosted FreshRSS feed for blogs, YouTube and release notes, read from anywhere on your tailnet",
-      "why_read": "You retweeted it: a weekend-sized homelab project that gets your reading out of algorithmic feeds.",
-      "body": [
-        "Tailscale's Kevin walks through setting up FreshRSS to pull favorite blogs, YouTube channels and software updates into one chronological feed, then reading it from a phone or laptop over Tailscale without exposing the server to the internet."
-      ],
-      "authors": [
-        "Tailscale"
-      ],
-      "source": "x",
-      "source_url": "https://buff.ly/Y5uCrQz",
-      "discuss_url": "https://x.com/Tailscale/status/2122807449518322016",
-      "interests": [
-        "systems"
-      ],
-      "source_label": "X",
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "casey-handmer-physics-audit",
-      "kicker": "SCIENCE",
-      "headline": "Casey Handmer had AI audit his entire PhD field: 158,059 papers, and an estimate that peer review catches about one error in five",
-      "why_read": "A striking use of AI as a literature auditor, with numbers on how long errors keep getting copied.",
-      "body": [
-        "Handmer screened every paper with full text in his former field, recomputed and checked 659 of the most important, and followed every verified error through the papers that cite it. Among revised papers, 13 verified errors were fixed between preprint and journal version while 56 went through review into print, which he reads as peer review removing about one error in five.",
-        "Errors persist: the share of copied errors still being copied is 52% at year 7 and 39% at year 10. Extrapolating from the papers checked so far, he estimates about 34,000 undetected errors (25,000 to 48,000) in the field's papers cited 100 or more times."
-      ],
-      "authors": [
-        "Casey Handmer"
-      ],
-      "source": "hn",
-      "source_url": "https://science.caseyhandmer.com/physics/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50545118",
-      "interests": [
-        "science",
-        "ai"
-      ],
-      "source_label": "HN",
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "romer-speed-of-light-350",
-      "kicker": "PHYSICS",
-      "headline": "350 years ago this month, Ole Rømer predicted a late eclipse of Io and proved light has a finite speed",
-      "why_read": "A short, satisfying history of one of physics' great predictions, on its anniversary.",
-      "body": [
-        "In September 1676 the Danish astronomer told the Académie des Sciences in Paris that on November 9, Jupiter's moon Io would emerge from the planet's shadow about ten minutes later than expected. He was right. The delay came from the extra distance light had to travel as Earth moved away from Jupiter.",
-        "Rømer concluded light took about 22 minutes to cross the diameter of Earth's orbit, which works out to roughly 225,000 km/s against today's value of about 300,000 km/s. Huygens and later Newton backed the idea fairly quickly."
-      ],
-      "authors": [
-        "Elise Kjørstad"
-      ],
-      "source": "hn",
-      "source_url": "https://www.sciencenorway.no/culture-history-history-of-science/350-years-ago-this-man-discovered-that-light-has-a-finite-speed/2737969",
-      "discuss_url": "https://news.ycombinator.com/item?id=50536813",
-      "interests": [
-        "science"
-      ],
-      "source_label": "HN",
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "nike-valedictorian-af1s",
-      "kicker": "KINDNESS",
-      "headline": "Nike accepts a Mississippi senator-elect's challenge to give every valedictorian custom Air Force 1s, and takes it nationwide",
-      "why_read": "You retweeted it: a small, generous gesture that went bigger than anyone asked.",
-      "body": [
-        "Senator-elect Scott Colom challenged Nike to give every high school valedictorian in Mississippi a pair of custom Air Force 1s. Nike accepted, and says it will expand the incentive nationwide.",
-        "As Yashar Ali notes, it will cost Nike no more than a few million dollars and generate many times that in goodwill."
-      ],
-      "authors": [
-        "Yashar Ali"
-      ],
-      "source": "x",
-      "source_url": "https://x.com/yashar/status/2122900006780969160",
-      "discuss_url": "https://x.com/scott_colom/status/2122865093667131511",
+      "source_url": "https://www.cam.ac.uk/news/cambridge-dictionary-reveals-word-of-the-year-2026",
+      "discuss_url": "https://news.ycombinator.com/item?id=50546914",
       "interests": [
         "life"
       ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "hinojosa-rescind-h1b-order",
+      "kicker": "TEXAS",
+      "headline": "Gov.-elect Gina Hinojosa plans to rescind Abbott's H-1B executive order, and told Trump Big Bend wants monitoring, not a wall",
+      "why_read": "You retweeted it twice: a home-state policy shift that matters to Texas tech workers.",
+      "body": [
+        "In a Texas Tribune interview in Austin, Gov.-elect Gina Hinojosa said she spoke with President Trump about border security on Saturday and told him Texans near Big Bend National Park would rather have electronic monitoring than a border wall. \"He understands my commitment to keeping a secure border,\" she said.",
+        "Jasper Scherer highlighted that she plans to rescind several of Greg Abbott's executive orders, including those on H-1B visas and THC."
+      ],
+      "authors": [
+        "Jasper Scherer",
+        "Texas Tribune"
+      ],
+      "source": "x",
       "source_label": "X",
+      "source_url": "https://www.texastribune.org/2026/11/18/gina-hinojosa-texas-governor-elect-interview/",
+      "discuss_url": "https://x.com/jaspscherer/status/2123162506948677690",
+      "interests": [
+        "texas"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "digital-metal-bottle-openers",
+      "kicker": "AUSTIN MAKERS",
+      "headline": "Austin foundry Digital Metal pours its leftover stainless steel into one-piece bottle openers",
+      "why_read": "You retweeted and bookmarked it: a small, clever bit of manufacturing thrift from your own city.",
+      "body": [
+        "Connor Kapoor says Digital Metal makes the fastest castings in the west from its new foundry in Austin. When it casts stainless steel for a customer order it often melts more than needed, and instead of pouring the excess into ingot molds for revert, it now pours it into standby molds for one-piece bottle openers.",
+        "They are its first merch item, in 17-4PH or 304 stainless."
+      ],
+      "authors": [
+        "Connor Kapoor"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/connorkapoor/status/2123103390825615855",
+      "discuss_url": "https://x.com/connorkapoor/status/2123103390825615855",
+      "interests": [
+        "texas"
+      ],
       "lead": false,
       "featured": false
     }

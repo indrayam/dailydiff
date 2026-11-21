@@ -1,140 +1,117 @@
 {
-  "date": "2026-11-20",
-  "weekday": "Friday",
+  "date": "2026-11-21",
+  "weekday": "Saturday",
   "title": "The Daily Diff",
   "stories": [
     {
-      "id": "anthropic-nasdaq-debut",
-      "kicker": "AI MARKETS",
-      "headline": "Anthropic's Nasdaq debut: ANT opens at $111.50 and closes up 17% at $97.17 after the largest IPO on record",
-      "why_read": "The top story on Hacker News with more than 2,000 comments, and half your bookmarks last night circled it: the first frontier lab is now a public company with a ticker you can watch.",
+      "id": "grh-navier-stokes-ai-proofs",
+      "kicker": "AI FOR MATH",
+      "headline": "Levent Alpöge claims an AI-built proof of the Generalized Riemann Hypothesis, plus Navier-Stokes and Euler blow-up results in Lean",
+      "why_read": "The two biggest threads on Hacker News overnight, with more than 2,600 points: physics and math from your pinned post, colliding head-on with AI.",
       "body": [
-        "Anthropic began trading on Nasdaq as ANT on Thursday after pricing at $83 a share. According to X's news summaries of the day, the IPO raised $81.3 billion, the largest on record, with total proceeds reaching $107.3 billion including a private placement. The stock opened at $111.50, pulled back through the session and closed up 17% at $97.17, putting the fully diluted valuation around $1.5 trillion. Reuters framed the debut as a test of whether Wall Street will pay for AI's promise and its peril at the same time.",
-        "The numbers people kept posting: App Economy Insights' breakdown shows Q3 revenue of $17.0 billion, up 47% quarter over quarter, against compute costs of $9.9 billion, and Uday Kotak noted the listing is worth more than India's top 10 companies combined. Skeptics pointed at roughly $900 billion of disclosed purchase commitments, mostly compute, while the broader market slid on the day."
+        "Levent Alpöge posted a short remark claiming a proof of the Riemann Hypothesis that, he writes, extends to the Generalized Riemann Hypothesis, discovered while \"working with Claude\" and formalized \"without assumptions.\" He describes guiding the work toward the right setting and then watching the model \"far outpace\" him near the finish line. Terence Tao's same-day roundup describes it as an enormous, Lean-only proof generated with an internal AI model, and the least digested of the day's results.",
+        "Tao ranks two companion results as further along: a human-readable, Lean-formalized proof of finite-time blow-up for the unforced 3D incompressible Euler equations by Alpöge, Tristan Buckmaster and Matei Coiculescu, and a proof of blow-up for the unforced 3D Navier-Stokes equations by Alpöge and Buckmaster, both built with heavy AI assistance. Formal verification is the reason people are taking this seriously instead of laughing it off, but Tao is explicit that the community still has to digest all of it."
       ],
       "authors": [
-        "Reuters"
+        "Levent Alpöge",
+        "Terence Tao"
       ],
       "source": "hn",
       "source_label": "HN",
-      "source_url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50562754",
+      "source_url": "https://alpo.ge/remark.pdf",
+      "discuss_url": "https://news.ycombinator.com/item?id=50574968",
       "interests": [
-        "ai"
+        "ai",
+        "science"
       ],
       "lead": true,
       "featured": false
     },
     {
-      "id": "cybercab-dallas",
-      "kicker": "ROBOTAXI",
-      "headline": "Cybercab arrives in Dallas, Tesla's second city for the purpose-built robotaxi",
-      "why_read": "You retweeted the Robotaxi account and bookmarked Ashok Elluswamy's follow-up: city two came \"at almost no extra effort on the engineering side.\"",
+      "id": "cursor-becomes-grok-build",
+      "kicker": "AI CODING",
+      "headline": "Cursor is getting renamed Grok Build, with a faster app and Grok Build CLI 2.0 in alpha",
+      "why_read": "You retweeted both halves of this thread, and it is the tool you build with every day: new name, same cube, and a bundle tied to the unified subscription you bought.",
       "body": [
-        "Tesla's Robotaxi account posted \"Howdy Dallas, Cybercab has arrived in your city,\" and the main Tesla account followed with \"Cybercab expands to second city.\" Ashok Elluswamy quoted it with a short line that matters more than the launch itself: the expansion happened at almost no extra effort on the engineering side.",
-        "That is the scaling thesis in one sentence. If a new metro is mostly an operations problem rather than an engineering one, the pace of city launches is set by vehicles and depots, not by mapping. Order screens shared on X also show a 279-mile range for Cybercab, and the Robotaxi account was having fun with it, posting a video captioned \"Cybercab can be anything you want it to be.\""
+        "Grok Insider reports that Cursor is being renamed Grok Build: \"A new name, and a faster app.\" The post says Grok Build CLI 2.0 is already in an alpha unified channel, which suggests it will be tied to the unified X, Grok and Cursor subscription. Its one-line summary: \"The cube stays. The Cursor name doesn't.\"",
+        "The follow-up lists what the announcement promises: a lighter, faster app on desktop and web; Projects, where a team of agents works on one big problem; one Project shared with your whole team, even from Slack; cloud agents you steer from your phone; and Grok, Anthropic, OpenAI and more models in one app."
       ],
       "authors": [
-        "Tesla Robotaxi",
-        "Ashok Elluswamy"
+        "Grok Insider"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/robotaxi/status/2123458263522107564",
-      "discuss_url": "https://x.com/aelluswamy/status/2123531623643918789",
+      "source_url": "https://x.com/GrokInsider/status/2123867269553938671",
+      "discuss_url": "https://x.com/i/status/2123867272112488456",
       "interests": [
-        "tesla",
-        "texas"
+        "ai",
+        "systems"
       ],
       "lead": true,
       "featured": false
     },
     {
-      "id": "claude-black-hole-physics",
-      "kicker": "AI FOR SCIENCE",
-      "headline": "Claude solves two open problems in the physics of black holes",
-      "why_read": "Physics and AI in one story, straight from your pinned interests: a 20-year-old calculation in quantum gravity, finished by a model.",
+      "id": "inkling-2-mini",
+      "kicker": "OPEN WEIGHTS",
+      "headline": "Thinking Machines releases Inkling 2 Mini, a looped open-weights model that runs on a laptop",
+      "why_read": "An open-weights model under 100B parameters that leads its class on agentic coding, and a new architectural trick worth understanding.",
       "body": [
-        "Anthropic says Claude Fable 5.2 has solved two open problems in theoretical physics, both concerning black holes and the search for a theory of quantum gravity. In the first, it completed a calculation physicists set up more than 20 years ago but never finished; the result shows that a sudden transition associated with black hole formation persists even where spacetime no longer has a definite shape.",
-        "In the second, Claude found the exact limit of the simplest version of a technique used to test candidate theories of quantum gravity. Anthropic's post explains both in plain terms and then in technical detail, and links two preprints, so the claims can be checked by physicists rather than taken on faith."
+        "Thinking Machines Lab released Inkling 2 Mini, a mixture-of-experts model with 26.4B total parameters and 3.4B active. It is a looped transformer: the middle layers run three times for every token, so the model can reason more without writing more tokens. The lab says it leads every open-weights model under 100B total parameters on DeepSWE v1.1 (48.2%) and Vals Index v2.2 (46.5%), and runs faster than similarly performing models.",
+        "The interesting tension is monitorability. Looping lets a model think longer without writing its reasoning down, which makes chain-of-thought oversight harder, so the lab is also releasing a research variant with a variable number of loops to study that trade-off. It is available on Tinker and Hugging Face."
       ],
       "authors": [
-        "Anthropic"
+        "Thinking Machines Lab"
       ],
       "source": "hn",
       "source_label": "HN",
-      "source_url": "https://www.anthropic.com/research/claude-black-hole-physics",
-      "discuss_url": "https://news.ycombinator.com/item?id=50563148",
+      "source_url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50581260",
       "interests": [
-        "ai",
+        "ai"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "masullo-grh-human-proof",
+      "kicker": "MATHEMATICS",
+      "headline": "A second, all-human GRH proof gets a hurried announcement, and AI models quickly flag problems",
+      "why_read": "The same day as the AI-built claim, Ravi Vakil rushed out news of a human proof Brian Conrad has studied for months. Then the AI reviewers showed up.",
+      "body": [
+        "Stanford's Ravi Vakil posted, between AMS board meetings, that Alessandro Maria Masullo has a proposed proof of the Generalized Riemann Hypothesis. Brian Conrad has been examining it closely for months and gave extensive feedback, and Vakil stressed that \"It is all human, with no AI.\" The plan had been a year of polishing before any announcement.",
+        "About eight hours later Vakil added an update: several people had reported problems in the proposed proof, identified with the help of different AI models. He noted that all issues must be resolved to the community's satisfaction before it could be accepted. It is a striking snapshot of where math is right now: AI on both sides of the proof-and-check loop."
+      ],
+      "authors": [
+        "Ravi Vakil"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50579568",
+      "interests": [
         "science"
       ],
       "lead": false,
       "featured": true
     },
     {
-      "id": "frostbite-ai-cpu",
-      "kicker": "CHIPS",
-      "headline": "Frostbite: a new CPU architecture discovered, designed and verified end-to-end by AI",
-      "why_read": "An IT architect's dream read: AI iterating over the compiler, ISA, microarchitecture, RTL and final GDS, and claiming 4.59x perf per watt.",
+      "id": "ai-selloff-nasdaq",
+      "kicker": "AI MARKETS",
+      "headline": "Nasdaq erases its 2026 gains as the AI sell-off dampens Anthropic's second day",
+      "why_read": "You retweeted Dan Ives' six-part explanation and bookmarked Kobeissi's \"-$6 trillion in 45 days\" piece: the bubble-or-opportunity debate is now the market.",
       "body": [
-        "Architect Labs introduced Frostbite, a general-purpose CPU with a new instruction set built from scratch around interaction nets, a model of computation where every step is local, every dependency is explicit and every value has exactly one owner. Conventional CPUs spend silicon rediscovering at runtime which instructions depend on each other; Frostbite's premise is that the program can simply say so.",
-        "The company says its AI systems autonomously iterated across compiler, ISA, architecture, microarchitecture, RTL, verification and final GDS. On 25 workloads, 15 of them held out until the final evaluation, it reports a 4.59x performance-per-watt multiple over a modern silicon-proven dual-issue in-order core. It follows the lab's earlier Redwood inference accelerator, and argues every class of chip, from CPUs to NICs, will see similar shifts."
+        "The Guardian reports that the Nasdaq has given back all of its 2026 gains as an AI-led sell-off weighed on Anthropic's second day of trading. Tesla shares fell more than 7% on November 20 in the same slide, according to X's news summaries.",
+        "Dan Ives lists his \"perfect storm\": fears of an anti-AI, anti-datacenter Washington after the election, losing Jensen Huang as the leader of the AI revolution, China-driven regulatory worries across semis and memory, market-clearing events that triggered more selling, and Anthropic's successful IPO pulling liquidity from other tech names. The Kobeissi Letter frames the same moment as -$6 trillion in 45 days and asks whether it is a bubble or an opportunity."
       ],
       "authors": [
-        "Architect Labs"
+        "The Guardian",
+        "Dan Ives",
+        "The Kobeissi Letter"
       ],
       "source": "hn",
       "source_label": "HN",
-      "source_url": "https://architectlabs.com/blog/frostbite",
-      "discuss_url": "https://news.ycombinator.com/item?id=50572503",
-      "interests": [
-        "ai",
-        "systems"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "openssl-encodeblock-cve",
-      "kicker": "SECURITY",
-      "headline": "OpenSSL fixes a CVSS 9.8 buffer overflow in EVP_EncodeBlock()",
-      "why_read": "Base64 encoding is everywhere in the stacks you run; this one is fixed in public before the advisory, so patch planning starts now.",
-      "body": [
-        "A pull request to OpenSSL fixes CVE-2026-121481, a buffer overflow in EVP_EncodeBlock(), by returning -1 for invalid inputs: NULL input or output buffers, negative lengths, and lengths whose encoded size would not fit in an int. The author says the OpenSSL security team asked for it to be fixed publicly while the formal advisory is still pending.",
-        "The patch adds similar guards to EVP_DecodeBlock(), fixes an incorrect length check in base64encode() in http_client.c, adds tests and documents the new -1 returns. With more than 200 comments on Hacker News, expect distro updates soon; it pairs with the OpenJDK Base64 bug below as a rough week for encoders."
-      ],
-      "authors": [
-        "OpenSSL"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://github.com/openssl/openssl/pull/33652",
-      "discuss_url": "https://news.ycombinator.com/item?id=50569226",
-      "interests": [
-        "systems"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "gemini-neon-reactions",
-      "kicker": "FRONTIER MODELS",
-      "headline": "Day two of Gemini 4 Neon: Theo's capability-versus-coherence chart, a fries parable, and 100 HTML files",
-      "why_read": "You retweeted Theo twice, Mia's 100-file test and @petergyang's Opus comparison: the vibe check after the benchmarks.",
-      "body": [
-        "After Wednesday's launch, the reactions you shared fell into a pattern. MiaAI_lab asked Neon for 100 HTML files with no repeated designs and called it the closest thing to Opus and Fable she has tested. @petergyang compared it against Claude Opus 5.5 and found Opus still better at 3D and design, with Neon on par or better at writing and personality.",
-        "Theo's two posts were the most shared: a restaurant parable about a waiter who asks whether you want your fries medium rare too, about models that do exactly what you said rather than what you meant, and a diagram arguing that benchmarks only show capability, not coherence. SemiAnalysis even posted a playful apology after a Gemini RL researcher said his team kept an old SemiAnalysis article printed on their desks."
-      ],
-      "authors": [
-        "Theo",
-        "MiaAI_lab",
-        "@petergyang"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/theo/status/2123529106965004788",
-      "discuss_url": "https://x.com/theo/status/2123536846013755432",
+      "source_url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+      "discuss_url": "https://news.ycombinator.com/item?id=50574383",
       "interests": [
         "ai"
       ],
@@ -142,44 +119,133 @@
       "featured": true
     },
     {
-      "id": "nvidia-inception",
-      "kicker": "CHIPS",
-      "headline": "Nvidia is in advanced talks to buy diffusion-LLM developer Inception for more than $500 million",
-      "why_read": "Nvidia betting on diffusion language models, which generate text in parallel, is an inference story you will want to track.",
+      "id": "cybercab-phoenix",
+      "kicker": "ROBOTAXI",
+      "headline": "Cybercab spotted testing across Phoenix, and Tesla's Tempe site is already set up for Robotaxi",
+      "why_read": "You bookmarked and retweeted Robotaxi Radar's map of sightings: city three looks close.",
       "body": [
-        "The Information reports Nvidia is in advanced talks to acquire Inception, a developer of diffusion-based language models, for more than $500 million. Stephanie Palazzolo noted it is a sign the company's dealmaking machine is still humming even after Jensen Huang's departure as CEO.",
-        "Diffusion LLMs produce many tokens in parallel rather than one at a time, promising faster, cheaper generation on standard hardware. For a company that sells the hardware, owning that research is a hedge on how inference will look in two years."
+        "Robotaxi Radar collected Cybercab sightings across the Valley this fall: Scottsdale, Mesa, Chandler highways and south Phoenix near Sky Harbor. Tesla's Tempe site already shows parking and cleaning as open and ready for Robotaxi use, while Phoenix is still listed as \"coming soon\" from Tesla's Q2 deck.",
+        "Ryan Tanaka posted another Cybercab in Phoenix and asked the obvious question: \"They've gotta be launching soon, right?!\" After Austin and Dallas, Phoenix would put Cybercab directly into Waymo's oldest market."
       ],
       "authors": [
-        "Stephanie Palazzolo"
+        "Robotaxi Radar"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://www.theinformation.com/articles/nvidia-nears-acquisition-diffusion-ai-developer-500-million",
-      "discuss_url": "https://x.com/steph_palazzolo/status/2123549936880930945",
+      "source_url": "https://x.com/RobotaxiRadar/status/2123959862849651015",
+      "discuss_url": "https://x.com/RyanTanaka/status/2123929019326640138",
+      "interests": [
+        "tesla"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "lm-rewrites-own-weights",
+      "kicker": "AI RESEARCH",
+      "headline": "Language models can rewrite their own weights, no gradients required",
+      "why_read": "A genuinely new idea on the HN front page: an open 27B model acts as its own optimizer and gets better on problems it never saw.",
+      "body": [
+        "A new arXiv paper by Jiajun Fan and ten co-authors proposes \"self-rewriting\": an open 27B model is given its own weights, its graded answers and the ability to run itself, then diagnoses its failures and edits the weights behind them, with no gradients and no training run. The authors report that its own edit makes it 6.6 points more accurate on problems it never saw.",
+        "It keeps improving across eight consecutive sessions by testing edits on practice problems and submitting only what works. The authors also show it repairing a damaged copy of itself without retraining. Earlier work had a frontier model edit a much smaller one; here the model edits itself."
+      ],
+      "authors": [
+        "Jiajun Fan et al."
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://arxiv.org/abs/2611.21885",
+      "discuss_url": "https://news.ycombinator.com/item?id=50577265",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "gemini-4-neon-reviews",
+      "kicker": "MODELS",
+      "headline": "Gemini 4 Neon wins over the builders: \"the closest I've tested to Opus and Fable\"",
+      "why_read": "You retweeted Theo's verdict and Mia's 100-page design stress test: the model everyone in your feed is switching to this week.",
+      "body": [
+        "Theo posted a long video review with a short verdict: \"Gemini 4 Neon is an incredible model.\" Mia asked it to generate 100 HTML files that look stunning with zero repetitive designs, and called it the closest she has tested to Opus and Fable, and the first Google model she can use without frustration.",
+        "Dax went with receipts instead of vibes, sharing his team's model usage from last week, since \"people are always suspicious of model reviews.\""
+      ],
+      "authors": [
+        "Theo",
+        "Mia"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/theo/status/2123880652428988683",
+      "discuss_url": "https://x.com/MiaAI_lab/status/2123494425431359768",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "pstack-v0-15-46",
+      "kicker": "AGENT SKILLS",
+      "headline": "pstack v0.15.46 prunes its skills and adds Gemini 4 Neon as a panel reviewer",
+      "why_read": "You bookmarked it, and it auto-updates in the Grok Bot setup you run every day.",
+      "body": [
+        "Poteto shipped pstack v0.15.46 with lots of pruning, so skills are much shorter, and Gemini 4 Neon added as a panel reviewer. It auto-updates for Grok Bot and Cursor users; to change model routing, run /setup-pstack again.",
+        "A Japanese post you retweeted connects pstack's idea that code is the best memory with the advice not to keep ADRs and docs in the codebase, and weighs it against README-driven development."
+      ],
+      "authors": [
+        "Poteto"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/poteto/status/2123824683862855898",
+      "discuss_url": "https://x.com/i/status/2123739632710131750",
       "interests": [
         "ai",
         "systems"
       ],
       "lead": false,
-      "featured": true
+      "featured": false
     },
     {
-      "id": "postgresql-19",
-      "kicker": "DATABASES",
-      "headline": "PostgreSQL 19 ships with REPACK, planner advice and restart-free logical replication",
-      "why_read": "The release notes most systems people will actually act on this quarter: built-in bloat cleanup without blocking writes.",
+      "id": "gemma-llm-explainer",
+      "kicker": "LEARN",
+      "headline": "An interactive, in-browser walkthrough of how LLMs actually work, built on Gemma",
+      "why_read": "You retweeted Paige Bailey's pointer: tokenization through tool use, all running live in your browser.",
       "body": [
-        "PostgreSQL 19 was released on November 19. Headline features include a new REPACK command that reclaims disk space and reorganizes tables, with REPACK (CONCURRENTLY) working without blocking reads and writes; a pg_plan_advice extension for steering planner decisions plus pg_stash_advice to apply that advice automatically; and logical replication that can be enabled without a restart when wal_level is replica.",
-        "There is more: logical replication of sequence values, read-your-writes consistency on standbys via a new WAIT command, parallel autovacuum of indexes with a new prioritization score, automatic scaling of I/O workers and faster foreign-key checks. A companion Snowflake engineering post on REPACK is also on the front page."
+        "Paige Bailey shared Google Gemma's interactive explainer, which walks through how LLMs work under the hood, from tokenization and embeddings to attention, sampling and tool use, completely interactively in the browser.",
+        "It is a good link to send to anyone who wants intuition rather than a paper."
       ],
       "authors": [
-        "PostgreSQL Global Development Group"
+        "Paige Bailey"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/DynamicWebPaige/status/2123838129954255152",
+      "discuss_url": "https://x.com/DynamicWebPaige/status/2123838129954255152",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "dev-to-architect",
+      "kicker": "ENGINEERING",
+      "headline": "We promoted developers into architects without telling them",
+      "why_read": "Written for exactly your job title: when AI writes the code, knowing what each line costs is the new seniority.",
+      "body": [
+        "Mani Doraisamy describes a vibe-coded logging routine in a Google Forms add-on that tried to fetch the user's email, then the user ID, then logged an error, with each one-line call quietly making multiple API calls to Google. Because it ran first after install, the welcome screen took 15 seconds to load.",
+        "His point: an architect would have logged just a timestamp, or moved the lookup off the critical path, and talked to marketing about the trade-off. With AI writing code, every developer is now making architectural decisions, whether or not anyone told them."
+      ],
+      "authors": [
+        "Mani Doraisamy"
       ],
       "source": "hn",
       "source_label": "HN",
-      "source_url": "https://www.postgresql.org/docs/release/19.0/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50569890",
+      "source_url": "https://manidoraisamy.com/developer-to-architect.html",
+      "discuss_url": "https://news.ycombinator.com/item?id=50579331",
       "interests": [
         "systems"
       ],
@@ -187,21 +253,363 @@
       "featured": true
     },
     {
-      "id": "pancreatic-cancer-virus",
-      "kicker": "MEDICINE",
-      "headline": "Pancreatic cancer halted by a virus injection in three patients",
-      "why_read": "A small but striking result against one of the deadliest cancers, and the number two story on Hacker News.",
+      "id": "cybercab-dallas-82-sq-mi",
+      "kicker": "ROBOTAXI",
+      "headline": "Dallas Robotaxi zone grows to 82 square miles as early Cybercab riders report sub-5-minute waits",
+      "why_read": "You retweeted Ethan McKanna's ride report from Tesla's second Cybercab city.",
       "body": [
-        "New Scientist reports that an injected virus halted pancreatic cancer in three patients. Pancreatic cancer is notoriously hard to treat and is usually caught late, which is why even a tiny early result drew more than 800 points on Hacker News.",
-        "Three patients is a case series, not a trial, so read it as a signal worth following rather than a cure. The discussion thread is a good place to see what oncologists and researchers make of the approach."
+        "Tesla expanded its Dallas Robotaxi zone to about 82 square miles, adding a northeast section along North Central Expressway that includes The Hill Supercharger for easier fleet charging, according to X's news summary. The zone started at 31 square miles in April.",
+        "Ethan McKanna says Cybercab in Dallas is \"working flawlessly\" with sub-five-minute waits and perfect driving so far, and that he is seeing a ton of them on the road."
       ],
       "authors": [
-        "New Scientist"
+        "Ethan McKanna"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/ethanmckanna/status/2123920081587511329",
+      "discuss_url": "https://x.com/i/trending/2123775584585105868",
+      "interests": [
+        "tesla",
+        "texas"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "robotaxi-highway",
+      "kicker": "ROBOTAXI",
+      "headline": "Tesla Robotaxi highway access coming soon?",
+      "why_read": "You retweeted Sawyer Merritt's teaser: highways are what turn a robotaxi from a neighborhood shuttle into airport runs.",
+      "body": [
+        "Sawyer Merritt quoted a post hinting that Tesla Robotaxi may soon be allowed on highways, asking \"Tesla robotaxi highway access coming soon?\"",
+        "Robotaxi Radar's Phoenix post already logged Cybercab sightings on Chandler highways, so the testing appears to be underway."
+      ],
+      "authors": [
+        "Sawyer Merritt"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/SawyerMerritt/status/2123872430905020864",
+      "discuss_url": "https://x.com/SawyerMerritt/status/2123872430905020864",
+      "interests": [
+        "tesla"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "tesla-shareholder-meeting",
+      "kicker": "TESLA",
+      "headline": "Tesla sends invites for its 2026 annual shareholder meeting at Giga Texas on December 3",
+      "why_read": "You retweeted it: an Austin event two weeks out, with a possible SpaceX tie-up in the background.",
+      "body": [
+        "Sawyer Merritt reports that Tesla has started sending invites to its 2026 annual shareholder meeting at Giga Texas on December 3.",
+        "X's news summaries note special committees are already exploring a potential Tesla-SpaceX deal that would need shareholder approval, which makes this year's meeting more interesting than usual."
+      ],
+      "authors": [
+        "Sawyer Merritt"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/SawyerMerritt/status/2123949300145144276",
+      "discuss_url": "https://x.com/SawyerMerritt/status/2123949300145144276",
+      "interests": [
+        "tesla",
+        "texas"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "optimus-factory-giga-presses",
+      "kicker": "OPTIMUS",
+      "headline": "Tesla's 7-million-square-foot Optimus factory at Giga Texas will apparently use Giga Presses",
+      "why_read": "You retweeted Sawyer's catch from Joe Tegtmeyer's drone footage of the build site down the road from you.",
+      "body": [
+        "Sawyer Merritt points out that Tesla's new 7 million square foot Optimus factory at Giga Texas looks set to use Giga Presses, quoting Joe Tegtmeyer's footage of the site.",
+        "Separately, new close-ups of Optimus's hands show exposed boards and wiring, and Musk said he expects the robot to handle full dishwashing in 12 to 18 months, per X's news summary."
+      ],
+      "authors": [
+        "Sawyer Merritt"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/SawyerMerritt/status/2123871696469864948",
+      "discuss_url": "https://x.com/JoeTegtmeyer/status/2123838390843961444",
+      "interests": [
+        "tesla",
+        "texas"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "mkbhd-cybercab-bet",
+      "kicker": "ROBOTAXI",
+      "headline": "Marques Brownlee honors his 2024 Cybercab bet with a deposit in Austin",
+      "why_read": "You bookmarked and retweeted it: a famously skeptical reviewer putting $1,000 down, and picking your city.",
+      "body": [
+        "Marques Brownlee said he will \"honor the spirit of the bet\" he made in 2024. He was invited to buy a Cybercab, submitted a $1,000 non-refundable deposit, and selected Austin, Texas.",
+        "If Tesla tells him his Cybercab is ready, he says, he will fly down to Austin to get it."
+      ],
+      "authors": [
+        "Sawyer Merritt"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/SawyerMerritt/status/2123818714990567933",
+      "discuss_url": "https://x.com/SawyerMerritt/status/2123818714990567933",
+      "interests": [
+        "tesla",
+        "life"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "valkey-fbtree",
+      "kicker": "DATABASES",
+      "headline": "Valkey replaces the skiplist with a B+ tree and cuts sorted-set overhead by up to 43%",
+      "why_read": "A clean systems deep dive: why a classic data structure lost to cache-friendly contiguous memory.",
+      "body": [
+        "In Valkey 9.2, large sorted sets are no longer backed by a skiplist. The team built fbtree, a high-fanout B+ tree variant with SIMD searches, linked leaves and fast paths for sequential inserts and pops. In a 5-million-member test it reduced per-member memory overhead by 36 to 43%, saving up to 109 MB.",
+        "The post breaks down why: a skiplist stores one element per node in scattered allocations, with a backward pointer plus an average of 1.33 levels of forward pointers and span values, which adds up to around 29 bytes of overhead per member before the data itself."
+      ],
+      "authors": [
+        "Rain Valentine",
+        "Dragos Andriciuc"
       ],
       "source": "hn",
       "source_label": "HN",
-      "source_url": "https://www.newscientist.com/article/2528235-pancreatic-cancer-halted-by-virus-injection-in-three-patients/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50563066",
+      "source_url": "https://valkey.io/blog/from-skiplist-to-b+tree/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50534387",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "vibecoding-inference-chip",
+      "kicker": "CHIPS",
+      "headline": "Vibecoding an inference chip: getting an FPGA to run an LLM with coding agents",
+      "why_read": "Inference hardware plus AI coding tools, two of your beats in one hands-on story.",
+      "body": [
+        "Ankit Gupta knew little about FPGAs, so he pointed coding agents and a large token budget at one and tried to get it running an LLM. He recounts a series of \"oh shit\" moments, and says it just worked.",
+        "His larger point: coding agents let you work in entirely new domains, and low-level hardware is now one of them."
+      ],
+      "authors": [
+        "Ankit Gupta"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://ankitg.me/blog/vibecoding-inference-chip/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50579297",
+      "interests": [
+        "ai",
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "dreamcoder",
+      "kicker": "DEV TOOLS",
+      "headline": "DreamCoder: a GUI-first AI coding harness from the author of Mastering Emacs",
+      "why_read": "A thoughtful counterpoint to terminal-first agents, from someone who has used Claude Code since its first week.",
+      "body": [
+        "Mickey Petersen spent fifteen months building DreamCoder, an AI coding harness and IDE that he says is very different from the ones you know. He installed Claude Code days after its 2025 release and was struck by the speed, but also by the odd choice of a terminal as the primary interface.",
+        "His complaint: why stare at a shoe-rack-sized terminal window, when most GUI versions are second-class citizens? DreamCoder is his answer."
+      ],
+      "authors": [
+        "Mickey Petersen"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://www.masteringemacs.org/article/announcing-dreamcoder",
+      "discuss_url": "https://news.ycombinator.com/item?id=50581110",
+      "interests": [
+        "ai",
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "gpgme-double-free",
+      "kicker": "SECURITY",
+      "headline": "Critical GPGME bug: a crafted OpenPGP user ID triggers a double free; patch now",
+      "why_read": "Update notice for anyone who signs commits or mail: Werner Koch says RCE \"can't be ruled out.\"",
+      "body": [
+        "GnuPG released GPGME 2.3.1 to fix a critical bug in all prior versions (CVE-2026-129975). An OpenPGP key with a crafted, very long user ID can trigger a double free that could be used to exfiltrate data from applications, and remote code execution can't be ruled out. New Gpg4win and GnuPG Desktop builds ship the fix.",
+        "Johan Carlsson found it and GitLab reported it on November 12. Disclosure was moved up from November 25 because of a separate bug that forced GitLab to update early."
+      ],
+      "authors": [
+        "Werner Koch"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html",
+      "discuss_url": "https://news.ycombinator.com/item?id=50587208",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "starfactory-cadence",
+      "kicker": "STARSHIP",
+      "headline": "Inside Starfactory: one Starship upper stage every two weeks, a booster every four",
+      "why_read": "The follow-through on Flight 15's tower catch: production rate is now the story.",
+      "body": [
+        "After Flight 15, where Ship 42 reached orbit, deployed 26 Starlink V3 satellites and became the first upper stage caught by the tower, X's news summary reports that teams inside Starfactory now build one upper stage every two weeks and a booster every four.",
+        "The booster from that flight splashed down in the Gulf after an automated abort, and debris washed up on a beach in Mexico, which SpaceX says it is clearing."
+      ],
+      "authors": [
+        "SpaceX"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2123819675490664925",
+      "discuss_url": "https://x.com/i/trending/2123530004290040310",
+      "interests": [
+        "space"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "spacex-chips-stay-on-earth",
+      "kicker": "SPACE + CHIPS",
+      "headline": "Lenders on a $44 billion Nvidia Vera Rubin deal want SpaceX's chips kept on Earth",
+      "why_read": "Orbital compute meets credit risk: you cannot repossess a GPU in orbit.",
+      "body": [
+        "Lenders behind a roughly $44 billion financing of Nvidia Vera Rubin GPUs leased to SpaceX want legal clauses preventing the chips from being launched into space, because repossession and resale on default would be impossible in orbit, according to X's news summary.",
+        "SpaceX says these chips stay in U.S. ground data centers, even as it eyes orbital compute projects starting in late 2027."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2123762717333053449",
+      "discuss_url": "https://x.com/i/trending/2123049224098979964",
+      "interests": [
+        "space",
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "starbase-datacenter-tax",
+      "kicker": "TEXAS",
+      "headline": "Cameron County halts a tax break for SpaceX's $24 billion Starbase data center and gas plant",
+      "why_read": "Data centers, power plants and Texas politics: the same anti-datacenter mood Dan Ives flagged, at county level.",
+      "body": [
+        "Cameron County commissioners voted 3-2 to halt a public hearing on a 10-year, 100% property tax abatement for SpaceX's proposed $24 billion data center and natural gas power plant at Starbase, per X's news summary. The project promises 500 permanent jobs on 444 acres near Brownsville.",
+        "It already has its air permit and can proceed without the incentive."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2123577296292376852",
+      "discuss_url": "https://x.com/i/trending/2123577296292376852",
+      "interests": [
+        "space",
+        "energy",
+        "texas"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "spacex-launch-shortage",
+      "kicker": "LAUNCH",
+      "headline": "The West faces a shortfall of about 150 medium and heavy launches through 2030",
+      "why_read": "Why Starship cadence matters beyond SpaceX: everyone else's rockets are behind.",
+      "body": [
+        "U.S. and European launch capacity is short about 150 medium- and heavy-lift flights through 2030, per X's news summary, driven by SpaceX scaling back Falcon 9 rideshares after 2028, a recent Vulcan failure that lost 40 Amazon satellites, and delays at rivals like New Glenn.",
+        "Proposed fixes include pushing Falcon 9 to 100 to 150 launches a year and Space Force backing for a Starship spaceport."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2123894777816945083",
+      "discuss_url": "https://x.com/i/trending/2123894777816945083",
+      "interests": [
+        "space"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "dragon-science-return",
+      "kicker": "SPACE SCIENCE",
+      "headline": "Dragon heads home with bioprinted blood vessels and tumor organoids from the ISS",
+      "why_read": "Quiet science: what actually comes back on a cargo return.",
+      "body": [
+        "SpaceX's Dragon undocked from the ISS on November 20 after 36 days and more than 6,300 pounds of deliveries, per X's news summary. It carries 3D-bioprinted blood vessels for heart disease studies, frozen tumor organoids for cancer research, and samples of antibiotic-resistant bacteria.",
+        "The capsule will splash down off California."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2123831473707102532",
+      "discuss_url": "https://x.com/i/trending/2123831473707102532",
+      "interests": [
+        "space",
+        "science"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "hera-brian-may-3d",
+      "kicker": "ASTEROIDS",
+      "headline": "Sir Brian May turns Hera's views of the Didymos asteroid into 3D",
+      "why_read": "Physics, astronomy and a rock star: a delightful one.",
+      "body": [
+        "Astrophysicist and Queen guitarist Sir Brian May, a member of ESA's Hera science team, built stereoscopic images of the Didymos asteroid from two frames Hera captured on November 6 at 29.7 km with 2.8 m per pixel resolution.",
+        "In depth, he says, the sharpness of Didymos's equatorial ridge stands out against the rock-strewn surface. Principal investigator Patrick Michel says the 3D view makes the team feel like they are there, even from 197 million km away."
+      ],
+      "authors": [
+        "ESA"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/sir-brian-may-adds-new-dimension-to-hera-asteroid",
+      "discuss_url": "https://news.ycombinator.com/item?id=50583768",
+      "interests": [
+        "space",
+        "science"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "neuralink-blindsight-gta",
+      "kicker": "NEUROTECH",
+      "headline": "Neuralink: a patient plays GTA VI with his thoughts, and Blindsight awaits approval",
+      "why_read": "Human-interest and hard tech: from a mouth stick to two joysticks and 12 buttons.",
+      "body": [
+        "Elon Musk shared a video of a Neuralink participant controlling the newly launched GTA VI with full PlayStation-style inputs decoded from over 1,000 neural channels, per X's news summary. Before the implant he used a mouth stick for his iPad.",
+        "Musk also described Blindsight, which sends camera signals directly to the visual cortex to create light patterns called phosphenes. It has FDA Breakthrough Device designation from 2024 and could help anyone with an intact visual cortex."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2123897565972402434",
+      "discuss_url": "https://x.com/i/trending/2123953247585026367",
       "interests": [
         "science",
         "life"
@@ -210,466 +618,69 @@
       "featured": false
     },
     {
-      "id": "java4shell-openjdk",
-      "kicker": "SECURITY",
-      "headline": "\"java4shell\": an OpenJDK AVX-512 Base64 decoder bug that can corrupt the heap",
-      "why_read": "If you run Java on modern x86 servers, this is the bug behind the scary nickname, reported back in September.",
+      "id": "agent-research-journal",
+      "kicker": "AI AGENTS",
+      "headline": "Nearly 1,000 AI agents ran independent research and invented their own peer review",
+      "why_read": "A glimpse of agent swarms doing science, with the self-correction built in.",
       "body": [
-        "The OpenJDK pull request describes a bug in the x86_64 AVX-512 VBMI path of the Base64 decode stub. For leftover tails under four bytes on invalid input, the computed output size can go below zero, producing a wrong output mask so the stub writes past the logical output length before returning to Java, corrupting the heap.",
-        "Valid Base64 always has a length that is a multiple of four, so only invalid inputs trigger it, but services decode untrusted Base64 all the time. The suggested fix is an early return to Java when the length is under four. Hacker News latched on to the fact that it was reported in September 2026."
-      ],
-      "authors": [
-        "OpenJDK"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://github.com/openjdk/jdk/pull/32781",
-      "discuss_url": "https://news.ycombinator.com/item?id=50558906",
-      "interests": [
-        "systems"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "synology-oauth-cve",
-      "kicker": "SECURITY",
-      "headline": "Synology warns of a critical CVSS 9.8 flaw in DSM's OAuth API",
-      "why_read": "Homelab and NAS owners: the mitigation is a single toggle, and patched DSM builds are due today.",
-      "body": [
-        "Synology advisory SA-26:21 covers CVE-2026-120382, an argument-injection flaw in the OAuth API of DiskStation Manager that lets remote attackers read or write arbitrary files and cause denial of service, rated CVSS 9.8. BeeStation OS 1.5 and DSM 7.1 through 7.4 are listed as critical.",
-        "Fixed releases DSM 7.4.1-90080-2 and 7.3.2-86009-6 are scheduled by November 20; older 7.2 branches are told to upgrade to 7.3.2. Until then, Synology's mitigation is to deactivate the OAuth Service package."
-      ],
-      "authors": [
-        "Synology"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://www.synology.com/en-uk/security/advisory/Synology_SA_26_21",
-      "discuss_url": "https://news.ycombinator.com/item?id=50567209",
-      "interests": [
-        "systems"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "grok-bot-obsidian",
-      "kicker": "GROK BOT",
-      "headline": "Grok Bot can now connect to your Obsidian vault",
-      "why_read": "You bookmarked it, and it is the exact plumbing your own notes setup runs on.",
-      "body": [
-        "Obsidian announced that Grok Bot can now connect to an Obsidian vault to create, search and manage notes. It can update links, capture content from the web, and create Bases and Canvas files.",
-        "Changes sync to your devices through Obsidian Sync, so what an agent writes shows up on your phone and laptop like any other edit."
-      ],
-      "authors": [
-        "Obsidian"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/obsdmd/status/2123484964268413341",
-      "discuss_url": "https://x.com/obsdmd/status/2123484964268413341",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "grok-bot-phone-calls",
-      "kicker": "GROK BOT",
-      "headline": "Matt Palmer's walkthrough: making phone calls right inside Grok Bot",
-      "why_read": "A seven-minute bookmark that covers limits, handing a live call back to you, and confirming who it calls.",
-      "body": [
-        "Matt Palmer posted a video walkthrough of phone calls in Grok Bot, with chapters on how it works, limits, calling a business, phone calls as a tool, handing a call off to a human, confirming who it calls, and the live transcript.",
-        "It ends with what he would use it for. Worth a watch if you have been wondering how much of the hold-music part of life an agent can take over."
-      ],
-      "authors": [
-        "Matt Palmer"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/mattyp/status/2123437208283869276",
-      "discuss_url": "https://x.com/mattyp/status/2123437208283869276",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "grok-bot-crews",
-      "kicker": "GROK BOT",
-      "headline": "People are running teams of Grok Bots as round-the-clock crews",
-      "why_read": "A look at how others structure bot teams, from someone who runs a fleet of his own.",
-      "body": [
-        "X's news summary collects posts from people teaming up Grok Bots into always-on crews that handle invoices, payments, support tickets, PR, research and operations after humans log off. One solo founder runs six bots and says their own replies are now the main bottleneck.",
-        "Bookmarks from the same day add texture: Larsen Cundric says he ships faster with Grok Bot than he did with Claude Code and Codex, and Aryan Vij showed marketplace bots running on existing AI subscriptions."
+        "Per X's news summary, the agents produced 936 studies with code, data and model weights, exchanged 9,500 messages across 229 rooms, and reported negative results more often than human preprints do.",
+        "They founded a Journal of Agent Research, where automated checks overturned nearly half of challenged claims, and publicly retracted errors."
       ],
       "authors": [
         "X News"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/i/trending/2123733037145796744",
-      "discuss_url": "https://x.com/larsencc/status/2123526383444148253",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "poteto-11000-prs",
-      "kicker": "AI CODING",
-      "headline": "Poteto's \"All Code Is Slop (Except Mine)\" talk hits a million views",
-      "why_read": "You bookmarked it: the engineering behind 11,000 production PRs in one month, and the fastest AI.Engineer talk to a million views.",
-      "body": [
-        "AI.Engineer says the talk by poteto of SpaceXAI is its fastest ever to reach one million views. It covers the engineering behind 11,000 production pull requests in a single month.",
-        "The title is the hook, but the substance is how a team keeps that volume of agent-written code shippable, which is the problem every AI coding setup runs into after the demo phase."
-      ],
-      "authors": [
-        "AI.Engineer"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://www.youtube.com/watch?v=O_zcc6Xl12g",
-      "discuss_url": "https://x.com/aiDotEngineer/status/2123453748785684806",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "rauchg-1000x-engineer",
-      "kicker": "AI CODING",
-      "headline": "Guillermo Rauch's math: the outcome-oriented engineer is now 1000x, the tabs-vs-spaces debater is -10x",
-      "why_read": "You retweeted and bookmarked it: a crisp framing for which engineering habits AI amplifies and which it punishes.",
-      "body": [
-        "Vercel's CEO posted his version of whether engineering is still a valuable pursuit. An outcome-oriented, creative engineer is now a 1000x engineer; a tabs-versus-spaces-debating, miss-the-forest-for-the-trees engineer is now a -10x engineer; and the regular knowledge worker becomes a 2x engineer.",
-        "It is a provocation, but it matches what you see in your own fleet: the leverage goes to whoever can name the outcome and judge the result."
-      ],
-      "authors": [
-        "Guillermo Rauch"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/rauchg/status/2123505400591106113",
-      "discuss_url": "https://x.com/rauchg/status/2123505400591106113",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "vercel-board",
-      "kicker": "AGENTS",
-      "headline": "Vercel Board: a headless message board for humans and agents",
-      "why_read": "You retweeted it: bring your own UI to shared threads, teams and agents.",
-      "body": [
-        "Chris Tate introduced Vercel Board, a message board for humans and agents that is headless, which he stresses means any UI, not no UI. People visualize work differently, as chat, boards or a terminal, so you can ask your agent to build the interface you want while threads, team and agents stay shared.",
-        "His post includes ten examples of interfaces built on top of it. The idea, a shared backend for agent work with disposable frontends, is the same pattern as your own canvases and pages."
-      ],
-      "authors": [
-        "Chris Tate"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/ctatedev/status/2123585277536944319",
-      "discuss_url": "https://x.com/ctatedev/status/2123585277536944319",
+      "source_url": "https://x.com/i/trending/2123485364841296259",
+      "discuss_url": "https://x.com/i/trending/2123485364841296259",
       "interests": [
         "ai",
-        "systems"
+        "science"
       ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "slack-226k-agents",
-      "kicker": "AGENTS",
-      "headline": "Benioff: 226,000 custom agents have been deployed to Slack",
-      "why_read": "You bookmarked it: Slack quietly becoming agent infrastructure, with Devin Bots as the example.",
+      "id": "starlink-ebola-schools",
+      "kicker": "KINDNESS",
+      "headline": "Starlink kits help Ebola responders in Congo and connect 800 remote schools in Paraguay",
+      "why_read": "The love-and-kindness slot: connectivity where it saves lives and opens classrooms.",
       "body": [
-        "Marc Benioff wrote that Salesforce never thought of this when it bought Slack, but is now inspired by how Cognition and others are using Slack as trusted agent infrastructure. He says 226,000 custom agents have been deployed to Slack from every major agent-builder platform.",
-        "Cognition's Devin Bots were his headline example, and Cognition leaned in the same day with DevinDash, below."
-      ],
-      "authors": [
-        "Marc Benioff"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/Benioff/status/2123249365875904551",
-      "discuss_url": "https://x.com/Benioff/status/2123249365875904551",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "devindash",
-      "kicker": "AGENTS",
-      "headline": "Cognition launches DevinDash: order DoorDash through a Devin Bot",
-      "why_read": "A playful launch with a serious subtext: MCP connectors turning agents into everyday errand runners.",
-      "body": [
-        "Cognition introduced DevinDash, which lets you order food with the DoorDash MCP and a Devin Bot, and is offering startups $1,000 of free DoorDash. X's summary says it runs on Cognition's new persistent Devin Bots, which pursue ongoing goals with minimal oversight.",
-        "Cognition also ran a promo where users haggled by text with a bot for credits. It is marketing, but it shows where the agent platforms are competing: on reach into the apps people already use."
-      ],
-      "authors": [
-        "Cognition"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/cognition/status/2123488248785981596",
-      "discuss_url": "https://x.com/cognition/status/2123488248785981596",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "openai-research-agents",
-      "kicker": "AI RESEARCH",
-      "headline": "OpenAI: agents now complete 46% of its researchers' two-to-four-hour tasks",
-      "why_read": "Hard data on how long a task agents can actually own, from inside a frontier lab.",
-      "body": [
-        "OpenAI shared new data on how AI is changing research at the company, covering March to October 2026. Per X's summary, agents completed 46% of two-to-four-hour tasks autonomously, up from 23%, and 35% of four-to-eight-hour tasks, up from 13%. Success varied widely by task type, from 79% for monitoring training runs to 25% at the low end.",
-        "OpenAI's own framing: researchers' AI use continues to rise exponentially and agents handle longer tasks, but human involvement remains central, and researchers are spending more time on safety."
-      ],
-      "authors": [
-        "OpenAI"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/OpenAI/status/2123191365983248653",
-      "discuss_url": "https://x.com/i/trending/2123072001992798394",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "anthropic-unit-economics",
-      "kicker": "AI MARKETS",
-      "headline": "How Anthropic makes money: compute eats 58 cents of every revenue dollar",
-      "why_read": "You bookmarked the chart twice: the unit economics underneath the trillion-dollar listing.",
-      "body": [
-        "App Economy Insights broke down Anthropic's filing: Q3 revenue of $17.0 billion, up 47% quarter over quarter; compute costs of $9.9 billion, up 77%; and an operating loss of $567 million. That puts compute at roughly 58 cents of every dollar of revenue.",
-        "Compute growing faster than revenue is the number bulls and bears are both looking at. Pair it with the SpaceX compute deal and the debut story above."
-      ],
-      "authors": [
-        "App Economy Insights"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/EconomyApp/status/2123434542187110493",
-      "discuss_url": "https://x.com/QuinnyPig/status/2123539550421282972",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "deepmind-after-agi",
-      "kicker": "AI ESSAYS",
-      "headline": "DeepMind's essay: what comes after AGI, and four roads to superintelligence",
-      "why_read": "A structured way to think about the next step, from the lab whose model you were testing all week.",
-      "body": [
-        "A new DeepMind Institute essay argues that with AGI coming within reach, researchers can no longer put off asking what follows. It treats general intelligence as a continuum and introduces cognitive industrialization as a frame for what AGI does to the economy.",
-        "It lays out four pathways from AGI to artificial superintelligence: scaling models and data, technological paradigm shifts, improving agent coordination, and recursive self-improvement, and calls for rigorous ways to track progress along each. X's summary notes it is backed by a technical report with 14 authors including Shane Legg."
-      ],
-      "authors": [
-        "Google DeepMind"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://institute.deepmind.com/essays/what-comes-after-agi/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50569519",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "chinese-open-weights",
-      "kicker": "OPEN MODELS",
-      "headline": "The debate over whether Chinese open-weight models can dent Anthropic's lead",
-      "why_read": "The open-model beat you follow, framed against the biggest IPO in history.",
-      "body": [
-        "X's news summary collects a debate over whether fast-improving open-weight models from Chinese labs, Z.ai's GLM 5.3, Alibaba's Qwen series, Moonshot's Kimi K3 and DeepSeek V4, could disrupt Anthropic's market lead. Practitioners say they already use these cheaper options for coding and summarization.",
-        "The timing matters: the conversation peaked the day Anthropic listed, as people asked how durable frontier pricing is when open weights keep closing the gap."
+        "Africa CDC donated Starlink kits to frontline teams in Beni, in the Democratic Republic of the Congo, speeding surveillance, case reporting and logistics during the country's 17th Ebola outbreak, according to X's news summary.",
+        "In Paraguay, SpaceX provided 1,600 kits that have connected 800 remote schools so far, including Indigenous communities in the Chaco, with another 400 on the way and hospitals planned."
       ],
       "authors": [
         "X News"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/i/trending/2123662178935046577",
-      "discuss_url": "https://x.com/i/trending/2123662178935046577",
+      "source_url": "https://x.com/i/trending/2124074392036741410",
+      "discuss_url": "https://x.com/i/trending/2124074392036741410",
       "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "palo-alto-applied-compute",
-      "kicker": "AI DEALS",
-      "headline": "Palo Alto Networks buys Applied Compute for $4.5 billion",
-      "why_read": "You bookmarked the founder profile: a 23-year-old Stanford dropout's 18-month-old company, built on enterprises running open-weight models.",
-      "body": [
-        "Palo Alto Networks announced an all-stock acquisition of Applied Compute, founded 18 months ago by former OpenAI staff Yash Patil, Rhythm Garg and Linden Li. X's summary says the company reached $100 million in annualized revenue helping enterprises securely train and run open-weight models.",
-        "Moneycontrol profiled Patil, the 23-year-old Stanford dropout at the center of it. For enterprise IT, the signal is that private open-weight deployment is now worth billions to a security vendor."
-      ],
-      "authors": [
-        "Chandra R. Srikanth"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://www.moneycontrol.com/news/business/startup/who-is-yash-patil-the-23-year-old-stanford-dropout-who-sold-his-ai-startup-to-palo-alto-for-4-5-billion-14084804.html",
-      "discuss_url": "https://x.com/chandrarsrikant/status/2123378519522836628",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "tesla-grok-landmarks",
-      "kicker": "TESLA",
-      "headline": "Ask Grok in your Tesla about anything you see, and it tells you where you are and its history",
-      "why_read": "You retweeted it: one of the most slept-on features for anyone who drives with Grok every day.",
-      "body": [
-        "Mike P called it one of the most slept-on Tesla features: when you are traveling and see something interesting in the distance, you can just describe it, and Grok figures out where you are, what you are talking about, and gives you its history.",
-        "It is a small thing that makes the car feel like a tour guide, and a good use of Grok's location context in the cabin."
-      ],
-      "authors": [
-        "Mike P"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/mikepat711/status/2123492338525765796",
-      "discuss_url": "https://x.com/mikepat711/status/2123492338525765796",
-      "interests": [
-        "tesla",
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "boring-nashville-airport",
-      "kicker": "INFRASTRUCTURE",
-      "headline": "Boring Company will pay Nashville's airport to run a tunnel to the terminal",
-      "why_read": "You retweeted it: an unusual deal structure where the tunnel builder pays the airport, not the other way around.",
-      "body": [
-        "Steph Debour writes that Boring Company is paying Nashville's airport to run a tunnel to the terminal. It will cost Boring $343 million in fees over up to 50 years, and Boring pays for the tunnel itself. The deal was signed this week.",
-        "If it works, the post argues, more airports will be calling. It flips the usual public-infrastructure model where the city funds construction."
-      ],
-      "authors": [
-        "Steph Debour"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/StephDebour/status/2123453752023642502",
-      "discuss_url": "https://x.com/StephDebour/status/2123453752023642502",
-      "interests": [
-        "systems"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "starlink-seattle-11100",
-      "kicker": "SPACE",
-      "headline": "Starlink started with a speech in Seattle; now it is 11,100 satellites in 174 countries",
-      "why_read": "You bookmarked Musk's one-liner: an eleven-year retrospective on the network that now underpins Cybercab connectivity too.",
-      "body": [
-        "Elon Musk quoted a post recalling that in 2015 he opened SpaceX's satellite office in Seattle and said the company wanted to change satellites the way it changed rockets. That post says Starlink now has more than 11,100 satellites in orbit, works in 174 countries, has 13.6 million users and is on more than 3,800 planes.",
-        "It connects remote villages, ships at sea, and people after disasters when normal networks are down. Musk's comment: \"Starlink started with a speech in Seattle.\""
-      ],
-      "authors": [
-        "Elon Musk"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/elonmusk/status/2123333341932052749",
-      "discuss_url": "https://x.com/AsFoundX/status/2123059516749029756",
-      "interests": [
-        "space"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "heat-pump-washer-1kwh",
-      "kicker": "ENERGY",
-      "headline": "A ventless heat-pump washer-dryer on a normal outlet: 1 kWh a day for a family of four",
-      "why_read": "You retweeted it: energy-efficient appliances that actually change the household math.",
-      "body": [
-        "Slye's washer-dryer combo has a ventless heat pump, runs on a normal outlet, and by Slye's account uses just 1 kWh per day to wash and dry all the clothes for a family of four.",
-        "No vent, no 240-volt circuit, and a tiny energy footprint: it is the kind of quiet efficiency win that adds up across a home running on solar and batteries."
-      ],
-      "authors": [
-        "Slye"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/slye/status/2123425263619047611",
-      "discuss_url": "https://x.com/slye/status/2123425263619047611",
-      "interests": [
-        "energy",
+        "space",
         "life"
       ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "vint-cerf-tcpip",
-      "kicker": "INTERNET HISTORY",
-      "headline": "Vint Cerf on why TCP/IP was never patented",
-      "why_read": "A lovely interview: the co-designer of TCP/IP on openness, debugging, and building an internet between planets at 83.",
+      "id": "discobox-software-factory",
+      "kicker": "AGENT OPS",
+      "headline": "Darren Shepherd open-sources his software factory built on discobox and skills",
+      "why_read": "You retweeted it: a real agent factory you can point your own agent at and ask how it works.",
       "body": [
-        "João Tomé launched his Future Stories podcast with Vint Cerf, who co-designed TCP/IP with Bob Kahn in the 1970s. On patents, Cerf explained they did not know who their allies would be 25 years later, so the only way to make sure they had access was to simply open it up.",
-        "Cerf, 83, left Google this year after more than twenty years and is helping start Tolero, which builds software for an interplanetary internet. His line: \"the speed of light is too slow.\" There is also a good debugging story involving his friend Steve Crocker."
+        "Darren Shepherd says his software factory is built on discobox and skills, and published the repos, discobox-ai/factory-demo and discobox-ai/manager, suggesting you ask your agent to explain what is in them.",
+        "Warp, also in your retweets, launched the first two units of its learning series at warp.dev/learn."
       ],
       "authors": [
-        "João Tomé"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://seremot.com/p/vint-cerf-on-why-tcpip-was-never",
-      "discuss_url": "https://news.ycombinator.com/item?id=50568861",
-      "interests": [
-        "systems",
-        "life"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "rex-over-ssh",
-      "kicker": "DEV TOOLS",
-      "headline": "Mitchell Hashimoto: exe.dev's Rex now works across SSH with a one-command install",
-      "why_read": "You retweeted it, and exe.dev is a tool you track: remote dev environments installed with a single ssh:// command.",
-      "body": [
-        "Mitchell Hashimoto shared a recently shipped feature: Rex now works across SSH, including one command to install over SSH, rex server install ssh://<address>, after which you are up and running. He says it works in all of their clients.",
-        "Separately he joked that he shared a terminal specification proposal with a group including people working on Claude Code and forgot it was their IPO day, posting a screenshot of everyone's Slack status."
-      ],
-      "authors": [
-        "Mitchell Hashimoto"
+        "Darren Shepherd"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/mitchellh/status/2123516770812387809",
-      "discuss_url": "https://x.com/exedev/status/2123497208389718211",
+      "source_url": "https://x.com/ibuildthecloud/status/2123483773534863684",
+      "discuss_url": "https://github.com/discobox-ai/factory-demo",
       "interests": [
+        "ai",
         "systems"
       ],
       "lead": false,

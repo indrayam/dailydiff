@@ -136,7 +136,7 @@ a {
 
 .error-page {
   max-width: 760px;
-  margin-top: 24pt;
+  margin-top: 0;
   margin-bottom: 10pt;
 }
 

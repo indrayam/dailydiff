@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700;6..72,800;6..72,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:wght@400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700;6..72,800;6..72,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:wght@400;600;700;900&family=Fraunces:opsz,wght@9..144,300&display=swap");
 
 :root {
   --bg-page: #ffffff;
-  --bg-page-image: url("./images/blue-dash.gif");
+  --bg-page-image: none;
   --bg-sheet: #ffffff;
   --bg-well: #ffffff;
   --bg-quote: #fcf7f4;
@@ -68,106 +68,52 @@ a {
   padding: 0 0 4rem;
 }
 
-/* Emma chrome sits on the dash field; the newspaper is the .post panel.
-   Shared site chrome and content use the same 760px desktop cap. The
-   newspaper may expand on genuinely wide screens for its three-column layout. */
+/* Site header: just the site links, centered, styled like the Home page menu. */
 .site-header {
-  position: relative;
-  z-index: 2;
-  width: auto;
-  color: var(--ink);
-  padding-top: 1px;
-  margin-top: 24pt;
-  margin-bottom: 10pt;
-  overflow: visible;
-  font-size: 17px;
-  line-height: normal;
-  -webkit-font-smoothing: auto;
-  -moz-osx-font-smoothing: auto;
+  margin-top: 18px;
+  margin-bottom: 14px;
 }
 
-.site-header-portrait {
-  float: left;
-  padding-right: 12px;
-  margin-left: 12pt;
-}
-
-.site-header-portrait img {
-  display: block;
-  box-sizing: content-box;
-  width: 120px;
-  height: 148px;
-  border: 1px solid #000000;
-}
-
-.site-header-title {
-  font-family: var(--font-display);
-  font-weight: 900;
-  font-size: 2em;
-  line-height: normal;
-  color: var(--ink);
+.site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 22px;
   margin: 0;
-  padding-top: 1pt;
-}
-
-.site-header-tagline {
-  font-family: var(--font-body);
-  font-weight: 400;
-  font-size: 1.17em;
-  color: var(--rule);
-  line-height: normal;
-  margin: 0 0 1em;
-  padding-top: 0;
-}
-
-.site-header-nav {
-  font-family: var(--font-body);
-  font-size: 90%;
-  color: var(--link);
-  line-height: normal;
-  margin: 0 0 1em;
-}
-
-.site-header-nav a {
-  color: var(--link);
-  text-decoration: underline;
-  text-underline-offset: auto;
-}
-
-.topnav-menu > .topnav-toggle {
-  display: none;
-}
-
-.topnav-menu > .topnav-toggle-input {
-  display: none;
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
   padding: 0;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
-  border: 0;
+  list-style: none;
 }
 
-.topnav-menu > .topnav-links {
-  display: block;
+.site-nav a {
+  display: inline-block;
+  padding: 4px 0;
+  color: #111111;
+  font-family: Fraunces, Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  font-weight: 300;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 7px;
+  transition: text-decoration-color 0.15s ease;
 }
 
-.topnav-menu .topnav-separator {
-  white-space: pre;
+.site-nav a:hover,
+.site-nav a:focus-visible,
+.site-nav a[aria-current="page"] {
+  text-decoration-color: var(--accent);
 }
 
-.site-header-nav,
+.site-nav a:focus-visible {
+  outline: none;
+}
+
 .story-headline,
 .story-byline,
 .story-deck {
   overflow-wrap: anywhere;
 }
 
-/* Portrait hangs over the newspaper’s top hairline — that line is the sheet border. */
 .newspaper-sheet {
   position: relative;
   z-index: 1;
@@ -176,11 +122,11 @@ a {
   --font-body: "Newsreader", Georgia, "Times New Roman", serif;
   font-family: var(--font-body);
   background: var(--bg-sheet);
-  border: 1px solid var(--rule);
+  border: none;
   box-shadow: var(--shadow-sheet);
   padding: var(--sheet-pad);
   padding-bottom: 0.4rem;
-  margin-top: -10pt;
+  margin-top: 0;
   overflow: visible;
 }
 
@@ -758,20 +704,6 @@ a {
     margin-right: 10px;
     max-width: none;
   }
-
-  .site-header-portrait {
-    margin-left: 0;
-  }
-
-  .site-header-portrait img {
-    box-sizing: border-box;
-    height: auto;
-    max-width: 100%;
-  }
-
-  .site-header-nav {
-    margin: 1em 0;
-  }
 }
 
 @media (max-width: 1000px) {
@@ -831,16 +763,6 @@ a {
 }
 
 @media (max-width: 600px) {
-  .site-header {
-    font-size: 16px;
-    margin-top: 16pt;
-    text-align: left;
-  }
-
-  .site-header-nav {
-    line-height: 1.7;
-  }
-
   .newspaper-sheet {
     padding: 1.25rem 0.75rem 0.4rem;
   }
@@ -928,64 +850,6 @@ a {
 }
 
 @media (max-width: 480px) {
-  .topnav-menu > .topnav-toggle-input {
-    display: block;
-  }
-
-  .topnav-menu > .topnav-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.5rem;
-    min-height: 2.25rem;
-    padding: 0.35rem 0.6rem;
-    border: 1px solid var(--rule);
-    background: var(--bg-sheet);
-    color: var(--link);
-    font: inherit;
-    font-size: 90%;
-    font-weight: 700;
-    cursor: pointer;
-  }
-
-  .topnav-menu > .topnav-toggle::after {
-    content: "+";
-    font-size: 1.25em;
-    line-height: 1;
-  }
-
-  .topnav-menu > .topnav-toggle-input:checked + .topnav-toggle::after {
-    content: "−";
-  }
-
-  .topnav-menu > .topnav-toggle-input:focus-visible + .topnav-toggle {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
-  }
-
-  .topnav-menu > .topnav-links {
-    display: none;
-    padding: 0.25rem 0.6rem;
-    border: 1px solid var(--rule);
-    border-top: 0;
-    background: var(--bg-sheet);
-  }
-
-  .topnav-menu > .topnav-toggle-input:checked ~ .topnav-links {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .topnav-menu .topnav-links a {
-    display: block;
-    padding: 0.3rem 0;
-  }
-
-  .topnav-menu .topnav-separator {
-    display: none;
-  }
-
   .masthead-date-wrap {
     padding: 0;
     border: 0;

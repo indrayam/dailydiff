@@ -730,7 +730,7 @@ a {
 }
 
 /* Live blog width: 60% column on desktop, 10px insets on phones.
-   Match the live blog header flow in https://indrayam.com/style.css. */
+   Match the live blog header flow in https://blog.indrayam.com/style.css. */
 @media screen and (min-width: 900px) {
   .site-header {
     margin-left: auto;

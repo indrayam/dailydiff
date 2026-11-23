@@ -102,59 +102,51 @@
     );
   }
 
+  // Builds the filter buttons once per edition. Clicks update the existing
+  // buttons in place (syncFilters) so keyboard focus stays on the button.
   function renderFilters() {
-    const sourceChips = editionFilterChips(state.edition, "source", SOURCE_LABELS);
-    const interestChips = editionFilterChips(state.edition, "interests", INTEREST_LABELS);
-    const sourceMount = document.getElementById("source-filter-options");
-    const interestMount = document.getElementById("interest-filter-options");
-    sourceMount.innerHTML = sourceChips.map(function (chip) {
-      return (
-        '<button type="button" class="filter-btn' +
-        (chip.id === state.source ? " active" : "") +
-        '" data-filter="' +
-        escapeHtml(chip.id) +
-        '">' +
-        escapeHtml(chip.label) +
-        "</button>"
-      );
-    }).join("");
-    interestMount.innerHTML = interestChips.map(function (chip) {
-      return (
-        '<button type="button" class="filter-btn' +
-        (chip.id === state.interest ? " active" : "") +
-        '" data-filter="' +
-        escapeHtml(chip.id) +
-        '">' +
-        escapeHtml(chip.label) +
-        "</button>"
-      );
-    }).join("");
-
-    sourceMount.querySelectorAll(".filter-btn").forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        state.source = btn.getAttribute("data-filter");
-        renderFilters();
-        applyFilters();
+    const groups = [
+      { mount: "source-filter-options", chips: editionFilterChips(state.edition, "source", SOURCE_LABELS), key: "source" },
+      { mount: "interest-filter-options", chips: editionFilterChips(state.edition, "interests", INTEREST_LABELS), key: "interest" },
+    ];
+    groups.forEach(function (group) {
+      const mount = document.getElementById(group.mount);
+      mount.innerHTML = group.chips.map(function (chip) {
+        return (
+          '<button type="button" class="filter-btn" aria-pressed="false" data-filter="' +
+          escapeHtml(chip.id) +
+          '">' +
+          escapeHtml(chip.label) +
+          "</button>"
+        );
+      }).join("");
+      mount.querySelectorAll(".filter-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          state[group.key] = btn.getAttribute("data-filter");
+          syncFilters();
+          applyFilters();
+        });
       });
     });
-    interestMount.querySelectorAll(".filter-btn").forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        state.interest = btn.getAttribute("data-filter");
-        renderFilters();
-        applyFilters();
-      });
-    });
+    syncFilters();
+  }
 
-    const sourceText = document.getElementById("source-filter-text");
-    const interestText = document.getElementById("interest-filter-text");
-    const sourceChip = sourceChips.find(function (c) {
-      return c.id === state.source;
-    }) || sourceChips[0];
-    const interestChip = interestChips.find(function (c) {
-      return c.id === state.interest;
-    }) || interestChips[0];
-    if (sourceText) sourceText.textContent = sourceChip.label;
-    if (interestText) interestText.textContent = interestChip.label;
+  function syncFilters() {
+    [
+      { mount: "source-filter-options", text: "source-filter-text", value: state.source },
+      { mount: "interest-filter-options", text: "interest-filter-text", value: state.interest },
+    ].forEach(function (group) {
+      const buttons = document.querySelectorAll("#" + group.mount + " .filter-btn");
+      let label = "";
+      buttons.forEach(function (btn, index) {
+        const selected = btn.getAttribute("data-filter") === group.value;
+        btn.classList.toggle("active", selected);
+        btn.setAttribute("aria-pressed", String(selected));
+        if (selected || (!label && index === 0)) label = btn.textContent;
+      });
+      const text = document.getElementById(group.text);
+      if (text && label) text.textContent = label;
+    });
   }
 
   function renderStory(story, type) {
@@ -318,9 +310,14 @@
     });
     document.addEventListener("click", function () {
       groups.forEach(function (group) {
+        if (!group.classList.contains("open")) return;
         group.classList.remove("open");
         const trigger = group.querySelector(".filter-mobile-trigger");
-        if (trigger) trigger.setAttribute("aria-expanded", "false");
+        if (!trigger) return;
+        trigger.setAttribute("aria-expanded", "false");
+        // A choice inside the closing dropdown hides the focused button;
+        // return focus to the trigger instead of losing it.
+        if (group.contains(document.activeElement) && document.activeElement !== trigger) trigger.focus();
       });
     });
   }

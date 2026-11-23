@@ -1,6 +1,6 @@
 # The Daily Diff
 
-A static newspaper of papers and threads worth Anand Sharma's time. Emma blog chrome (title, portrait, Home | Archives | Daily Diff | About Me, copyright footer) sits on the dash field; The Daily Diff — True Signals in a sea of Noise — lives inside the boxed newspaper sheet.
+A static newspaper of posts, threads, and signals worth Anand Sharma's attention, curated from sources such as X, Hacker News, GitHub, and the web. It uses the shared `indrayam.com` chrome: the site nav (Home | About Me | Resume | Daily Diff | Field Notes | Sightings | Writings), the 10px orange top bar, a white page with no box around the content, and the shared copyright footer. Inside, a centered Source Sans Pro masthead ("The Daily Diff") sits over a Newsreader newspaper layout.
 
 **Live:** https://dailydiff.indrayam.com
 
@@ -8,13 +8,18 @@ A static newspaper of papers and threads worth Anand Sharma's time. Emma blog ch
 
 | File | Role |
 | --- | --- |
-| `index.html` | Newspaper shell. Fetches `./edition.json` and provides loading placeholders for the dynamic edition metadata. |
-| `styles.css` | Newspaper layout with Emma tokens: Lora display, PT Serif body, orange bars, `#900` links, dash-tiled page, white sheet. |
-| `app.js` | Filters and story render. |
-| `edition.json` | This edition's copy. |
-| `images/blue-dash.gif` | Emma page-background tile (in-repo; do not hotlink). |
-| `images/me.gif` | Emma header portrait (in-repo). |
+| `index.html` | Newspaper shell: site nav, masthead with loading placeholders for the edition date and story count, filter bar, and empty story columns. Preloads `edition.json`. |
+| `app.js` | Fetches `./edition.json`, fills the masthead, and renders the stories with source and interest filters. |
+| `edition.json` | The current edition's content and the data contract with `app.js`. |
+| `styles.css` | Shared chrome (nav, top bar, footer) plus the newspaper layout: Source Sans Pro masthead, Newsreader body, orange accent, `#900` links. |
+| `404.html` | Custom not-found page with the shared nav and footer and the `images/404.webp` illustration. |
+| `images/og-daily-diff.png` | 1200x630 share image used by the `og:image` and `twitter:image` tags. |
+| `favicon.ico`, `apple-touch-icon.png` | The icon shared by every indrayam.com site. |
+| `robots.txt`, `sitemap.xml` | Crawler files for this host. |
+| `vercel.json` | Shared security headers, plus `Cache-Control: max-age=0, must-revalidate` on `edition.json` so each visit gets the latest edition. |
+| `.vercelignore` | Keeps `AGENTS.md`, `README.md`, `preflight.txt`, `.env*`, and `.claude/` out of deployments. |
+| `preflight.txt` | Working log from the edition pipeline; not deployed. |
 
-No bundler, no framework. Serve the directory with any static file server, then open the local URL in a browser. Direct `file://` opening is not supported because the app loads `edition.json` with `fetch`.
+No bundler, no framework. Serve the directory with any static file server (the workspace's `.claude/launch.json` has a `samachar` entry on port 8084), then open the local URL. Direct `file://` opening is not supported because the app loads `edition.json` with `fetch`.
 
-Canonical host is Vercel (Git-connected). GitHub Pages is off.
+Canonical host is Vercel (Git-connected, project `samachar`): a push to `main` deploys. GitHub Pages is off.

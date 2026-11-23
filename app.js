@@ -39,7 +39,9 @@
   }
 
   async function loadEdition() {
-    const response = await fetch("./edition.json", { cache: "no-store" });
+    // Default caching lets this reuse the <link rel="preload"> in index.html;
+    // vercel.json makes the browser revalidate edition.json on every load.
+    const response = await fetch("./edition.json");
     if (!response.ok) throw new Error(String(response.status));
     return await response.json();
   }

@@ -320,6 +320,19 @@
         if (group.contains(document.activeElement) && document.activeElement !== trigger) trigger.focus();
       });
     });
+    // Escape closes an open dropdown and returns focus to its trigger.
+    document.addEventListener("keydown", function (event) {
+      if (event.key !== "Escape") return;
+      groups.forEach(function (group) {
+        if (!group.classList.contains("open")) return;
+        group.classList.remove("open");
+        const trigger = group.querySelector(".filter-mobile-trigger");
+        if (!trigger) return;
+        trigger.setAttribute("aria-expanded", "false");
+        trigger.focus();
+        event.preventDefault();
+      });
+    });
   }
 
   initMobileFilters();

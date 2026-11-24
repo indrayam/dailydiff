@@ -20,6 +20,6 @@ A static newspaper of posts, threads, and signals worth Anand Sharma's attention
 | `.vercelignore` | Keeps `AGENTS.md`, `README.md`, `preflight.txt`, `.env*`, and `.claude/` out of deployments. |
 | `preflight.txt` | Working log from the edition pipeline; not deployed. |
 
-No bundler, no framework. Serve the directory with any static file server (the workspace's `.claude/launch.json` has a `samachar` entry on port 8084), then open the local URL. Direct `file://` opening is not supported because the app loads `edition.json` with `fetch`.
+No bundler, no framework. Serve the directory with any static file server (the workspace's `.claude/launch.json` has a `dailydiff` entry on port 8084), then open the local URL. Direct `file://` opening is not supported because the app loads `edition.json` with `fetch`.
 
-Canonical host is Vercel (Git-connected, project `samachar`): a push to `main` deploys. GitHub Pages is off.
+Canonical host is Vercel (Git-connected, project `dailydiff`): a push to `main` deploys. GitHub Pages is off.
